@@ -1,10 +1,13 @@
-<script setup></script>
-
 <template>
   <div>
+    <NavBar />
     <RouterView />
   </div>
 </template>
+
+<script setup>
+import NavBar from './components/NavBar.vue';
+</script>
 
 <style scoped></style>
 
@@ -33,8 +36,9 @@ body {
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 
   --gray900: #191f28;
+  --gray500: #99a2ad;
+  --gray400: #bcc3c9;
   --white: #fdfdfd;
-
-  color: var(--gray900);
+  --border: #e5e8eb;
 }
 </style>
