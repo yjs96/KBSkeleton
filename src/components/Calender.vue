@@ -1,14 +1,16 @@
 <template>
-  <div class="container">
-    <VDatePicker v-model="date" color="indigo">
+  <div class="calender-box">
+    <VDatePicker
+      v-model="date"
+      color="green"
+      transparent
+      borderless
+      style="width: 80% !important"
+      class="calender-content"
+    >
       <template #footer>
         <div class="w-full px-3 pb-3">
-          <button
-            class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold w-full px-3 py-1 rounded-md"
-            @click="setToday"
-          >
-            Today
-          </button>
+          <button class="today-btn" @click="setToday">Today</button>
         </div>
       </template>
     </VDatePicker>
@@ -16,7 +18,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 // 현재 날짜를 담을 ref
 const date = ref(new Date());
@@ -27,22 +29,35 @@ function setToday() {
 }
 
 // 달력이 마운트된 후에 실행될 로직
-import { onMounted } from "vue";
 onMounted(() => {
   console.log("Calendar mounted");
 });
 
 // 달력이 언마운트되기 전에 실행될 로직
-import { onBeforeUnmount } from "vue";
 onBeforeUnmount(() => {
   console.log("Calendar will unmount");
 });
+
+// ----------------------------
 </script>
 
 <style scoped>
+.calender-box {
+  /* border: 1px solid red; */
+}
+.calender-content {
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+.today-btn {
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px; /** 선택 */
 }
 </style>
