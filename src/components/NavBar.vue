@@ -23,22 +23,17 @@ const navTabs = ref([
   {
     path: '/two',
     name: '두번째',
-    icon: 'fa-solid fa-magnifying-glass',
+    icon: 'fa-solid fa-wallet',
   },
   {
     path: '/three',
     name: '세번째',
-    icon: 'fa-solid fa-money-bill',
+    icon: 'fa-solid fa-chart-simple',
   },
   {
     path: '/four',
     name: '네번째',
     icon: 'fa-solid fa-plus',
-  },
-  {
-    path: '/five',
-    name: '다섯번째',
-    icon: 'fa-solid fa-user',
   },
 ]);
 </script>
@@ -46,19 +41,19 @@ const navTabs = ref([
 <style scoped>
 .navbar-frame {
   position: absolute;
-  padding: 0 4.4%;
+  padding: 0 4%;
   bottom: 0;
   width: 100%;
   height: 76px;
   display: flex;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--gray);
   background-color: var(--white);
   z-index: 2;
 }
 
 .tab-frame {
   position: relative;
-  width: calc(100% / 5);
+  width: calc(100% / 4);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -70,7 +65,7 @@ const navTabs = ref([
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--gray400);
+  color: var(--nav-gray);
 }
 
 .tab span {
@@ -81,7 +76,7 @@ const navTabs = ref([
 }
 
 .tab-active {
-  color: var(--gray900);
+  color: var(--black);
 }
 
 a {
