@@ -1,5 +1,5 @@
-import Calender from "@/pages/Calender.vue";
 import Home from "@/pages/Home.vue";
+import Statistics from "@/pages/Statistics.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -12,8 +12,8 @@ const router = createRouter({
     },
     {
       path: "/two",
-      name: "calender",
-      component: Calender,
+      name: "statistics",
+      component: Statistics,
     },
   ],
 });
