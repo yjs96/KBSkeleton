@@ -1,13 +1,19 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '@/pages/Home.vue';
+import Calender from "@/pages/Calender.vue";
+import Home from "@/pages/Home.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: "/",
+      name: "home",
       component: Home,
+    },
+    {
+      path: "/two",
+      name: "calender",
+      component: Calender,
     },
   ],
 });
