@@ -23,11 +23,9 @@ const props = defineProps({
   height: calc(100% - 76px);
   overflow-x: hidden;
   overflow-y: scroll;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .padded {
-  padding: 16px 5.56%;
+  padding: 0px 5.56%;
 }
 </style>
