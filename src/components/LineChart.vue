@@ -32,6 +32,31 @@
       <div class="category-name">수입1</div>
     </div>
   </div>
+  <div class="monthlyinout">
+    <div class="june">6월</div>
+    <div class="inout">
+      <div class="income">수입</div>
+      <div>
+        <div class="times">6회</div>
+        <div class="total">+500000원</div>
+      </div>
+    </div>
+    <div class="inout">
+      <div class="income">지출</div>
+      <div>
+        <div class="times">6회</div>
+        <div class="total">+500000원</div>
+      </div>
+    </div>
+
+    <div class="inout">
+      <div class="outcome">지출</div>
+      <div>
+        <div class="times">120회</div>
+        <div class="total">-1500000원</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup></script>
@@ -73,5 +98,39 @@
 
 .category-name {
   font-size: 12px;
+}
+
+.monthlyinout {
+  margin-top: 16px;
+  background-color: var(--white);
+}
+.june {
+  border-bottom: 1px solid var(--gray);
+  /* padding: 1px 0; */
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+.inout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+.outout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+.times {
+  text-align: right;
+}
+
+.total {
+  text-align: right;
 }
 </style>
