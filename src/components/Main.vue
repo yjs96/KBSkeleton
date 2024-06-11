@@ -26,6 +26,6 @@ const props = defineProps({
 }
 
 .padded {
-  padding: 0 5.56%;
+  padding: 0px 5.56%;
 }
 </style>
