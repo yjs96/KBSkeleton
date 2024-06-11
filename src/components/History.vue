@@ -4,9 +4,7 @@
       <div class="category-icon">그림</div>
       <div class="history-info-frame">
         <span class="history-name">세종대 학식</span>
-        <span class="history-time">
-          24. 6. 7 &nbsp;11:52 &nbsp;|&nbsp; 음식
-        </span>
+        <span class="history-time"> 24. 6. 7 &nbsp;11:52 &nbsp;|&nbsp; 음식 </span>
       </div>
     </div>
     <div class="history-right">
