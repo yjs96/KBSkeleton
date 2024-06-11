@@ -16,7 +16,7 @@
         <div class="c">c</div>
         <div class="d">
           <div class="d-style">
-            <div class="d1">d1</div>
+            <div class="d1">d1111</div>
             <div class="d1">d2</div>
             <div class="d1">d3</div>
           </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import Main from '@/components/Main.vue';
+import Main from "@/components/Main.vue";
 </script>
 
 <style scoped>
@@ -75,23 +75,21 @@ i {
 .user-box {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   background-color: var(--green);
   border-radius: 10px;
-
+  
   box-shadow: 5px 5px 7px 0px rgba(182, 182, 182, 0.645);
 }
 .a {
-  flex: 1;
+  height: 100px;
 }
 .b {
-  flex: 1;
+  height: 100px;
 }
 .c {
-  flex: 1;
+  height: 100px;
 }
 .d {
-  height: 400px;
   /* border: 1px solid red; */
   background-color: var(--white);
   border-radius: 0px 0px 10px 10px;
@@ -107,7 +105,7 @@ i {
   /* border: 1px solid red; */
 }
 .d1 {
-  width: 400px;
+  width: 80%;
   height: 80px;
   /* border: 1px solid red; */
 
