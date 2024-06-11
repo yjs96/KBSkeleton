@@ -10,19 +10,35 @@
       <div class="profile-frame">프사</div>
     </div>
     <div class="month">
-      <span>{{ month }}월</span>
-      <i class="fa-solid fa-caret-down"></i>
+      <select v-model="month" class="month-select">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+        <option value="3">3월</option>
+        <option value="4">4월</option>
+        <option value="5">5월</option>
+        <option value="6">6월</option>
+        <option value="7">7월</option>
+        <option value="8">8월</option>
+        <option value="9">9월</option>
+        <option value="10">10월</option>
+        <option value="11">11월</option>
+        <option value="12">12월</option>
+      </select>
     </div>
     <div class="income-frame">
       <ShadowBox :height="124">
-        <div class="income-subtext">전월 대비 3%증가</div>
+        <div class="income-subtext">이번 달</div>
         <div class="income">총 수입</div>
-        <div class="income-amount">500,000원</div>
+        <div class="income-amount">
+          {{ addComma(totalIncomeByMonth(month)) }}원
+        </div>
       </ShadowBox>
       <ShadowBox :height="124">
-        <div class="income-subtext">전월 대비 3%증가</div>
+        <div class="income-subtext">이번 달</div>
         <div class="income">총 지출</div>
-        <div class="income-amount">500,000원</div>
+        <div class="income-amount">
+          {{ addComma(totalOutcomeByMonth(month)) }}원
+        </div>
       </ShadowBox>
     </div>
     <ShadowBox :height="100" @click="handleShowModal(true)">
@@ -38,11 +54,10 @@
         <div class="income">최근 내역</div>
         <i class="fa solid fa-chevron-right"></i>
       </div>
-      <History />
-      <History />
-      <History />
-      <History />
-      <History />
+      <History
+        v-for="history in recentHistoryByMonth(month)"
+        :value="history"
+      />
     </ShadowBox>
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 큰</div>
@@ -63,20 +78,33 @@
 </template>
 
 <script setup>
+import { computed, ref } from 'vue';
+
+import { useHistoryStore } from '@/stores/history';
+
 import Main from '@/components/Main.vue';
 import ShadowBox from '@/components/ShadowBox.vue';
 import History from '@/components/History.vue';
 import AddModal from '@/components/AddModal.vue';
 
-import { ref } from 'vue';
+const historyStore = useHistoryStore();
+
+const {
+  fetchHistory,
+  addComma,
+  totalIncomeByMonth,
+  totalOutcomeByMonth,
+  recentHistoryByMonth,
+} = historyStore;
+fetchHistory();
 
 const date = new Date();
-const month = date.getMonth() + 1;
+const month = ref(date.getMonth() + 1);
 
 const showModal = ref(false);
 
 const handleShowModal = (val) => {
-  showModal.value = val
+  showModal.value = val;
 };
 </script>
 
@@ -162,5 +190,11 @@ i {
   align-items: center;
   font-size: 12px;
   gap: 8px;
+}
+
+.month-select {
+  background-color: transparent;
+  border: 0 none;
+  outline: 0 none;
 }
 </style>

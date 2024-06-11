@@ -1,21 +1,42 @@
 <template>
   <div class="history-frame">
     <div class="history-left">
-      <div class="category-icon">그림</div>
+      <div class="category-icon">
+        <CategoryIcon :category="value.category" :width="44" />
+      </div>
       <div class="history-info-frame">
-        <span class="history-name">세종대 학식</span>
+        <span class="history-name">{{ value.memo }}</span>
         <span class="history-time">
-          24. 6. 7 &nbsp;11:52 &nbsp;|&nbsp; 음식
+          {{ moment(value.date, 'YY-MM-DD').format('YY. M. D') }}
+          <span style="font-size: 11px">&nbsp;|&nbsp;</span>
+          {{ value.category }}
         </span>
       </div>
     </div>
     <div class="history-right">
-      <span>-6,000원</span>
+      <span>{{ addSymbolComma(value.amount, value.type) }}</span>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useHistoryStore } from '@/stores/history';
+import { defineProps } from 'vue';
+import moment from 'moment';
+
+import CategoryIcon from './CategoryIcon.vue';
+
+const historyStore = useHistoryStore();
+
+const { addSymbolComma } = historyStore;
+
+const props = defineProps({
+  value: {
+    type: Object,
+    require: true,
+  },
+});
+</script>
 
 <style>
 .history-frame {
