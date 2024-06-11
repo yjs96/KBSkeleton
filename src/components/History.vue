@@ -7,14 +7,14 @@
       <div class="history-info-frame">
         <span class="history-name">{{ value.memo }}</span>
         <span class="history-time">
-          {{ moment(value.date, 'YY-MM-DD').format('YY. M. D') }}
+          {{ moment(value.date, 'YYYY-MM-DD').format('YY. M. D') }}
           <span style="font-size: 11px">&nbsp;|&nbsp;</span>
           {{ value.category }}
         </span>
       </div>
     </div>
     <div class="history-right">
-      <span>{{ addSymbolComma(value.amount, value.type) }}</span>
+      <span>{{ addSymbolComma(value.amount, value.type) }}원</span>
     </div>
   </div>
 </template>

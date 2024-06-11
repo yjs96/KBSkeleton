@@ -34,7 +34,7 @@
       <div class="button-container">
         <div class="button-label">금액</div>
         <div class="select-box">
-          <input class="memo-input" type="number" v-model="selectedNumber" />
+          <input class="memo-input" type="number" v-model="selectedAmount" />
         </div>
       </div>
       <div class="button-container">
@@ -69,16 +69,22 @@
 import moment from 'moment';
 import { ref, defineEmits } from 'vue';
 
+import { useHistoryStore } from '@/stores/history';
+
 const emit = defineEmits(['close-modal']);
 
 const closeModal = () => {
   emit('close-modal', false);
 };
 
+const historyState = useHistoryStore();
+
+const { postHistory } = historyState;
+
 const date = moment();
 
 const selectedType = ref('income');
-const selectedNumber = ref();
+const selectedAmount = ref();
 const selectedMemo = ref('');
 const selectedCategory = ref('수입');
 const selectedDate = ref(date.format('YYYY-MM-DD'));
@@ -91,7 +97,15 @@ const handleType = (type) => {
 };
 
 const addHistory = () => {
-  // 여기서 json-server 통신
+  const toSend = {
+    memo: selectedMemo.value,
+    category: selectedCategory.value,
+    type: selectedType.value,
+    amount: selectedAmount.value,
+    date: selectedDate.value,
+    done: true,
+  };
+  postHistory(toSend);
   closeModal();
 };
 </script>
