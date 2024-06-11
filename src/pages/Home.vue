@@ -1,4 +1,5 @@
 <template>
+  <AddModal v-if="showModal" @close-modal="handleShowModal" />
   <Main :padded="true">
     <div class="upper-bar">
       <div class="user-name-frame">
@@ -24,7 +25,7 @@
         <div class="income-amount">500,000원</div>
       </ShadowBox>
     </div>
-    <ShadowBox :height="100">
+    <ShadowBox :height="100" @click="handleShowModal(true)">
       <div class="add-new">
         <div class="profile-frame">
           <i class="fa-solid fa-plus" style="margin: 0 0 0 1px"></i>
@@ -65,9 +66,18 @@
 import Main from '@/components/Main.vue';
 import ShadowBox from '@/components/ShadowBox.vue';
 import History from '@/components/History.vue';
+import AddModal from '@/components/AddModal.vue';
+
+import { ref } from 'vue';
 
 const date = new Date();
 const month = date.getMonth() + 1;
+
+const showModal = ref(false);
+
+const handleShowModal = (val) => {
+  showModal.value = val
+};
 </script>
 
 <style scoped>
