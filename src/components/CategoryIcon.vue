@@ -1,5 +1,12 @@
 <template>
   <img
+    v-if="category === '지출 전체'"
+    src="/category_icon/pay.svg"
+    alt="지출전체"
+    :style="{ width: width + 'px' }"
+  />
+  <img
+    v-else
     :src="getCategoryImgSrc(category)"
     :alt="category"
     :style="{ width: width + 'px' }"
