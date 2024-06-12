@@ -16,7 +16,7 @@ const props = defineProps({
   },
   width: {
     type: Number,
-    required: true,
+    required: false,
   },
 });
 

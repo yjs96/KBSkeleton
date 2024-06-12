@@ -21,19 +21,19 @@ const navTabs = ref([
     icon: 'fa-solid fa-house',
   },
   {
-    path: '/two',
-    name: '두번째',
-    icon: 'fa-solid fa-wallet',
+    path: '/statistics',
+    name: '달력',
+    icon: 'fa-solid fa-calendar',
   },
   {
-    path: '/three',
-    name: '세번째',
-    icon: 'fa-solid fa-chart-simple',
+    path: '/charts',
+    name: '통계',
+    icon: 'fa-solid fa-chart-pie',
   },
   {
-    path: '/four',
-    name: '네번째',
-    icon: 'fa-solid fa-plus',
+    path: '/mypage',
+    name: '계정',
+    icon: 'fa-solid fa-user',
   },
 ]);
 </script>

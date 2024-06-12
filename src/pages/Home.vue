@@ -3,13 +3,13 @@
   <Main :padded="true">
     <div class="upper-bar">
       <div class="user-name-frame">
-        <span>{{ userInfo.name }}</span>
+        <router-link to="/mypage">{{ userInfo.name }}</router-link>
         <span class="weight-regular">님</span>
         <i class="fa solid fa-chevron-right"></i>
       </div>
-      <div class="profile-frame">
+      <router-link to="/mypage" class="profile-frame">
         <img class="profile-image" :src="userInfo.profileImage" alt="" />
-      </div>
+      </router-link>
     </div>
     <div class="month">
       <select v-model="month" class="month-select">
@@ -30,15 +30,11 @@
     <div class="income-frame">
       <ShadowBox :height="116">
         <div class="income">총 수입</div>
-        <div class="income-amount">
-          {{ addComma(totalIncomeByMonth(month)) }}원
-        </div>
+        <div class="income-amount">{{ addComma(totalIncomeByMonth(month)) }}원</div>
       </ShadowBox>
       <ShadowBox :height="116">
         <div class="income">총 지출</div>
-        <div class="income-amount">
-          {{ addComma(totalOutcomeByMonth(month)) }}원
-        </div>
+        <div class="income-amount">{{ addComma(totalOutcomeByMonth(month)) }}원</div>
       </ShadowBox>
     </div>
     <ShadowBox :height="100" @click="handleShowModal(true)">
@@ -52,18 +48,15 @@
     <ShadowBox>
       <div class="latest-upper">
         <div class="income">최근 내역</div>
-        <i class="fa solid fa-chevron-right"></i>
+        <router-link to="/statistics" class="fa solid fa-chevron-right"></router-link>
       </div>
-      <History
-        v-for="history in recentHistoryByMonth(month)"
-        :value="history"
-      />
+      <History v-for="history in recentHistoryByMonth(month)" :value="history" />
     </ShadowBox>
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 큰</div>
       <div class="income">단일 지출</div>
       <div class="income-amount">
-        {{ addComma(maxOutcomeByMonth(month).amount) }}원
+        {{ maxOutcomeByMonth(month) ? addComma(maxOutcomeByMonth(month).amount) : '' }}원
       </div>
     </ShadowBox>
     <ShadowBox :height="120">

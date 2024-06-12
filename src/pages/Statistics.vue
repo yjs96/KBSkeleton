@@ -18,10 +18,10 @@
         <!-- 필터링될 History -->
         <div>
           <div class="daily-filter-spend">
-            <History />
-            <History />
-            <History />
-            <History />
+            <History :value="tempObj" />
+            <History :value="tempObj" />
+            <History :value="tempObj" />
+            <History :value="tempObj" />
           </div>
         </div>
       </div>
@@ -33,6 +33,18 @@
 import Calender from '@/components/Calender.vue';
 import History from '@/components/History.vue';
 import Main from '@/components/Main.vue';
+
+import { ref } from 'vue';
+
+const tempObj = ref({
+  id: 40,
+  memo: '서브웨이',
+  category: '식비',
+  type: 'outcome',
+  amount: 9900,
+  date: '2024-04-08',
+  done: 'TRUE',
+});
 </script>
 
 <style>

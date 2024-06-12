@@ -1,5 +1,5 @@
-// import "bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { createPinia } from "pinia";
 import VCalendar from "v-calendar";
 import "v-calendar/style.css";

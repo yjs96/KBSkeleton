@@ -4,11 +4,13 @@
     <div class="mypage-container">
       <div class="upper-bar">
         <div class="user-name-frame">
-          <span>박소해</span>
+          <router-link to="/">{{ userInfo.name }}</router-link>
           <span class="weight-regular">님</span>
           <i class="fa solid fa-chevron-right"></i>
         </div>
-        <div class="profile-frame">프사</div>
+        <router-link to="/" class="profile-frame">
+          <img class="profile-image" :src="userInfo.profileImage" alt="" />
+        </router-link>
       </div>
       <div class="user-box">
         <div class="a"></div>
@@ -27,7 +29,17 @@
 </template>
 
 <script setup>
-import Main from "@/components/Main.vue";
+import { computed } from 'vue';
+
+import Main from '@/components/Main.vue';
+import { useUserInfoStore } from '@/stores/history';
+
+const userInfoStore = useUserInfoStore();
+
+const { fetchuserInfo } = userInfoStore;
+const userInfo = computed(() => userInfoStore.userInfo);
+
+fetchuserInfo();
 </script>
 
 <style scoped>
@@ -71,13 +83,19 @@ i {
   overflow: hidden;
   object-fit: cover;
 }
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+}
+
 /* card */
 .user-box {
   display: flex;
   flex-direction: column;
   background-color: var(--green);
   border-radius: 10px;
-  
+
   box-shadow: 5px 5px 7px 0px rgba(182, 182, 182, 0.645);
 }
 .a {
