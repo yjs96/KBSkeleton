@@ -1,150 +1,35 @@
-<!-- <template>
-  <div class="calendar-box">
-    <VDatePicker
-      v-model="date"
-      color="purple"
-      :theme-styles="{ dayHeight: '100px', dayWidth: '60px' }"
-      borderless
-      :attributes="attrs"
-      class="calendar-content custom-width-height"
-      @input="logDate"
-    >
-      <template #day="{ date: dayDate }">
-        <div class="custom-day" @click="selectDate(dayDate)">
-          <div>{{ dayDate.getDate() }}</div>
-          <div v-if="isSpecialDate(dayDate)" class="custom-component">
-            <SpecialComponent />
-          </div>
-        </div>
-      </template>
-      <template #footer>
-        <div class="today-wrapper-btn">
-          <button class="today-btn" @click="setToday">Today</button>
-        </div>
-      </template>
-    </VDatePicker>
-  </div>
-</template>
-
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import SpecialComponent from './SpecialComponent.vue'; // 커스텀 컴포넌트 임포트
-
-const date = ref(new Date());
-console.log('date',date);
-function setToday() {
-  date.value = new Date();
-  console.log(date.value);
-}
-
-const logDate = (selectedDate) => {
-  console.log('Selected date:', selectedDate);
-};
-
-const selectDate = (selectedDate) => {
-  date.value = selectedDate;
-  console.log('Selected date:', selectedDate);
-};
-
-const isSpecialDate = (date) => {
-  // 특정 날짜를 확인하는 로직을 여기에 추가
-  // 예를 들어, 매달 15일을 특별한 날짜로 설정
-  return date.getDate() === 15;
-};
-
-onMounted(() => {
-  console.log('Calendar mounted');
-  console.log(date);
-});
-
-onBeforeUnmount(() => {
-  console.log('Calendar will unmount');
-  console.log(date);
-});
-
-const attrs = ref([
-  {
-    key: 'today',
-    dates: new Date(),
-    highlight: {
-      color: 'purple',
-      fillMode: 'outline',
-    },
-  },
-]);
-</script>
-
-<style scoped>
-.calendar-box {
-  width: 100%;
-  background-color: white;
-}
-
-.custom-width-height {
-  width: 80% !important;
-  height: auto;
-}
-
-.today-btn {
-  background-color: var(--gray);
-  border: none;
-  border-radius: 10px;
-  color: var(--white);
-  padding: 5px 10px;
-  margin-top: 10px;
-}
-
-.today-wrapper-btn {
-  margin-bottom: 20px;
-}
-
-.custom-day {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer; /* 클릭할 수 있다는 것을 사용자에게 시각적으로 표시 */
-}
-
-.custom-component {
-  margin-top: 5px;
-  background-color: lightblue;
-  border-radius: 5px;
-  padding: 2px 5px;
-}
-
-/* 네비게이션 바의 화살표 버튼 스타일 */
-.vdp-nav-button {
-  background-color: var(--white) !important;
-}
-
-/* 월과 연도가 보이는 버튼 스타일 */
-.vdp-header {
-  background-color: var(--white) !important;
-}
-
-/* CSS 변수 정의 */
-:root {
-  --white: #fdfdfd;
-}
-</style> -->
 <template>
   <div class="calendar-box">
     <div class="calendar-controls">
-      <button @click="prevMonth">이전</button>
-      <span>{{ currentYear }}년 {{ currentMonth + 1 }}월</span>
-      <button @click="nextMonth">다음</button>
+      <button class="chevron-icon" @click="prevMonth">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <span class="current-year">{{ currentYear }}년 {{ currentMonth + 1 }}월</span>
+      <button class="chevron-icon" @click="nextMonth">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
     <div class="calendar-grid">
-      <div class="calendar-day" v-for="day in daysInMonth" :key="day">
-        <div @click="selectDate(day)">
-          <div>{{ day.getDate() }}</div>
-          <div v-if="isSpecialDate(day)" class="custom-component">
+      <!-- 요일 헤더 -->
+      <div class="calendar-header" v-for="(day, index) in weekDays" :key="index">
+        {{ day }}
+      </div>
+      <!-- 날짜 렌더링 -->
+      <div class="calendar-day" v-for="day in daysGrid" :key="day.date ? day.date.toString() : Math.random()">
+        <!-- 날짜 컨텐츠 전체  -->
+        <div class="daily-today-contents">
+          <div @click="selectDate(day.date)" :class="{ 'non-current-month': !day.isCurrentMonth }">
+            <!-- today 숫자 -->
+            <div class="daily-today">{{ day.date ? day.date.getDate() : '' }}</div>
+          </div>
+          <!-- mome + income, outcome -->
+          <div v-if="day.isCurrentMonth && isSpecialDate(day.date)" class="custom-component">
             <SpecialComponent />
           </div>
         </div>
       </div>
     </div>
+    <!-- 클릭 하면 현재 날짜가 포커스 되도록 하려는데 아직 안 해봄. -->
     <div class="today-wrapper-btn">
       <button class="today-btn" @click="setToday">Today</button>
     </div>
@@ -161,16 +46,42 @@ const selectedDate = ref(null);
 const currentYear = computed(() => currentDate.value.getFullYear());
 const currentMonth = computed(() => currentDate.value.getMonth());
 
-const daysInMonth = computed(() => {
+const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
+
+const daysGrid = computed(() => {
   const year = currentYear.value;
   const month = currentMonth.value;
   const date = new Date(year, month, 1);
   const days = [];
+
+  // 이전 달의 날짜 추가
+  const prevMonthDays = [];
+  const firstDayIndex = date.getDay();
+  if (firstDayIndex > 0) {
+    const prevMonth = new Date(year, month, 0);
+    for (let i = firstDayIndex - 1; i >= 0; i--) {
+      const prevDate = new Date(year, month, -i);
+      prevMonthDays.push({ date: prevDate, isCurrentMonth: false });
+    }
+  }
+
+  // 현재 달의 날짜 추가
   while (date.getMonth() === month) {
-    days.push(new Date(date));
+    days.push({ date: new Date(date), isCurrentMonth: true });
     date.setDate(date.getDate() + 1);
   }
-  return days;
+
+  // 다음 달의 날짜 추가
+  const nextMonthDays = [];
+  const remainingDays = 7 - ((days.length + prevMonthDays.length) % 7);
+  if (remainingDays < 7) {
+    for (let i = 1; i <= remainingDays; i++) {
+      const nextDate = new Date(year, month + 1, i);
+      nextMonthDays.push({ date: nextDate, isCurrentMonth: false });
+    }
+  }
+
+  return [...prevMonthDays, ...days, ...nextMonthDays];
 });
 
 const setToday = () => {
@@ -183,7 +94,7 @@ const selectDate = (date) => {
 };
 
 const isSpecialDate = (date) => {
-  return date.getDate() === 15;
+  return date && date.getDate() === 10;
 };
 
 const prevMonth = () => {
@@ -197,37 +108,90 @@ const nextMonth = () => {
 
 <style scoped>
 .calendar-box {
-  width: 100%;
-  background-color: white;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  background-color: var(--white);
+  padding: 20px 0 0 0;
 }
 
 .calendar-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+}
+
+.chevron-icon {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: var(--white);
+}
+
+.fa-solid {
+  font-weight: bold;
+}
+
+.current-year {
+  font-weight: bold;
+  color: var(--green);
+  font-size: 24px;
+  padding: 0px 24px;
 }
 
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
+  /* gap: 10px; */
 }
 
+/* 요일 */
+.calendar-header {
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+.daily-today-contents {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted var(--gray);
+}
+/* 날짜 한 칸 한 칸 */
 .calendar-day {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100px;
+  justify-content: end;
+  height: 50px;
+  width: 64px;
   cursor: pointer;
 }
 
+/* 날짜 클릭 시 */
+.daily-today {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+}
+.daily-today:hover {
+  background-color: var(--green);
+  box-shadow: 0 0 5px 1px var(--green); /* 하이라이트 효과 추가 */
+}
+.daily-today:active {
+  background-color: var(--green);
+}
+
 .custom-component {
-  margin-top: 5px;
-  background-color: lightblue;
-  border-radius: 5px;
-  padding: 2px 5px;
+  display: flex;
+  height: 100%;
 }
 
 .today-btn {
@@ -240,12 +204,18 @@ const nextMonth = () => {
 }
 
 .today-wrapper-btn {
-  margin-top: 20px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-:root {
+.non-current-month {
+  color: var(--dark-gray);
+}
+
+/* :root {
   --white: #fdfdfd;
   --gray: #888;
-}
+  --green: #0f0;
+  --dark-gray: #555;
+} */
 </style>

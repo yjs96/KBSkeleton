@@ -7,22 +7,8 @@
       <div class="button-container">
         <div class="button-label">유형</div>
         <div class="type-button-frame">
-          <div
-            @click="handleType('income')"
-            :class="
-              selectedType === 'income' ? 'button button-selected' : 'button'
-            "
-          >
-            수입
-          </div>
-          <div
-            @click="handleType('outcome')"
-            :class="
-              selectedType === 'outcome' ? 'button button-selected' : 'button'
-            "
-          >
-            지출
-          </div>
+          <div @click="handleType('income')" :class="selectedType === 'income' ? 'button button-selected' : 'button'">수입</div>
+          <div @click="handleType('outcome')" :class="selectedType === 'outcome' ? 'button button-selected' : 'button'">지출</div>
         </div>
       </div>
       <div class="button-container">
@@ -46,11 +32,7 @@
       <div v-if="selectedType === 'outcome'" class="button-container">
         <div class="button-label">카테고리</div>
         <div class="select-box">
-          <select
-            name="category"
-            class="category-select"
-            v-model="selectedCategory"
-          >
+          <select name="category" class="category-select" v-model="selectedCategory">
             <option value="식비">식비</option>
             <option value="교통">교통</option>
             <option value="문화">문화</option>
