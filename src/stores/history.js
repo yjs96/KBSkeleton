@@ -39,6 +39,7 @@ export const useHistoryStore = defineStore('history', () => {
     }
   };
 
+  // 홈 페이지에서 사용할 함수들
   // 내역 추가
   const postHistory = async (obj) => {
     try {
@@ -132,6 +133,61 @@ export const useHistoryStore = defineStore('history', () => {
     return mostFrequentCategory;
   };
 
+  // 차트 페이지에서 사용할 함수들
+  // 파이 차트
+  // 월별 카테고리별 합 배열 반환
+  const outcomeByCategoryAndMonth = (month) => {
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter(
+      (history) =>
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
+    );
+
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
+    const outcomeByCategory = categories.map((category) => {
+      const categoryOutcome = filteredOutcome
+        .filter((history) => history.category === category)
+        .reduce((sum, history) => sum + history.amount, 0);
+      return categoryOutcome;
+    });
+
+    return outcomeByCategory;
+  };
+
+  const outcomeByCategoryAndMonthWithPercentage = (month) => {
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter(
+      (history) =>
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
+    );
+
+    const totalOutcome = filteredOutcome.reduce(
+      (sum, history) => sum + history.amount,
+      0
+    );
+
+    const categoryOutcome = filteredOutcome.reduce((acc, history) => {
+      const { category, amount } = history;
+      acc[category] = (acc[category] || 0) + amount;
+      return acc;
+    }, {});
+
+    const outcomeData = Object.entries(categoryOutcome).map(
+      ([category, sumAmount]) => ({
+        category,
+        sumAmount,
+        percentage: parseFloat(((sumAmount / totalOutcome) * 100).toFixed(2)),
+      })
+    );
+
+    outcomeData.sort((a, b) => b.sumAmount - a.sumAmount);
+
+    return outcomeData;
+  };
+
+  // 공통 사용
   // 숫자 세개 단위 콤마
   const addComma = (val) => {
     return val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
@@ -162,5 +218,7 @@ export const useHistoryStore = defineStore('history', () => {
     maxOutcomeByMonth,
     mostFrequentMemoByMonth,
     mostFrequentCategoryByMonth,
+    outcomeByCategoryAndMonth,
+    outcomeByCategoryAndMonthWithPercentage,
   };
 });
