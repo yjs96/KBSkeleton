@@ -1,4 +1,6 @@
 <template>
+  <MemoModal v-if="showModal" @close-modal="handleShowModal" />
+
   <Main :padded="false" style="background-color: var(--gray)">
     <div class="calender-warpper">
       <Calender />
@@ -8,13 +10,15 @@
           <div class="daily-month">
             <span>10일(월)</span>
           </div>
+          <!-- memo 모달 클릭  -->
+          <div>
+            <i @click="handleShowModal(true)" class="fa-solid fa-envelope"></i>
+          </div>
           <div class="daily-spend">
             <span class="daily-income">+1000</span> |
             <span class="daily-outcome">-6000</span>
           </div>
         </div>
-        <!-- 밑 줄 -->
-        <div class="divider"></div>
         <!-- 필터링될 History -->
         <div>
           <div class="daily-filter-spend">
@@ -33,9 +37,11 @@
 import Calender from '@/components/Calender.vue';
 import History from '@/components/History.vue';
 import Main from '@/components/Main.vue';
+import MemoModal from '@/components/MemoModal.vue';
 
 import { ref } from 'vue';
 
+const showModal = ref(false);
 const tempObj = ref({
   id: 40,
   memo: '서브웨이',
@@ -45,9 +51,13 @@ const tempObj = ref({
   date: '2024-04-08',
   done: 'TRUE',
 });
+
+const handleShowModal = (val) => {
+  showModal.value = val;
+};
 </script>
 
-<style>
+<style scoped>
 .calender-warpper {
   /* 기본 css */
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -68,8 +78,9 @@ const tempObj = ref({
   align-items: center;
   /* border: 1px solid red; */
   background-color: var(--white);
-  padding: 0px 30px;
-  margin: 20px 0px;
+  padding: 0px 5.56%;
+  margin-top: 16px;
+  border-bottom: 1px solid var(--gray);
 }
 .daily-month {
   color: var(--black);
@@ -95,7 +106,24 @@ const tempObj = ref({
   text-align: left;
   position: relative;
   width: 100%;
-  padding: 0px 24px;
+  padding: 20px 5.56%;
   background-color: var(--white);
+}
+
+.daily-filter-spend :first-child {
+  margin-top: 0px;
+}
+
+/* memo 모달  */
+.fa-envelope {
+  font-size: 24px;
+  color: var(--green);
+  transition: all 0.1s ease-out;
+}
+.fa-envelope:hover {
+  color: var(--red);
+}
+.fa-envelope:active {
+  transform: scale(0.7);
 }
 </style>
