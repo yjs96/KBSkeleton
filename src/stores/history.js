@@ -218,6 +218,52 @@ export const useHistoryStore = defineStore('history', () => {
     return outcomeData;
   };
 
+  // 1~6월 카테고리별 누적 금액
+  const getAmountsByMonthAndCategory = () => {
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
+    const months = [1, 2, 3, 4, 5, 6];
+
+    const result = {
+      income: [],
+      outcome: [],
+      ...categories.reduce((acc, category) => {
+        acc[category] = [];
+        return acc;
+      }, {}),
+    };
+
+    months.forEach((month) => {
+      const targetMonth = String(month).padStart(2, '0');
+      const filteredHistory = state.historyList.filter(
+        (history) => moment(history.date).format('MM') === targetMonth
+      );
+
+      const incomeAmount = filteredHistory
+        .filter((history) => history.type === 'income')
+        .reduce((sum, history) => sum + history.amount, 0);
+
+      const outcomeAmount = filteredHistory
+        .filter((history) => history.type === 'outcome')
+        .reduce((sum, history) => sum + history.amount, 0);
+
+      result.income.push(incomeAmount);
+      result.outcome.push(outcomeAmount);
+
+      categories.forEach((category) => {
+        const categoryAmount = filteredHistory
+          .filter(
+            (history) =>
+              history.type === 'outcome' && history.category === category
+          )
+          .reduce((sum, history) => sum + history.amount, 0);
+
+        result[category].push(categoryAmount);
+      });
+    });
+
+    return result;
+  };
+
   // 공통 사용
   // 숫자 세개 단위 콤마
   const addComma = (val) => {
@@ -252,5 +298,6 @@ export const useHistoryStore = defineStore('history', () => {
     mostFrequentCategoryByMonth,
     outcomeByCategoryAndMonth,
     outcomeByCategoryAndMonthWithPercentage,
+    getAmountsByMonthAndCategory,
   };
 });

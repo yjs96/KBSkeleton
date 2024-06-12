@@ -3,18 +3,41 @@
     <canvas ref="lineChartCanvas"></canvas>
   </div>
   <div class="category-container">
-    <div class="category-frame">
+    <div class="category-frame" @click="selectTab('수입')">
       <div class="category-icon">
-        <CategoryIcon :category="incomeTab.category" width="60" />
+        <CategoryIcon
+          :class="{ 'selected-tab-image': selectedTab === '수입' }"
+          :category="incomeTab.category"
+          width="60"
+        />
       </div>
-      <div class="category-name">{{ incomeTab.category }}</div>
+      <div
+        class="category-name"
+        :class="{ 'selected-tab-text': selectedTab === '수입' }"
+      >
+        {{ incomeTab.category }}
+      </div>
     </div>
     <div class="divide-bar"></div>
-    <div class="category-frame" v-for="tab in outcomeList" :key="tab.category">
+    <div
+      class="category-frame"
+      v-for="(tab, index) in outcomeList"
+      :key="index"
+      @click="selectTab(tab.category)"
+    >
       <div class="category-icon">
-        <CategoryIcon :category="tab.category" width="60" />
+        <CategoryIcon
+          :class="{ 'selected-tab-image': selectedTab === tab.category }"
+          :category="tab.category"
+          width="60"
+        />
       </div>
-      <div class="category-name">{{ tab.category }}</div>
+      <div
+        :class="{ 'selected-tab-text': selectedTab === tab.category }"
+        class="category-name"
+      >
+        {{ tab.category }}
+      </div>
     </div>
   </div>
   <div class="monthlyinout">
@@ -33,15 +56,17 @@
         <div class="total text-red">+500000원</div>
       </div>
     </div>
+    {{ amountsByMonthAndCategory }}
   </div>
 </template>
-
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { Chart, registerables } from 'chart.js';
+import { useHistoryStore } from '@/stores/history';
 
 import CategoryIcon from './CategoryIcon.vue';
 
+const selectedTab = ref('noTab');
 const incomeTab = ref({
   category: '수입',
   selected: false,
@@ -74,21 +99,47 @@ const outcomeList = ref([
   },
 ]);
 
+const selectTab = (tab) => {
+  selectedTab.value = selectedTab.value === tab ? 'noTab' : tab;
+};
+
+const historyStore = useHistoryStore();
+
+const { getAmountsByMonthAndCategory } = historyStore;
+getAmountsByMonthAndCategory();
+
+
+const newArray = computed(() => {
+  if (selectTab === 'noTab') {
+    return [
+      [amountsByMonthAndCategory.value.income],
+      [amountsByMonthAndCategory.value.outcome],
+    ];
+  } else if (selectTab === '지출 전체') {
+    return [[amountsByMonthAndCategory.value.outcome], []];
+  }
+});
+
 Chart.register(...registerables);
 
 const lineChartCanvas = ref(null);
+let chart = null;
 
-onMounted(() => {
+const createChart = () => {
+  if (chart) {
+    chart.destroy();
+  }
+
   const ctx = lineChartCanvas.value.getContext('2d');
 
   new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ['4월', '5월', '6월'],
+      labels: ['1월', '2월', '3월', '4월', '5월', '6월'],
       datasets: [
         {
           label: '수입',
-          data: [2500000, 2500000, 1200000],
+          data: newArray[0],
           borderColor: 'rgba(75, 192, 192, 1)',
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           tension: 0.4,
@@ -96,7 +147,7 @@ onMounted(() => {
         },
         {
           label: '지출 전체',
-          data: [1002800, 1127800, 429300],
+          data: newArray[1],
           borderColor: 'rgba(255, 99, 132, 1)',
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
           tension: 0.4,
@@ -108,7 +159,7 @@ onMounted(() => {
       responsive: true,
       plugins: {
         legend: {
-          position: 'bottom',
+          position: 'top',
         },
         title: {
           display: false,
@@ -117,14 +168,27 @@ onMounted(() => {
       },
       scales: {
         y: {
-          beginAtZero: true,
+          beginAtZero: false,
         },
       },
     },
   });
+};
+
+onMounted(() => {});
+
+onMounted(() => {
+  createChart();
+});
+
+watch(selectedTab, () => {
+  createChart();
+});
+
+watch(amountsByMonthAndCategory, () => {
+  createChart();
 });
 </script>
-
 <style scoped>
 .chart-frame {
   background-color: var(--white);
@@ -151,6 +215,7 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .category-icon {
@@ -169,6 +234,16 @@ onMounted(() => {
   font-size: 12px;
 }
 
+.selected-tab-image {
+  filter: brightness(0.88);
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.selected-tab-text {
+  font-weight: 650;
+}
+
 .divide-bar {
   width: 1px;
   height: 56px;
@@ -182,14 +257,15 @@ onMounted(() => {
   padding-bottom: 16px;
   font-size: 16px;
 }
+
 .june {
   border-bottom: 1px solid var(--gray);
-  /* padding: 1px 0; */
   height: 36px;
   display: flex;
   align-items: center;
   padding: 0 5.56%;
 }
+
 .inout {
   width: 100%;
   display: flex;
@@ -197,6 +273,7 @@ onMounted(() => {
   padding: 0 5.56%;
   margin-top: 16px;
 }
+
 .outout {
   width: 100%;
   display: flex;
@@ -204,6 +281,7 @@ onMounted(() => {
   padding: 0 24px;
   margin-top: 16px;
 }
+
 .times {
   text-align: right;
   font-weight: 400;
