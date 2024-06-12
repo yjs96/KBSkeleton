@@ -55,9 +55,7 @@
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 큰</div>
       <div class="income">단일 지출</div>
-      <div class="income-amount">
-        {{ maxOutcomeByMonth(month) ? addComma(maxOutcomeByMonth(month).amount) : '' }}원
-      </div>
+      <div class="income-amount">{{ maxOutcomeByMonth(month) ? addComma(maxOutcomeByMonth(month).amount) : '' }}원</div>
     </ShadowBox>
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 많은</div>

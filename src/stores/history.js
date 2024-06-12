@@ -34,7 +34,6 @@ export const useHistoryStore = defineStore('history', () => {
     try {
       const response = await axios.get(BASEURL);
       state.historyList = await response.data;
-      // console.log(response.data);
     } catch (err) {
       // console.log(err);
     }
@@ -54,11 +53,7 @@ export const useHistoryStore = defineStore('history', () => {
   // 월 전체 수입
   const totalIncomeByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const incomeList = state.historyList.filter(
-      (history) =>
-        moment(history.date).format('MM') === targetMonth &&
-        history.type === 'income'
-    );
+    const incomeList = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'income');
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
   };
@@ -66,11 +61,7 @@ export const useHistoryStore = defineStore('history', () => {
   // 월 전체 지출
   const totalOutcomeByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const incomeList = state.historyList.filter(
-      (history) =>
-        moment(history.date).format('MM') === targetMonth &&
-        history.type === 'outcome'
-    );
+    const incomeList = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
   };
@@ -78,13 +69,9 @@ export const useHistoryStore = defineStore('history', () => {
   // 월 최근 5개 내역
   const recentHistoryByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const filteredHistory = state.historyList.filter(
-      (history) => moment(history.date).format('MM') === targetMonth
-    );
+    const filteredHistory = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth);
 
-    const sortedHistory = filteredHistory.sort((a, b) =>
-      moment(b.date).diff(moment(a.date))
-    );
+    const sortedHistory = filteredHistory.sort((a, b) => moment(b.date).diff(moment(a.date)));
 
     return sortedHistory.slice(0, 5);
   };
@@ -92,19 +79,13 @@ export const useHistoryStore = defineStore('history', () => {
   // 월 단일 최대 금액
   const maxOutcomeByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format('MM') === targetMonth &&
-        history.type === 'outcome'
-    );
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
     }
 
-    const maxOutcome = filteredOutcome.reduce((max, history) =>
-      history.amount > max.amount ? history : max
-    );
+    const maxOutcome = filteredOutcome.reduce((max, history) => (history.amount > max.amount ? history : max));
 
     return maxOutcome;
   };
@@ -112,11 +93,7 @@ export const useHistoryStore = defineStore('history', () => {
   // 가장 많은 지출처
   const mostFrequentMemoByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format('MM') === targetMonth &&
-        history.type === 'outcome'
-    );
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
@@ -129,9 +106,7 @@ export const useHistoryStore = defineStore('history', () => {
     }, {});
 
     const maxCount = Math.max(...Object.values(memoCount));
-    const mostFrequentMemo = Object.keys(memoCount).find(
-      (memo) => memoCount[memo] === maxCount
-    );
+    const mostFrequentMemo = Object.keys(memoCount).find((memo) => memoCount[memo] === maxCount);
 
     return mostFrequentMemo;
   };
@@ -139,11 +114,7 @@ export const useHistoryStore = defineStore('history', () => {
   // 가장 많은 카테고리
   const mostFrequentCategoryByMonth = (month) => {
     const targetMonth = String(month).padStart(2, '0');
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format('MM') === targetMonth &&
-        history.type === 'outcome'
-    );
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
@@ -156,9 +127,7 @@ export const useHistoryStore = defineStore('history', () => {
     }, {});
 
     const maxCount = Math.max(...Object.values(categoryCount));
-    const mostFrequentCategory = Object.keys(categoryCount).find(
-      (category) => categoryCount[category] === maxCount
-    );
+    const mostFrequentCategory = Object.keys(categoryCount).find((category) => categoryCount[category] === maxCount);
 
     return mostFrequentCategory;
   };
@@ -170,15 +139,14 @@ export const useHistoryStore = defineStore('history', () => {
 
   // 수입일 경우 + 기호, 지출일 경우 - 기호 + 콤마
   const addSymbolComma = (val, type) => {
-    const newVal = val
-      .toString()
-      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
+    const newVal = val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
     if (type === 'income') {
       return `+${newVal}`;
     } else {
       return `-${newVal}`;
     }
   };
+  fetchHistory();
 
   const historyList = computed(() => state.historyList);
 
