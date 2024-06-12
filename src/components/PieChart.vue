@@ -1,99 +1,190 @@
 <template>
-  <div class="chart-frame">
-    <!-- 여기에 차트가 들어갈겁니다 -->
-  </div>
-  <div class="category-container">
-    <div class="cateogry-frame">
-      <div class="container">
-        <div class="icon">
-          <img
-            src="https://placehold.co/64x64"
-            style="border-radius: 50%"
-            alt="icon"
-          />
-        </div>
-        <div class="data">
-          <div class="data_top">
-            <div class="data_top_left">
-              <div class="category">
-                <b>쇼핑</b>
-              </div>
-              <div class="percentage">80.00%</div>
-            </div>
-            <div class="data_top_right">
-              <div class="cost">120,000원</div>
-            </div>
-          </div>
-          <div class="data_bottom">
-            <div class="bar"></div>
-          </div>
-        </div>
-      </div>
+  <div class="chart-container">
+    <div class="month">
+      <select v-model="month" class="month-select">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+        <option value="3">3월</option>
+        <option value="4">4월</option>
+        <option value="5">5월</option>
+        <option value="6">6월</option>
+        <option value="7">7월</option>
+        <option value="8">8월</option>
+        <option value="9">9월</option>
+        <option value="10">10월</option>
+        <option value="11">11월</option>
+        <option value="12">12월</option>
+      </select>
+    </div>
+    <div class="chart-frame">
+      <canvas ref="chartCanvas"></canvas>
     </div>
   </div>
+  <Percentage
+    v-for="percentageObj in percentageList"
+    :key="percentageObj.sumAmount"
+    :category="percentageObj.category"
+    :sumAmount="percentageObj.sumAmount"
+    :percentage="percentageObj.percentage"
+  />
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted, computed, watch } from 'vue';
+import { Chart, registerables } from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { useHistoryStore } from '@/stores/history';
+
+import Percentage from './Percentage.vue';
+
+const date = new Date();
+const month = ref(date.getMonth() + 1);
+
+const historyStore = useHistoryStore();
+const {
+  fetchHistory,
+  outcomeByCategoryAndMonth,
+  outcomeByCategoryAndMonthWithPercentage,
+} = historyStore;
+
+fetchHistory();
+
+const outcomeList = computed(() => outcomeByCategoryAndMonth(month.value));
+const percentageList = computed(() =>
+  outcomeByCategoryAndMonthWithPercentage(month.value)
+);
+
+Chart.register(...registerables);
+Chart.register(ChartDataLabels);
+
+const chartCanvas = ref(null);
+let chart = null;
+
+const createChart = () => {
+  if (chart) {
+    chart.destroy();
+  }
+
+  const ctx = chartCanvas.value.getContext('2d');
+
+  chart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['식비', '교통', '문화', '통신', '기타'],
+      datasets: [
+        {
+          label: '지출액',
+          data: outcomeList.value,
+          backgroundColor: [
+            'rgba(68, 196, 161, 1)',
+            'rgba(255, 85, 62, 1)',
+            'rgba(238, 174, 85, 1)',
+            'rgba(100, 121, 138, 1)',
+            'rgba(86, 157, 223, 1)',
+          ],
+          borderColor: [
+            'rgba(68, 196, 161, 1)',
+            'rgba(255, 85, 62, 1)',
+            'rgba(238, 174, 85, 1)',
+            'rgba(100, 121, 138, 1)',
+            'rgba(86, 157, 223, 1)',
+          ],
+          borderWidth: 1,
+          datalabels: {
+            color: '#727272',
+            anchor: 'end',
+            align: 'end',
+            offset: 2,
+            font: {
+              family: 'Pretendard',
+              size: 14,
+              weight: 500,
+            },
+            formatter: (value, ctx) => {
+              const label = ctx.chart.data.labels[ctx.dataIndex];
+              return label;
+            },
+          },
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      layout: {
+        padding: {
+          top: 28,
+          right: 28,
+          bottom: 28,
+          left: 28,
+        },
+      },
+      plugins: {
+        legend: {
+          display: false,
+          // position: 'right',
+          // labels: {
+          //   color: '#727272',
+          //   boxWidth: 6,
+          //   boxHeight: 6,
+          //   padding: 12,
+          //   font: {
+          //     family: 'Pretendard',
+          //     size: 14,
+          //     weight: 500,
+          //   },
+          // },
+        },
+        title: {
+          display: false,
+          text: '월별 카테고리',
+        },
+        tooltip: {
+          enabled: true,
+          callbacks: {
+            label: (context) => {
+              const label = context.label;
+              const value = context.parsed;
+              return label + ': ' + value.toLocaleString() + '원';
+            },
+          },
+        },
+      },
+    },
+  });
+};
+
+onMounted(() => {
+  createChart();
+});
+
+watch(month, () => {
+  createChart();
+});
+</script>
 
 <style scoped>
-.chart-frame {
-  background-color: var(--red);
-  height: 280px;
+.chart-container {
+  background-color: var(--white);
+  height: 320px;
+  margin-bottom: 16px;
 }
 
-.category-container {
-  background-color: var(-grey);
-  margin-top: 16px;
-  padding: 10px 24px;
-}
-
-.container {
+.month {
+  margin-left: 5.56%;
+  font-size: 20px;
   display: flex;
-  width: 100%;
-  padding: 10px;
   align-items: center;
-  border-bottom: 1px solid var(--gray);
 }
-.icon {
-  margin-right: 10px;
+
+.month-select {
+  background-color: transparent;
+  border: 0 none;
+  outline: 0 none;
 }
-.data {
+
+.chart-frame {
+  max-height: 290px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 50px;
-}
-.data_top {
-  display: flex;
-  justify-content: space-between;
-  height: 50%;
-}
-.data_top_left {
-  display: flex;
-}
-.data_top_right {
-}
-.data_bottom {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.bar {
-  width: 80%;
-  height: 50%;
-  background-color: var(--green);
-  margin: 4px 5px;
-  border-radius: 50px;
-}
-.category {
-  margin: 0 5px;
-}
-.percentage {
-  margin: 0 5px;
-  color: var(--dark-gray);
-}
-.cost {
-  color: var(--dark-gray);
 }
 </style>

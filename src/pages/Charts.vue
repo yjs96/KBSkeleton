@@ -39,7 +39,7 @@ const tabHandler = (tab) => {
 <style scoped>
 .head-bar-frame {
   background-color: var(--white);
-  padding: 32px 0 16px 0;
+  padding: 16px 0 8px 0;
 }
 
 .head-bar {
@@ -56,7 +56,7 @@ const tabHandler = (tab) => {
   justify-content: center;
   align-items: center;
   gap: 2px;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid var(--gray);
   border-radius: 6px;
   padding: 12px 8px;
