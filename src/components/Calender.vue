@@ -37,9 +37,19 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, reactive } from 'vue';
 import SpecialComponent from './SpecialComponent.vue';
+// pinia store 가져오기
+import { useHistoryStore } from '@/stores/history';
 
+const historyState = useHistoryStore();
+
+// const { historyList } = historyState;
+const { fetchHistory } = historyState;
+const historyList = computed(() => historyState.historyList);
+
+console.log('22222222', historyList.value);
+// ------------------------------
 const currentDate = ref(new Date());
 const selectedDate = ref(null);
 
@@ -87,7 +97,7 @@ const daysGrid = computed(() => {
 const setToday = () => {
   currentDate.value = new Date();
 };
-
+// 오늘 날짜 : Thu Jun 20 2024 00:00:00 GMT+0900 (한국 표준시)
 const selectDate = (date) => {
   selectedDate.value = date;
   console.log('Selected date:', date);
