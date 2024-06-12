@@ -11,6 +11,7 @@
           <span style="font-size: 11px">&nbsp;|&nbsp;</span>
           {{ value.category }}
         </span>
+
       </div>
     </div>
     <div class="history-right">
