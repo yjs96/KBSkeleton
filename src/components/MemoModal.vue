@@ -15,26 +15,27 @@
 </template>
 
 <script setup>
-import moment from 'moment';
-import { ref, defineEmits } from 'vue';
+import moment from "moment";
+import { ref, defineEmits } from "vue";
 
-import { useHistoryStore } from '@/stores/history';
-
-const emit = defineEmits(['close-modal']);
-
-const closeModal = () => {
-  emit('close-modal', false);
-};
+//--------- pinia store 가져오기----------------------
+import { useHistoryStore } from "@/stores/history";
 
 const historyState = useHistoryStore();
 
-const { postHistory } = historyState;
+// const { historyList } = historyState;
+const { fetchHistory } = historyState;
+const historyList = computed(() => historyState.historyList);
+
+console.log("22222222", historyList.value[1]); // {id: '2', memo: 'KT CCTV', category: '통신', type: 'outcome', amount: 20000, …}
+
+// ------------------------------
 
 const date = moment();
 
 const selectedAmount = ref();
-const selectedMemo = ref('');
-const selectedDate = ref(date.format('YYYY-MM-DD'));
+const selectedMemo = ref("");
+const selectedDate = ref(date.format("YYYY-MM-DD"));
 </script>
 
 <style scoped>
@@ -54,11 +55,11 @@ const selectedDate = ref(date.format('YYYY-MM-DD'));
 .modal-container {
   position: relative;
   background-color: var(--white);
-  outline: 3px solid var(--green); /** 선택 */
-  width: 60%;
+  outline: 1px solid var(--gray); /** 선택 */
+  width: 80%;
   border-radius: 8px;
   padding: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 /* close 버튼 */
 .close-frame {
@@ -68,7 +69,7 @@ const selectedDate = ref(date.format('YYYY-MM-DD'));
 }
 /* memo 컨테이너 */
 .memo-container {
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 /* 날짜  */
@@ -88,7 +89,7 @@ const selectedDate = ref(date.format('YYYY-MM-DD'));
   align-items: center;
   font-size: 14px;
 
-  border: 1px solid var(--dark-gray);
+  /* border: 1px solid var(--dark-gray); */
   border-radius: 10px;
   background-color: var(--gray);
 }

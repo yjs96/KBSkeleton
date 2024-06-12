@@ -1,18 +1,62 @@
 <template>
   <div class="spend-container">
     <div class="spend-content">
-      <div class="isMemo">
+      <div class="isMemo" v-if="hasMemo">
         <i class="fa-solid fa-envelope"></i>
       </div>
       <div class="spend-smry">
-        <div class="income">+10000</div>
-        <div class="outcome">-10000</div>
+        <!-- 수입이 있을 때만 표시 -->
+        <div v-if="formattedIncome > 0" class="income">
+          {{ formattedIncome }}
+        </div>
+        <!-- 지출이 있을 때만 표시 -->
+        <div v-if="formattedOutcome" class="outcome">
+          {{ formattedOutcome }}
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// const props = defineProps({
+//   date: {
+//     type: Date,
+//     required: true,
+//   },
+// });
+//--------- pinia store 가져오기----------------------
+import { useHistoryStore } from "@/stores/history";
+import { computed } from "vue";
+
+import { defineProps } from "vue";
+
+const props = defineProps({
+  formattedIncome: {
+    type: String,
+    required: true,
+  },
+  formattedOutcome: {
+    type: String,
+    required: true,
+  },
+  hasMemo: {
+    type: Boolean,
+    required: true,
+  },
+});
+const historyState = useHistoryStore();
+const historyList = computed(() => historyState.historyList);
+
+console.log("special 컴포넌트");
+// for (let i = 0; i < historyList.value.length; i++) {
+//   console.log(
+//     `test :${historyList.value[i].id}, ${historyList.value[i].type}, ${historyList.value[i].amount},${historyList.value[i].memo}`
+//   );
+// }
+
+// ------------------------------
+</script>
 
 <style scoped>
 .spend-container {
@@ -29,9 +73,10 @@
   flex-direction: column;
   padding-left: 10px;
   width: 50%;
+  text-align: start;
 }
 .income {
-  color: var(--blue);
+  color: var(--green);
   font-size: 0.5rem;
 }
 .outcome {
@@ -52,3 +97,4 @@
 }
 /* 원하는 스타일을 추가하세요 */
 </style>
+import { computed } from "vue"; import { computed } from "vue";

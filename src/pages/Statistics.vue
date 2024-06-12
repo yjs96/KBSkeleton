@@ -34,22 +34,22 @@
 </template>
 
 <script setup>
-import Calender from '@/components/Calender.vue';
-import History from '@/components/History.vue';
-import Main from '@/components/Main.vue';
-import MemoModal from '@/components/MemoModal.vue';
+import Calender from "@/components/Calender.vue";
+import History from "@/components/History.vue";
+import Main from "@/components/Main.vue";
+import MemoModal from "@/components/MemoModal.vue";
 
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const showModal = ref(false);
 const tempObj = ref({
   id: 40,
-  memo: '서브웨이',
-  category: '식비',
-  type: 'outcome',
+  memo: "서브웨이",
+  category: "식비",
+  type: "outcome",
   amount: 9900,
-  date: '2024-04-08',
-  done: 'TRUE',
+  date: "2024-04-08",
+  done: "TRUE",
 });
 
 const handleShowModal = (val) => {
