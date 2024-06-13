@@ -52,7 +52,7 @@
       "category": "통신",
       "type": "outcome",
       "amount": 70000,
-      "date": "2024-06-01",
+      "date": "2024-06-03",
       "done": "FALSE"
     },
     {
@@ -62,7 +62,7 @@
       "category": "통신",
       "type": "outcome",
       "amount": 20000,
-      "date": "2024-06-02",
+      "date": "2024-06-03",
       "done": "FALSE"
     },
     {
@@ -81,17 +81,7 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13200,
-      "date": "2024-04-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 22,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 13900,
+      "amount": 5200,
       "date": "2024-04-01",
       "done": "FALSE"
     },
@@ -121,17 +111,7 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13800,
-      "date": "2024-04-03",
-      "done": "FALSE"
-    },
-    {
-      "id": 29,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 6400,
+      "amount": 4800,
       "date": "2024-04-03",
       "done": "FALSE"
     },
@@ -147,23 +127,13 @@
     },
     {
       "id": 36,
-      "memo": "진관홀",
+      "memo": "맥도날드",
       "details": "",
       "category": "식비",
       "type": "outcome",
       "amount": 9500,
       "date": "2024-04-06",
       "done": "FALSE"
-    },
-    {
-      "id": 37,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9500,
-      "date": "2024-04-07",
-      "done": "TRUE"
     },
     {
       "id": 40,
@@ -187,22 +157,12 @@
     },
     {
       "id": 42,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
+      "memo": "책",
+      "details": "교재",
+      "category": "기타",
       "type": "outcome",
       "amount": 13500,
       "date": "2024-04-09",
-      "done": "TRUE"
-    },
-    {
-      "id": 44,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 13700,
-      "date": "2024-04-11",
       "done": "TRUE"
     },
     {
@@ -216,52 +176,12 @@
       "done": "FALSE"
     },
     {
-      "id": 53,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9300,
-      "date": "2024-04-13",
-      "done": "FALSE"
-    },
-    {
-      "id": 57,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 11000,
-      "date": "2024-04-14",
-      "done": "TRUE"
-    },
-    {
-      "id": 58,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 12200,
-      "date": "2024-04-14",
-      "done": "FALSE"
-    },
-    {
-      "id": 59,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 10500,
-      "date": "2024-04-14",
-      "done": "TRUE"
-    },
-    {
       "id": 60,
-      "memo": "맥도날드",
+      "memo": "택시",
       "details": "",
-      "category": "식비",
+      "category": "교통",
       "type": "outcome",
-      "amount": 10500,
+      "amount": 6500,
       "date": "2024-04-15",
       "done": "TRUE"
     },
@@ -276,22 +196,42 @@
       "done": "TRUE"
     },
     {
+      "id": 60,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 6500,
+      "date": "2024-03-15",
+      "done": "TRUE"
+    },
+    {
+      "id": 61,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7900,
+      "date": "2024-03-15",
+      "done": "TRUE"
+    },
+    {
       "id": 62,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 10900,
+      "amount": 8900,
       "date": "2024-04-16",
       "done": "FALSE"
     },
     {
       "id": 63,
-      "memo": "맥도날드",
+      "memo": "버스",
       "details": "",
-      "category": "식비",
+      "category": "교통",
       "type": "outcome",
-      "amount": 13400,
+      "amount": 1400,
       "date": "2024-04-16",
       "done": "TRUE"
     },
@@ -306,6 +246,36 @@
       "done": "TRUE"
     },
     {
+      "id": 62,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8900,
+      "date": "2024-03-16",
+      "done": "FALSE"
+    },
+    {
+      "id": 63,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1400,
+      "date": "2024-03-16",
+      "done": "TRUE"
+    },
+    {
+      "id": 64,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10600,
+      "date": "2024-03-16",
+      "done": "TRUE"
+    },
+    {
       "id": 65,
       "memo": "스타벅스",
       "details": "",
@@ -316,13 +286,23 @@
       "done": "TRUE"
     },
     {
-      "id": 66,
+      "id": 67,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5400,
+      "date": "2024-04-17",
+      "done": "FALSE"
+    },
+    {
+      "id": 65,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 10600,
-      "date": "2024-04-17",
+      "amount": 7200,
+      "date": "2024-03-17",
       "done": "TRUE"
     },
     {
@@ -331,25 +311,15 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13400,
-      "date": "2024-04-17",
-      "done": "FALSE"
-    },
-    {
-      "id": 68,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 6200,
-      "date": "2024-04-17",
+      "amount": 5400,
+      "date": "2024-03-17",
       "done": "FALSE"
     },
     {
       "id": 69,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
+      "memo": "강아지 간식",
+      "details": "감자 간식",
+      "category": "기타",
       "type": "outcome",
       "amount": 12700,
       "date": "2024-04-18",
@@ -361,7 +331,7 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13000,
+      "amount": 8000,
       "date": "2024-04-18",
       "done": "FALSE"
     },
@@ -376,12 +346,42 @@
       "done": "FALSE"
     },
     {
+      "id": 69,
+      "memo": "강아지 간식",
+      "details": "감자 간식",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 12700,
+      "date": "2024-03-18",
+      "done": "TRUE"
+    },
+    {
+      "id": 70,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8000,
+      "date": "2024-03-18",
+      "done": "FALSE"
+    },
+    {
+      "id": 71,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-03-18",
+      "done": "FALSE"
+    },
+    {
       "id": 75,
       "memo": "진관홀",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 12200,
+      "amount": 5200,
       "date": "2024-04-19",
       "done": "TRUE"
     },
@@ -396,25 +396,26 @@
       "done": "TRUE"
     },
     {
-      "id": 81,
+      "id": 75,
       "memo": "진관홀",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 9300,
-      "date": "2024-04-21",
+      "amount": 5200,
+      "date": "2024-03-19",
       "done": "TRUE"
     },
     {
-      "id": 82,
-      "memo": "맥도날드",
+      "id": 76,
+      "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 9000,
-      "date": "2024-04-21",
-      "done": "FALSE"
+      "amount": 6400,
+      "date": "2024-03-19",
+      "done": "TRUE"
     },
+
     {
       "id": 83,
       "memo": "서브웨이",
@@ -436,6 +437,26 @@
       "done": "FALSE"
     },
     {
+      "id": 83,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-03-21",
+      "done": "FALSE"
+    },
+    {
+      "id": 84,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-03-21",
+      "done": "FALSE"
+    },
+    {
       "id": 86,
       "memo": "우동연가",
       "details": "",
@@ -444,26 +465,6 @@
       "amount": 6200,
       "date": "2024-04-22",
       "done": "TRUE"
-    },
-    {
-      "id": 87,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 11100,
-      "date": "2024-04-22",
-      "done": "FALSE"
-    },
-    {
-      "id": 88,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9000,
-      "date": "2024-04-22",
-      "done": "FALSE"
     },
     {
       "id": 91,
@@ -486,62 +487,32 @@
       "done": "FALSE"
     },
     {
-      "id": 93,
+      "id": 91,
       "memo": "우동연가",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13500,
-      "date": "2024-04-24",
-      "done": "FALSE"
-    },
-    {
-      "id": 94,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 12700,
-      "date": "2024-04-24",
+      "amount": 8600,
+      "date": "2024-03-24",
       "done": "TRUE"
     },
     {
-      "id": 95,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 6700,
-      "date": "2024-04-24",
-      "done": "TRUE"
-    },
-    {
-      "id": 96,
+      "id": 92,
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 12300,
-      "date": "2024-04-24",
+      "amount": 10900,
+      "date": "2024-03-24",
       "done": "FALSE"
     },
     {
-      "id": 97,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9300,
-      "date": "2024-04-24",
-      "done": "TRUE"
-    },
-    {
       "id": 98,
-      "memo": "진관홀",
-      "details": "",
+      "memo": "회식",
+      "details": "회식 N빵",
       "category": "식비",
       "type": "outcome",
-      "amount": 8000,
+      "amount": 28000,
       "date": "2024-04-24",
       "done": "TRUE"
     },
@@ -566,13 +537,33 @@
       "done": "TRUE"
     },
     {
-      "id": 101,
+      "id": 99,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7700,
+      "date": "2024-03-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 99,
+      "memo": "급여",
+      "details": "",
+      "category": "수입",
+      "type": "income",
+      "amount": 900000,
+      "date": "2024-03-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 100,
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 7000,
-      "date": "2024-04-25",
+      "amount": 9500,
+      "date": "2024-03-25",
       "done": "TRUE"
     },
     {
@@ -586,23 +577,13 @@
       "done": "TRUE"
     },
     {
-      "id": 106,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 10400,
-      "date": "2024-04-26",
-      "done": "FALSE"
-    },
-    {
-      "id": 107,
+      "id": 105,
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 12800,
-      "date": "2024-04-26",
+      "amount": 6400,
+      "date": "2024-03-26",
       "done": "TRUE"
     },
     {
@@ -616,23 +597,33 @@
       "done": "FALSE"
     },
     {
-      "id": 111,
-      "memo": "스타벅스",
+      "id": 112,
+      "memo": "치킨",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 11700,
+      "amount": 31500,
       "date": "2024-04-27",
       "done": "TRUE"
     },
     {
-      "id": 112,
-      "memo": "진관홀",
+      "id": 110,
+      "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 11500,
-      "date": "2024-04-27",
+      "amount": 10000,
+      "date": "2024-03-27",
+      "done": "FALSE"
+    },
+    {
+      "id": 112,
+      "memo": "치킨",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 31500,
+      "date": "2024-03-27",
       "done": "TRUE"
     },
     {
@@ -641,15 +632,15 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 11800,
+      "amount": 3800,
       "date": "2024-04-28",
       "done": "TRUE"
     },
     {
       "id": 116,
-      "memo": "맥도날드",
+      "memo": "택시",
       "details": "",
-      "category": "식비",
+      "category": "교통",
       "type": "outcome",
       "amount": 7600,
       "date": "2024-04-29",
@@ -666,13 +657,43 @@
       "done": "TRUE"
     },
     {
+      "id": 116,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 7600,
+      "date": "2024-03-29",
+      "done": "TRUE"
+    },
+    {
+      "id": 117,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8300,
+      "date": "2024-03-29",
+      "done": "TRUE"
+    },
+    {
       "id": 119,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 12500,
+      "amount": 7500,
       "date": "2024-04-30",
+      "done": "FALSE"
+    },
+    {
+      "id": 119,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7500,
+      "date": "2024-03-30",
       "done": "FALSE"
     },
     {
@@ -697,33 +718,13 @@
     },
     {
       "id": 123,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9000,
-      "date": "2024-05-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 124,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 10600,
-      "date": "2024-05-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 125,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13800,
+      "amount": 5000,
       "date": "2024-05-01",
-      "done": "TRUE"
+      "done": "FALSE"
     },
     {
       "id": 127,
@@ -731,7 +732,7 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 13800,
+      "amount": 7800,
       "date": "2024-05-02",
       "done": "FALSE"
     },
@@ -754,26 +755,6 @@
       "amount": 10800,
       "date": "2024-05-06",
       "done": "FALSE"
-    },
-    {
-      "id": 139,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 11300,
-      "date": "2024-05-06",
-      "done": "FALSE"
-    },
-    {
-      "id": 140,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 8100,
-      "date": "2024-05-06",
-      "done": "TRUE"
     },
     {
       "id": 141,
@@ -811,17 +792,7 @@
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 12600,
-      "date": "2024-05-08",
-      "done": "TRUE"
-    },
-    {
-      "id": 151,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 8900,
+      "amount": 5600,
       "date": "2024-05-08",
       "done": "TRUE"
     },
@@ -877,11 +848,11 @@
     },
     {
       "id": 163,
-      "memo": "서브웨이",
+      "memo": "택시",
       "details": "",
-      "category": "식비",
+      "category": "교통",
       "type": "outcome",
-      "amount": 9300,
+      "amount": 6300,
       "date": "2024-05-13",
       "done": "FALSE"
     },
@@ -916,16 +887,6 @@
       "done": "TRUE"
     },
     {
-      "id": 169,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 7700,
-      "date": "2024-05-14",
-      "done": "TRUE"
-    },
-    {
       "id": 170,
       "memo": "스타벅스",
       "details": "",
@@ -937,7 +898,7 @@
     },
     {
       "id": 171,
-      "memo": "스타벅스",
+      "memo": "진관홀",
       "details": "",
       "category": "식비",
       "type": "outcome",
@@ -946,22 +907,12 @@
       "done": "TRUE"
     },
     {
-      "id": 172,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 6900,
-      "date": "2024-05-16",
-      "done": "TRUE"
-    },
-    {
       "id": 173,
-      "memo": "우동연가",
+      "memo": "버스",
       "details": "",
-      "category": "식비",
+      "category": "교통",
       "type": "outcome",
-      "amount": 10700,
+      "amount": 2700,
       "date": "2024-05-16",
       "done": "TRUE"
     },
@@ -986,62 +937,32 @@
       "done": "TRUE"
     },
     {
-      "id": 178,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 8100,
-      "date": "2024-05-18",
-      "done": "TRUE"
-    },
-    {
       "id": 179,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 8900,
+      "memo": "용돈",
+      "details": "할머니가 용돈 주심",
+      "category": "수입",
+      "type": "income",
+      "amount": 100000,
       "date": "2024-05-18",
       "done": "TRUE"
     },
     {
-      "id": 182,
-      "memo": "진관홀",
+      "id": 183,
+      "memo": "옷",
       "details": "",
-      "category": "식비",
+      "category": "기타",
       "type": "outcome",
-      "amount": 12400,
+      "amount": 31000,
       "date": "2024-05-19",
       "done": "FALSE"
     },
     {
-      "id": 183,
+      "id": 185,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
-      "amount": 11000,
-      "date": "2024-05-19",
-      "done": "FALSE"
-    },
-    {
-      "id": 184,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 11100,
-      "date": "2024-05-19",
-      "done": "TRUE"
-    },
-    {
-      "id": 185,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 12900,
+      "amount": 5900,
       "date": "2024-05-19",
       "done": "FALSE"
     },
@@ -1066,42 +987,12 @@
       "done": "TRUE"
     },
     {
-      "id": 189,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 10600,
-      "date": "2024-05-20",
-      "done": "FALSE"
-    },
-    {
-      "id": 192,
-      "memo": "스타벅스",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 13600,
-      "date": "2024-05-22",
-      "done": "FALSE"
-    },
-    {
       "id": 193,
       "memo": "진관홀",
       "details": "",
       "category": "식비",
       "type": "outcome",
       "amount": 8700,
-      "date": "2024-05-22",
-      "done": "FALSE"
-    },
-    {
-      "id": 194,
-      "memo": "스타벅스",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9200,
       "date": "2024-05-22",
       "done": "FALSE"
     },
@@ -1136,16 +1027,6 @@
       "done": "TRUE"
     },
     {
-      "id": 200,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 8800,
-      "date": "2024-05-23",
-      "done": "FALSE"
-    },
-    {
       "id": 201,
       "memo": "진관홀",
       "details": "",
@@ -1167,9 +1048,9 @@
     },
     {
       "id": 206,
-      "memo": "진관홀",
+      "memo": "영화",
       "details": "",
-      "category": "식비",
+      "category": "문화",
       "type": "outcome",
       "amount": 12800,
       "date": "2024-05-25",
@@ -1206,33 +1087,13 @@
       "done": "TRUE"
     },
     {
-      "id": 212,
-      "memo": "스타벅스",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 9300,
-      "date": "2024-05-26",
-      "done": "FALSE"
-    },
-    {
-      "id": 213,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 6100,
-      "date": "2024-05-26",
-      "done": "TRUE"
-    },
-    {
       "id": 214,
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
       "type": "outcome",
       "amount": 10900,
-      "date": "2024-05-26",
+      "date": "2024-06-12",
       "done": "FALSE"
     },
     {
@@ -1242,7 +1103,7 @@
       "category": "식비",
       "type": "outcome",
       "amount": 9100,
-      "date": "2024-05-26",
+      "date": "2024-06-13",
       "done": "TRUE"
     },
     {
@@ -1277,9 +1138,9 @@
     },
     {
       "id": 220,
-      "memo": "맥도날드",
+      "memo": "노래방",
       "details": "",
-      "category": "식비",
+      "category": "문화",
       "type": "outcome",
       "amount": 9000,
       "date": "2024-05-29",
@@ -1316,16 +1177,6 @@
       "done": "FALSE"
     },
     {
-      "id": 233,
-      "memo": "유플러스",
-      "details": "",
-      "category": "통신",
-      "type": "outcome",
-      "amount": 70000,
-      "date": "2024-05-31",
-      "done": "FALSE"
-    },
-    {
       "id": 237,
       "memo": "우동연가",
       "details": "",
@@ -1334,16 +1185,6 @@
       "amount": 8000,
       "date": "2024-06-02",
       "done": "FALSE"
-    },
-    {
-      "id": 238,
-      "memo": "맥도날드",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 7900,
-      "date": "2024-06-02",
-      "done": "TRUE"
     },
     {
       "id": 240,
@@ -1364,16 +1205,6 @@
       "amount": 8700,
       "date": "2024-06-03",
       "done": "TRUE"
-    },
-    {
-      "id": 242,
-      "memo": "진관홀",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 12400,
-      "date": "2024-06-03",
-      "done": "FALSE"
     },
     {
       "id": 243,
@@ -1446,16 +1277,6 @@
       "done": "TRUE"
     },
     {
-      "id": 257,
-      "memo": "서브웨이",
-      "details": "",
-      "category": "식비",
-      "type": "outcome",
-      "amount": 11700,
-      "date": "2024-06-07",
-      "done": "FALSE"
-    },
-    {
       "id": 258,
       "memo": "스타벅스",
       "details": "",
@@ -1467,8 +1288,8 @@
     },
     {
       "id": 259,
-      "memo": "서브웨이",
-      "details": "",
+      "memo": "치킨",
+      "details": "준수랑 먹음",
       "category": "식비",
       "type": "outcome",
       "amount": 11300,
@@ -1497,11 +1318,11 @@
     },
     {
       "id": 272,
-      "memo": "맥북 구입",
-      "details": "당근에서 중고 맥북 구입",
+      "memo": "자전거",
+      "details": "당근에서 중고 자전거",
       "category": "기타",
       "type": "outcome",
-      "amount": 1100000,
+      "amount": 50000,
       "date": "2024-06-10",
       "done": "FALSE"
     },
@@ -1518,51 +1339,61 @@
     {
       "id": 32,
       "memo": "영화",
-      "details": "",
+      "details": "연비언니랑 봤음",
       "category": "문화",
       "type": "outcome",
       "amount": 29600,
-      "date": "2024-04-05",
+      "date": "2024-04-06",
       "done": "TRUE"
     },
     {
       "id": 46,
       "memo": "뮤지컬",
-      "details": "",
+      "details": "뮤지컬 관람",
       "category": "문화",
       "type": "outcome",
-      "amount": 16400,
-      "date": "2024-04-12",
+      "amount": 56400,
+      "date": "2024-04-20",
       "done": "FALSE"
     },
     {
-      "id": 72,
-      "memo": "공연",
-      "details": "",
+      "id": 46,
+      "memo": "뮤지컬",
+      "details": "뮤지컬 관람",
       "category": "문화",
       "type": "outcome",
-      "amount": 35400,
-      "date": "2024-04-19",
+      "amount": 56400,
+      "date": "2024-03-20",
       "done": "FALSE"
     },
     {
       "id": 89,
       "memo": "영화",
-      "details": "",
+      "details": "호진이랑 봄",
       "category": "문화",
       "type": "outcome",
       "amount": 26400,
-      "date": "2024-04-24",
+      "date": "2024-05-04",
       "done": "FALSE"
     },
     {
       "id": 113,
-      "memo": "영화",
+      "memo": "노래방",
       "details": "",
       "category": "문화",
       "type": "outcome",
-      "amount": 30400,
+      "amount": 3500,
       "date": "2024-04-28",
+      "done": "FALSE"
+    },
+    {
+      "id": 113,
+      "memo": "노래방",
+      "details": "",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 13500,
+      "date": "2024-03-28",
       "done": "FALSE"
     },
     {
@@ -1571,14 +1402,14 @@
       "details": "",
       "category": "문화",
       "type": "outcome",
-      "amount": 31800,
+      "amount": 15000,
       "date": "2024-05-07",
       "done": "TRUE"
     },
     {
       "id": 157,
       "memo": "공연",
-      "details": "",
+      "details": "엄마랑 공연봄",
       "category": "문화",
       "type": "outcome",
       "amount": 27300,
@@ -1586,19 +1417,9 @@
       "done": "FALSE"
     },
     {
-      "id": 196,
-      "memo": "뮤지컬",
-      "details": "",
-      "category": "문화",
-      "type": "outcome",
-      "amount": 28700,
-      "date": "2024-05-23",
-      "done": "FALSE"
-    },
-    {
       "id": 264,
       "memo": "전시회",
-      "details": "",
+      "details": "레오나르도 다빈치 특별 전시회",
       "category": "문화",
       "type": "outcome",
       "amount": 16500,
@@ -1608,7 +1429,7 @@
     {
       "id": 3,
       "memo": "미용실",
-      "details": "",
+      "details": "머리 잘랐음",
       "category": "기타",
       "type": "outcome",
       "amount": 17000,
@@ -1623,16 +1444,6 @@
       "type": "outcome",
       "amount": 27000,
       "date": "2024-04-13",
-      "done": "TRUE"
-    },
-    {
-      "id": 5,
-      "memo": "미용실",
-      "details": "",
-      "category": "기타",
-      "type": "outcome",
-      "amount": 17000,
-      "date": "2024-04-28",
       "done": "TRUE"
     },
     {
@@ -1651,24 +1462,24 @@
       "details": "",
       "category": "기타",
       "type": "outcome",
-      "amount": 32000,
+      "amount": 12000,
       "date": "2024-05-17",
       "done": "TRUE"
     },
     {
       "id": 10,
       "memo": "미용실",
-      "details": "",
+      "details": "머리 잘랐음",
       "category": "기타",
       "type": "outcome",
       "amount": 17000,
-      "date": "2024-05-19",
+      "date": "2024-05-24",
       "done": "TRUE"
     },
     {
       "id": 11,
       "memo": "강아지 병원",
-      "details": "",
+      "details": "감자 병원",
       "category": "기타",
       "type": "outcome",
       "amount": 100000,
@@ -1677,7 +1488,7 @@
     },
     {
       "id": 14,
-      "memo": "미용실",
+      "memo": "올리브영",
       "details": "",
       "category": "기타",
       "type": "outcome",
@@ -1687,11 +1498,11 @@
     },
     {
       "id": 15,
-      "memo": "올리브영",
+      "memo": "약",
       "details": "",
       "category": "기타",
       "type": "outcome",
-      "amount": 16000,
+      "amount": 6000,
       "date": "2024-06-03",
       "done": "TRUE"
     },
@@ -1701,37 +1512,7 @@
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 1300,
-      "date": "2024-04-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 17,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3500,
-      "date": "2024-04-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 18,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 1400,
-      "date": "2024-04-01",
-      "done": "FALSE"
-    },
-    {
-      "id": 19,
-      "memo": "버스",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3800,
+      "amount": 8300,
       "date": "2024-04-01",
       "done": "FALSE"
     },
@@ -1742,16 +1523,6 @@
       "category": "교통",
       "type": "outcome",
       "amount": 2300,
-      "date": "2024-04-02",
-      "done": "FALSE"
-    },
-    {
-      "id": 24,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3900,
       "date": "2024-04-02",
       "done": "FALSE"
     },
@@ -1797,9 +1568,9 @@
     },
     {
       "id": 35,
-      "memo": "전철",
+      "memo": "진관홀",
       "details": "",
-      "category": "교통",
+      "category": "식비",
       "type": "outcome",
       "amount": 3300,
       "date": "2024-04-05",
@@ -1821,7 +1592,7 @@
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 2200,
+      "amount": 1500,
       "date": "2024-04-08",
       "done": "FALSE"
     },
@@ -1857,11 +1628,11 @@
     },
     {
       "id": 49,
-      "memo": "버스",
+      "memo": "진관홀",
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 2900,
+      "amount": 3900,
       "date": "2024-04-12",
       "done": "TRUE"
     },
@@ -1876,66 +1647,6 @@
       "done": "TRUE"
     },
     {
-      "id": 51,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3500,
-      "date": "2024-04-13",
-      "done": "TRUE"
-    },
-    {
-      "id": 52,
-      "memo": "버스",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 1900,
-      "date": "2024-04-13",
-      "done": "FALSE"
-    },
-    {
-      "id": 54,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 1400,
-      "date": "2024-04-14",
-      "done": "TRUE"
-    },
-    {
-      "id": 55,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2400,
-      "date": "2024-04-14",
-      "done": "FALSE"
-    },
-    {
-      "id": 56,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3600,
-      "date": "2024-04-14",
-      "done": "FALSE"
-    },
-    {
-      "id": 73,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3700,
-      "date": "2024-04-19",
-      "done": "FALSE"
-    },
-    {
       "id": 74,
       "memo": "따릉이",
       "details": "",
@@ -1947,42 +1658,22 @@
     },
     {
       "id": 77,
-      "memo": "따릉이",
+      "memo": "버스",
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 3000,
+      "amount": 3800,
       "date": "2024-04-20",
       "done": "FALSE"
     },
     {
       "id": 78,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2800,
-      "date": "2024-04-20",
-      "done": "TRUE"
-    },
-    {
-      "id": 79,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2600,
-      "date": "2024-04-20",
-      "done": "FALSE"
-    },
-    {
-      "id": 80,
       "memo": "버스",
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 1500,
-      "date": "2024-04-21",
+      "amount": 3800,
+      "date": "2024-04-20",
       "done": "TRUE"
     },
     {
@@ -1993,6 +1684,26 @@
       "type": "outcome",
       "amount": 3200,
       "date": "2024-04-22",
+      "done": "TRUE"
+    },
+    {
+      "id": 85,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3200,
+      "date": "2024-03-22",
+      "done": "TRUE"
+    },
+    {
+      "id": 85,
+      "memo": "용돈",
+      "details": "용돈 받았음",
+      "category": "수입",
+      "type": "income",
+      "amount": 50000,
+      "date": "2024-03-22",
       "done": "TRUE"
     },
     {
@@ -2011,7 +1722,7 @@
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 3200,
+      "amount": 5200,
       "date": "2024-04-26",
       "done": "TRUE"
     },
@@ -2026,16 +1737,6 @@
       "done": "FALSE"
     },
     {
-      "id": 104,
-      "memo": "전철",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3100,
-      "date": "2024-04-26",
-      "done": "FALSE"
-    },
-    {
       "id": 108,
       "memo": "전철",
       "details": "",
@@ -2044,16 +1745,6 @@
       "amount": 2200,
       "date": "2024-04-27",
       "done": "FALSE"
-    },
-    {
-      "id": 109,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2400,
-      "date": "2024-04-27",
-      "done": "TRUE"
     },
     {
       "id": 114,
@@ -2136,22 +1827,12 @@
       "done": "TRUE"
     },
     {
-      "id": 132,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2800,
-      "date": "2024-05-04",
-      "done": "FALSE"
-    },
-    {
       "id": 134,
-      "memo": "전철",
+      "memo": "올리브영",
       "details": "",
-      "category": "교통",
+      "category": "기타",
       "type": "outcome",
-      "amount": 3000,
+      "amount": 33000,
       "date": "2024-05-05",
       "done": "TRUE"
     },
@@ -2171,7 +1852,7 @@
       "details": "",
       "category": "교통",
       "type": "outcome",
-      "amount": 2100,
+      "amount": 7100,
       "date": "2024-05-06",
       "done": "TRUE"
     },
@@ -2226,16 +1907,6 @@
       "done": "TRUE"
     },
     {
-      "id": 149,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2900,
-      "date": "2024-05-08",
-      "done": "TRUE"
-    },
-    {
       "id": 153,
       "memo": "버스",
       "details": "",
@@ -2254,16 +1925,6 @@
       "amount": 2300,
       "date": "2024-05-11",
       "done": "FALSE"
-    },
-    {
-      "id": 158,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2700,
-      "date": "2024-05-12",
-      "done": "TRUE"
     },
     {
       "id": 159,
@@ -2287,7 +1948,7 @@
     },
     {
       "id": 165,
-      "memo": "택시",
+      "memo": "전철",
       "details": "",
       "category": "교통",
       "type": "outcome",
@@ -2297,11 +1958,11 @@
     },
     {
       "id": 166,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
+      "memo": "책",
+      "details": "교재 샀음",
+      "category": "기타",
       "type": "outcome",
-      "amount": 1400,
+      "amount": 31400,
       "date": "2024-05-14",
       "done": "FALSE"
     },
@@ -2387,11 +2048,11 @@
     },
     {
       "id": 202,
-      "memo": "전철",
+      "memo": "월급",
       "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 1600,
+      "category": "수입",
+      "type": "income",
+      "amount": 900000,
       "date": "2024-05-24",
       "done": "FALSE"
     },
@@ -2422,7 +2083,7 @@
       "category": "교통",
       "type": "outcome",
       "amount": 3900,
-      "date": "2024-05-26",
+      "date": "2024-06-13",
       "done": "TRUE"
     },
     {
@@ -2432,7 +2093,7 @@
       "category": "교통",
       "type": "outcome",
       "amount": 2000,
-      "date": "2024-05-26",
+      "date": "2024-06-13",
       "done": "FALSE"
     },
     {
@@ -2453,6 +2114,16 @@
       "type": "outcome",
       "amount": 2900,
       "date": "2024-05-31",
+      "done": "TRUE"
+    },
+    {
+      "id": 230,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 12900,
+      "date": "2024-03-31",
       "done": "TRUE"
     },
     {
@@ -2496,16 +2167,6 @@
       "done": "FALSE"
     },
     {
-      "id": 244,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2900,
-      "date": "2024-06-04",
-      "done": "FALSE"
-    },
-    {
       "id": 245,
       "memo": "따릉이",
       "details": "",
@@ -2523,16 +2184,6 @@
       "type": "outcome",
       "amount": 3000,
       "date": "2024-06-04",
-      "done": "FALSE"
-    },
-    {
-      "id": 249,
-      "memo": "택시",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 3800,
-      "date": "2024-06-05",
       "done": "FALSE"
     },
     {
@@ -2564,16 +2215,6 @@
       "amount": 1700,
       "date": "2024-06-07",
       "done": "TRUE"
-    },
-    {
-      "id": 260,
-      "memo": "따릉이",
-      "details": "",
-      "category": "교통",
-      "type": "outcome",
-      "amount": 2100,
-      "date": "2024-06-08",
-      "done": "FALSE"
     },
     {
       "id": 261,
@@ -2631,48 +2272,2039 @@
       "details": "",
       "category": "수입",
       "type": "income",
-      "amount": "2500000",
+      "amount": 900000,
       "date": "2024-04-25",
       "done": true
     },
     {
       "id": 287,
-      "memo": "급여",
-      "details": "",
-      "category": "수입",
-      "type": "income",
-      "amount": "2500000",
+      "memo": "이차돌",
+      "details": "내가 쐈음",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 62000,
       "date": "2024-05-30",
       "done": true
     },
     {
-      "id": 288,
-      "memo": "급여",
-      "details": "",
-      "category": "수입",
-      "type": "income",
-      "amount": "500000",
-      "date": "2024-06-01",
-      "done": true
-    },
-    {
       "id": 39,
-      "memo": "영화",
+      "memo": "진관홀",
       "details": "",
-      "category": "문화",
+      "category": "식비",
       "type": "outcome",
-      "amount": 29600,
+      "amount": 8600,
       "date": "2024-06-10",
       "done": "TRUE"
     },
     {
       "id": 39,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 5600,
+      "date": "2024-06-11",
+      "done": "TRUE"
+    },
+    {
+      "id": 1,
+      "memo": "유플러스",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 70000,
+      "date": "2024-02-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 2,
+      "memo": "KT CCTV",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 20000,
+      "date": "2024-02-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 6,
+      "memo": "유플러스",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 70000,
+      "date": "2024-01-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 7,
+      "memo": "KT CCTV",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 20000,
+      "date": "2024-01-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 12,
+      "memo": "유플러스",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 70000,
+      "date": "2024-03-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 13,
+      "memo": "KT CCTV",
+      "details": "",
+      "category": "통신",
+      "type": "outcome",
+      "amount": 20000,
+      "date": "2024-03-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 20,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7000,
+      "date": "2024-02-01",
+      "done": "TRUE"
+    },
+    {
+      "id": 21,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5200,
+      "date": "2024-02-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 25,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8700,
+      "date": "2024-02-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 27,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12100,
+      "date": "2024-02-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 28,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 4800,
+      "date": "2024-02-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 30,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6500,
+      "date": "2024-02-03",
+      "done": "TRUE"
+    },
+    {
+      "id": 36,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9500,
+      "date": "2024-02-06",
+      "done": "FALSE"
+    },
+    {
+      "id": 40,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9900,
+      "date": "2024-02-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 41,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12800,
+      "date": "2024-02-09",
+      "done": "FALSE"
+    },
+    {
+      "id": 42,
+      "memo": "책",
+      "details": "교재",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 13500,
+      "date": "2024-02-09",
+      "done": "TRUE"
+    },
+    {
+      "id": 45,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7400,
+      "date": "2024-02-11",
+      "done": "FALSE"
+    },
+    {
+      "id": 60,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 6500,
+      "date": "2024-02-15",
+      "done": "TRUE"
+    },
+    {
+      "id": 61,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7900,
+      "date": "2024-02-15",
+      "done": "TRUE"
+    },
+    {
+      "id": 62,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8900,
+      "date": "2024-02-16",
+      "done": "FALSE"
+    },
+    {
+      "id": 63,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1400,
+      "date": "2024-02-16",
+      "done": "TRUE"
+    },
+    {
+      "id": 64,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10600,
+      "date": "2024-02-16",
+      "done": "TRUE"
+    },
+    {
+      "id": 65,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7200,
+      "date": "2024-02-17",
+      "done": "TRUE"
+    },
+    {
+      "id": 67,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5400,
+      "date": "2024-02-17",
+      "done": "FALSE"
+    },
+    {
+      "id": 69,
+      "memo": "강아지 간식",
+      "details": "감자 간식",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 12700,
+      "date": "2024-02-18",
+      "done": "TRUE"
+    },
+    {
+      "id": 70,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8000,
+      "date": "2024-02-18",
+      "done": "FALSE"
+    },
+    {
+      "id": 71,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-02-18",
+      "done": "FALSE"
+    },
+    {
+      "id": 75,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5200,
+      "date": "2024-02-19",
+      "done": "TRUE"
+    },
+    {
+      "id": 76,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6400,
+      "date": "2024-02-19",
+      "done": "TRUE"
+    },
+
+    {
+      "id": 83,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-02-21",
+      "done": "FALSE"
+    },
+    {
+      "id": 84,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-02-21",
+      "done": "FALSE"
+    },
+    {
+      "id": 86,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-02-22",
+      "done": "TRUE"
+    },
+    {
+      "id": 91,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8600,
+      "date": "2024-02-24",
+      "done": "TRUE"
+    },
+    {
+      "id": 92,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10900,
+      "date": "2024-02-24",
+      "done": "FALSE"
+    },
+    {
+      "id": 98,
+      "memo": "회식",
+      "details": "회식 N빵",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 28000,
+      "date": "2024-02-24",
+      "done": "TRUE"
+    },
+    {
+      "id": 99,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7700,
+      "date": "2024-02-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 100,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9500,
+      "date": "2024-02-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 105,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6400,
+      "date": "2024-02-26",
+      "done": "TRUE"
+    },
+    {
+      "id": 110,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10000,
+      "date": "2024-02-27",
+      "done": "FALSE"
+    },
+    {
+      "id": 112,
+      "memo": "치킨",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 31500,
+      "date": "2024-02-27",
+      "done": "TRUE"
+    },
+    {
+      "id": 115,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-02-28",
+      "done": "TRUE"
+    },
+    {
+      "id": 116,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 7600,
+      "date": "2024-02-29",
+      "done": "TRUE"
+    },
+    {
+      "id": 117,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8300,
+      "date": "2024-02-29",
+      "done": "TRUE"
+    },
+    {
+      "id": 121,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8300,
+      "date": "2024-01-01",
+      "done": "TRUE"
+    },
+    {
+      "id": 122,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12900,
+      "date": "2024-01-01",
+      "done": "TRUE"
+    },
+    {
+      "id": 123,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5000,
+      "date": "2024-01-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 127,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7800,
+      "date": "2024-01-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 133,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9000,
+      "date": "2024-01-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 138,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10800,
+      "date": "2024-01-06",
+      "done": "FALSE"
+    },
+    {
+      "id": 141,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-01-06",
+      "done": "FALSE"
+    },
+    {
+      "id": 144,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8400,
+      "date": "2024-01-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 145,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6900,
+      "date": "2024-01-07",
+      "done": "FALSE"
+    },
+    {
+      "id": 150,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5600,
+      "date": "2024-01-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 152,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8400,
+      "date": "2024-01-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 154,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8500,
+      "date": "2024-01-09",
+      "done": "TRUE"
+    },
+    {
+      "id": 156,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10300,
+      "date": "2024-01-11",
+      "done": "FALSE"
+    },
+    {
+      "id": 161,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6100,
+      "date": "2024-01-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 162,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11900,
+      "date": "2024-01-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 163,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 6300,
+      "date": "2024-01-13",
+      "done": "FALSE"
+    },
+    {
+      "id": 164,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11500,
+      "date": "2024-01-13",
+      "done": "TRUE"
+    },
+    {
+      "id": 167,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8500,
+      "date": "2024-01-14",
+      "done": "FALSE"
+    },
+    {
+      "id": 168,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7500,
+      "date": "2024-01-14",
+      "done": "TRUE"
+    },
+    {
+      "id": 167,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8500,
+      "date": "2024-03-14",
+      "done": "FALSE"
+    },
+    {
+      "id": 168,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7500,
+      "date": "2024-03-14",
+      "done": "TRUE"
+    },
+    {
+      "id": 170,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7900,
+      "date": "2024-01-15",
+      "done": "FALSE"
+    },
+    {
+      "id": 171,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11000,
+      "date": "2024-01-15",
+      "done": "TRUE"
+    },
+    {
+      "id": 173,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2700,
+      "date": "2024-01-16",
+      "done": "TRUE"
+    },
+    {
+      "id": 174,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-01-16",
+      "done": "FALSE"
+    },
+    {
+      "id": 177,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10500,
+      "date": "2024-01-17",
+      "done": "TRUE"
+    },
+    {
+      "id": 179,
+      "memo": "용돈",
+      "details": "할머니가 용돈 주심",
+      "category": "수입",
+      "type": "income",
+      "amount": 100000,
+      "date": "2024-01-18",
+      "done": "TRUE"
+    },
+    {
+      "id": 183,
+      "memo": "옷",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 31000,
+      "date": "2024-01-19",
+      "done": "FALSE"
+    },
+    {
+      "id": 185,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 5900,
+      "date": "2024-01-19",
+      "done": "FALSE"
+    },
+    {
+      "id": 187,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9300,
+      "date": "2024-01-20",
+      "done": "FALSE"
+    },
+    {
+      "id": 188,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8700,
+      "date": "2024-01-20",
+      "done": "TRUE"
+    },
+    {
+      "id": 193,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8700,
+      "date": "2024-01-22",
+      "done": "FALSE"
+    },
+    {
+      "id": 195,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9400,
+      "date": "2024-01-22",
+      "done": "FALSE"
+    },
+    {
+      "id": 198,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7200,
+      "date": "2024-01-23",
+      "done": "TRUE"
+    },
+    {
+      "id": 199,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9200,
+      "date": "2024-01-23",
+      "done": "TRUE"
+    },
+    {
+      "id": 201,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7000,
+      "date": "2024-01-23",
+      "done": "TRUE"
+    },
+    {
+      "id": 203,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 13100,
+      "date": "2024-01-24",
+      "done": "TRUE"
+    },
+    {
+      "id": 206,
+      "memo": "영화",
+      "details": "",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 12800,
+      "date": "2024-01-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 207,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9500,
+      "date": "2024-01-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 208,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11000,
+      "date": "2024-01-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 209,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12100,
+      "date": "2024-01-25",
+      "done": "TRUE"
+    },
+    {
+      "id": 214,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10900,
+      "date": "2024-03-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 215,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-03-13",
+      "done": "TRUE"
+    },
+    {
+      "id": 216,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6100,
+      "date": "2024-01-27",
+      "done": "TRUE"
+    },
+    {
+      "id": 217,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11600,
+      "date": "2024-01-27",
+      "done": "FALSE"
+    },
+    {
+      "id": 219,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8500,
+      "date": "2024-01-28",
+      "done": "FALSE"
+    },
+    {
+      "id": 220,
+      "memo": "노래방",
+      "details": "",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 9000,
+      "date": "2024-01-29",
+      "done": "FALSE"
+    },
+    {
+      "id": 221,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7900,
+      "date": "2024-01-29",
+      "done": "TRUE"
+    },
+    {
+      "id": 222,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9400,
+      "date": "2024-01-29",
+      "done": "TRUE"
+    },
+    {
+      "id": 231,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11300,
+      "date": "2024-01-31",
+      "done": "FALSE"
+    },
+    {
+      "id": 237,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8000,
+      "date": "2024-03-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 240,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7000,
+      "date": "2024-03-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 241,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8700,
+      "date": "2024-03-03",
+      "done": "TRUE"
+    },
+    {
+      "id": 243,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6200,
+      "date": "2024-03-03",
+      "done": "TRUE"
+    },
+    {
+      "id": 247,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 13400,
+      "date": "2024-03-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 248,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7600,
+      "date": "2024-03-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 251,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6000,
+      "date": "2024-03-05",
+      "done": "FALSE"
+    },
+    {
+      "id": 253,
+      "memo": "우동연가",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8500,
+      "date": "2024-03-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 254,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 6300,
+      "date": "2024-03-06",
+      "done": "FALSE"
+    },
+    {
+      "id": 256,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12300,
+      "date": "2024-03-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 258,
+      "memo": "스타벅스",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 9100,
+      "date": "2024-03-07",
+      "done": "FALSE"
+    },
+    {
+      "id": 259,
+      "memo": "치킨",
+      "details": "준수랑 먹음",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 11300,
+      "date": "2024-03-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 263,
+      "memo": "서브웨이",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 7600,
+      "date": "2024-03-08",
+      "done": "FALSE"
+    },
+    {
+      "id": 267,
+      "memo": "맥도날드",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 12200,
+      "date": "2024-03-09",
+      "done": "TRUE"
+    },
+    {
+      "id": 272,
+      "memo": "자전거",
+      "details": "당근에서 중고 자전거",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 50000,
+      "date": "2024-03-10",
+      "done": "FALSE"
+    },
+    {
+      "id": 278,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 10100,
+      "date": "2024-03-11",
+      "done": "TRUE"
+    },
+    {
+      "id": 32,
+      "memo": "영화",
+      "details": "연비언니랑 봤음",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 29600,
+      "date": "2024-02-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 46,
+      "memo": "뮤지컬",
+      "details": "뮤지컬 관람",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 56400,
+      "date": "2024-02-20",
+      "done": "FALSE"
+    },
+    {
+      "id": 89,
+      "memo": "영화",
+      "details": "호진이랑 봄",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 26400,
+      "date": "2024-01-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 113,
+      "memo": "노래방",
+      "details": "",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 3500,
+      "date": "2024-02-28",
+      "done": "FALSE"
+    },
+    {
+      "id": 142,
+      "memo": "영화",
+      "details": "",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 15000,
+      "date": "2024-01-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 157,
+      "memo": "공연",
+      "details": "엄마랑 공연봄",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 27300,
+      "date": "2024-01-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 264,
+      "memo": "전시회",
+      "details": "레오나르도 다빈치 특별 전시회",
+      "category": "문화",
+      "type": "outcome",
+      "amount": 16500,
+      "date": "2024-03-09",
+      "done": "FALSE"
+    },
+    {
+      "id": 3,
+      "memo": "미용실",
+      "details": "머리 잘랐음",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 17000,
+      "date": "2024-02-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 4,
       "memo": "올리브영",
       "details": "",
       "category": "기타",
       "type": "outcome",
-      "amount": 29600,
-      "date": "2024-06-11",
+      "amount": 27000,
+      "date": "2024-02-13",
+      "done": "TRUE"
+    },
+    {
+      "id": 8,
+      "memo": "철물점",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 18000,
+      "date": "2024-01-04",
+      "done": "TRUE"
+    },
+    {
+      "id": 9,
+      "memo": "올리브영",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 12000,
+      "date": "2024-01-17",
+      "done": "TRUE"
+    },
+    {
+      "id": 10,
+      "memo": "미용실",
+      "details": "머리 잘랐음",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 17000,
+      "date": "2024-01-24",
+      "done": "TRUE"
+    },
+    {
+      "id": 11,
+      "memo": "강아지 병원",
+      "details": "감자 병원",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 100000,
+      "date": "2024-01-21",
+      "done": "TRUE"
+    },
+    {
+      "id": 14,
+      "memo": "올리브영",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 17000,
+      "date": "2024-03-02",
+      "done": "TRUE"
+    },
+    {
+      "id": 15,
+      "memo": "약",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 6000,
+      "date": "2024-03-03",
+      "done": "TRUE"
+    },
+    {
+      "id": 16,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 8300,
+      "date": "2024-02-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 23,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2300,
+      "date": "2024-02-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 26,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-02-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 31,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2100,
+      "date": "2024-02-04",
+      "done": "TRUE"
+    },
+    {
+      "id": 33,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3000,
+      "date": "2024-02-05",
+      "done": "FALSE"
+    },
+    {
+      "id": 34,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2700,
+      "date": "2024-02-05",
+      "done": "TRUE"
+    },
+    {
+      "id": 35,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 3300,
+      "date": "2024-02-05",
+      "done": "TRUE"
+    },
+    {
+      "id": 38,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1400,
+      "date": "2024-02-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 39,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1500,
+      "date": "2024-02-08",
+      "done": "FALSE"
+    },
+    {
+      "id": 43,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2500,
+      "date": "2024-02-11",
+      "done": "TRUE"
+    },
+    {
+      "id": 47,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2800,
+      "date": "2024-02-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 48,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1900,
+      "date": "2024-02-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 49,
+      "memo": "진관홀",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3900,
+      "date": "2024-02-12",
+      "done": "TRUE"
+    },
+    {
+      "id": 50,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1200,
+      "date": "2024-02-13",
+      "done": "TRUE"
+    },
+    {
+      "id": 74,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-02-19",
+      "done": "TRUE"
+    },
+    {
+      "id": 77,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-02-20",
+      "done": "FALSE"
+    },
+    {
+      "id": 78,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-02-20",
+      "done": "TRUE"
+    },
+    {
+      "id": 85,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3200,
+      "date": "2024-02-22",
+      "done": "TRUE"
+    },
+    {
+      "id": 90,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1700,
+      "date": "2024-02-24",
+      "done": "TRUE"
+    },
+    {
+      "id": 102,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 5200,
+      "date": "2024-02-26",
+      "done": "TRUE"
+    },
+    {
+      "id": 103,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2200,
+      "date": "2024-02-26",
+      "done": "FALSE"
+    },
+    {
+      "id": 108,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2200,
+      "date": "2024-02-27",
+      "done": "FALSE"
+    },
+    {
+      "id": 114,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3400,
+      "date": "2024-02-28",
+      "done": "FALSE"
+    },
+    {
+      "id": 120,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-01-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 126,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1900,
+      "date": "2024-01-02",
+      "done": "TRUE"
+    },
+    {
+      "id": 128,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3100,
+      "date": "2024-01-03",
+      "done": "TRUE"
+    },
+    {
+      "id": 129,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2600,
+      "date": "2024-01-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 130,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2100,
+      "date": "2024-01-04",
+      "done": "TRUE"
+    },
+    {
+      "id": 131,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3700,
+      "date": "2024-01-04",
+      "done": "TRUE"
+    },
+    {
+      "id": 134,
+      "memo": "올리브영",
+      "details": "",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 33000,
+      "date": "2024-01-05",
+      "done": "TRUE"
+    },
+    {
+      "id": 135,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2900,
+      "date": "2024-01-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 136,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 7100,
+      "date": "2024-01-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 137,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2500,
+      "date": "2024-01-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 143,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2000,
+      "date": "2024-01-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 146,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1300,
+      "date": "2024-01-08",
+      "done": "FALSE"
+    },
+    {
+      "id": 147,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-01-08",
+      "done": "FALSE"
+    },
+    {
+      "id": 148,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3100,
+      "date": "2024-01-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 153,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-01-09",
+      "done": "TRUE"
+    },
+    {
+      "id": 155,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2300,
+      "date": "2024-01-11",
+      "done": "FALSE"
+    },
+    {
+      "id": 159,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1300,
+      "date": "2024-01-12",
+      "done": "TRUE"
+    },
+    {
+      "id": 160,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-01-12",
+      "done": "FALSE"
+    },
+    {
+      "id": 165,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1300,
+      "date": "2024-01-14",
+      "done": "TRUE"
+    },
+    {
+      "id": 166,
+      "memo": "책",
+      "details": "교재 샀음",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 31400,
+      "date": "2024-01-14",
+      "done": "FALSE"
+    },
+    {
+      "id": 175,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1400,
+      "date": "2024-01-17",
+      "done": "FALSE"
+    },
+    {
+      "id": 176,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1200,
+      "date": "2024-01-17",
+      "done": "FALSE"
+    },
+    {
+      "id": 180,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-01-19",
+      "done": "FALSE"
+    },
+    {
+      "id": 181,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2300,
+      "date": "2024-01-19",
+      "done": "FALSE"
+    },
+    {
+      "id": 186,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1400,
+      "date": "2024-01-20",
+      "done": "FALSE"
+    },
+    {
+      "id": 190,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2800,
+      "date": "2024-01-21",
+      "done": "TRUE"
+    },
+    {
+      "id": 191,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1600,
+      "date": "2024-01-22",
+      "done": "FALSE"
+    },
+    {
+      "id": 197,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1800,
+      "date": "2024-01-23",
+      "done": "FALSE"
+    },
+    {
+      "id": 202,
+      "memo": "월급",
+      "details": "",
+      "category": "수입",
+      "type": "income",
+      "amount": 900000,
+      "date": "2024-01-24",
+      "done": "FALSE"
+    },
+    {
+      "id": 204,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3100,
+      "date": "2024-01-25",
+      "done": "FALSE"
+    },
+    {
+      "id": 205,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3700,
+      "date": "2024-01-25",
+      "done": "FALSE"
+    },
+    {
+      "id": 210,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3900,
+      "date": "2024-03-13",
+      "done": "TRUE"
+    },
+    {
+      "id": 211,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2000,
+      "date": "2024-03-13",
+      "done": "FALSE"
+    },
+    {
+      "id": 218,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2600,
+      "date": "2024-01-28",
+      "done": "TRUE"
+    },
+    {
+      "id": 230,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2900,
+      "date": "2024-01-31",
+      "done": "TRUE"
+    },
+    {
+      "id": 234,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2500,
+      "date": "2024-03-01",
+      "done": "FALSE"
+    },
+    {
+      "id": 235,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-03-02",
+      "done": "FALSE"
+    },
+    {
+      "id": 236,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3700,
+      "date": "2024-03-02",
+      "done": "TRUE"
+    },
+    {
+      "id": 239,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-03-03",
+      "done": "FALSE"
+    },
+    {
+      "id": 245,
+      "memo": "따릉이",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2400,
+      "date": "2024-03-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 246,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3000,
+      "date": "2024-03-04",
+      "done": "FALSE"
+    },
+    {
+      "id": 250,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3700,
+      "date": "2024-03-05",
+      "done": "FALSE"
+    },
+    {
+      "id": 252,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3300,
+      "date": "2024-03-06",
+      "done": "TRUE"
+    },
+    {
+      "id": 255,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1700,
+      "date": "2024-03-07",
+      "done": "TRUE"
+    },
+    {
+      "id": 261,
+      "memo": "버스",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3800,
+      "date": "2024-03-08",
+      "done": "TRUE"
+    },
+    {
+      "id": 262,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 3600,
+      "date": "2024-03-08",
+      "done": "FALSE"
+    },
+    {
+      "id": 265,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2700,
+      "date": "2024-03-09",
+      "done": "TRUE"
+    },
+    {
+      "id": 266,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 1800,
+      "date": "2024-03-09",
+      "done": "FALSE"
+    },
+    {
+      "id": 275,
+      "memo": "전철",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 2700,
+      "date": "2024-03-11",
+      "done": "FALSE"
+    },
+    {
+      "id": 286,
+      "memo": "급여",
+      "details": "",
+      "category": "수입",
+      "type": "income",
+      "amount": 900000,
+      "date": "2024-02-25",
+      "done": true
+    },
+    {
+      "id": 287,
+      "memo": "이차돌",
+      "details": "내가 쐈음",
+      "category": "기타",
+      "type": "outcome",
+      "amount": 62000,
+      "date": "2024-01-30",
+      "done": true
+    },
+    {
+      "id": 39,
+      "memo": "진관홀",
+      "details": "",
+      "category": "식비",
+      "type": "outcome",
+      "amount": 8600,
+      "date": "2024-03-10",
+      "done": "TRUE"
+    },
+    {
+      "id": 39,
+      "memo": "택시",
+      "details": "",
+      "category": "교통",
+      "type": "outcome",
+      "amount": 5600,
+      "date": "2024-03-11",
       "done": "TRUE"
     }
   ]
