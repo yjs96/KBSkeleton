@@ -1497,11 +1497,11 @@
     },
     {
       "id": 272,
-      "memo": "우동연가",
-      "details": "",
-      "category": "식비",
+      "memo": "맥북 구입",
+      "details": "당근에서 중고 맥북 구입",
+      "category": "기타",
       "type": "outcome",
-      "amount": 13400,
+      "amount": 1100000,
       "date": "2024-06-10",
       "done": "FALSE"
     },
