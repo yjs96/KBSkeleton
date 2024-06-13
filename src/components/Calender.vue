@@ -158,7 +158,9 @@ const hasMemoForDate = (date) => {
   const formattedDate = moment(date).format("YYYY-MM-DD");
   return historyList.value.some(
     (history) =>
-      history.date === formattedDate && history.memo && history.memo.length > 0
+      history.date === formattedDate &&
+      history.details &&
+      history.details.length > 0
   );
 };
 const isSpecialDate = (date) => {
