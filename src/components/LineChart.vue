@@ -86,11 +86,7 @@
       class="detail-container"
       :style="hideDetail ? { height: '0px' } : { height: '379px' }"
     >
-      <div
-        class="inout"
-        v-if="!hideDetail"
-        v-for="category in comparisonPrev.categoryComparison"
-      >
+      <div class="inout" v-for="category in comparisonPrev.categoryComparison">
         <div class="income">{{ category.category }}</div>
         <div>
           <div class="times">{{ category.countDiff }}회</div>
@@ -406,7 +402,6 @@ onMounted(() => {
   background-color: var(--white);
   padding-bottom: 16px;
   font-size: 16px;
-  transition: height 0.8s ease;
 }
 
 .june {
@@ -471,7 +466,7 @@ onMounted(() => {
 }
 
 .detail-container {
-  transition: height 0.64s ease;
+  transition: height 0.8s ease;
   position: relative;
   overflow: hidden;
 }
