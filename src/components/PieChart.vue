@@ -42,12 +42,10 @@ const month = ref(date.getMonth() + 1);
 
 const historyStore = useHistoryStore();
 const {
-  fetchHistory,
   outcomeByCategoryAndMonth,
   outcomeByCategoryAndMonthWithPercentage,
 } = historyStore;
 
-fetchHistory();
 
 const outcomeList = computed(() => outcomeByCategoryAndMonth(month.value));
 const percentageList = computed(() =>
@@ -76,18 +74,18 @@ const createChart = () => {
           label: '지출액',
           data: outcomeList.value,
           backgroundColor: [
-            'rgba(68, 196, 161, 1)',
-            'rgba(255, 85, 62, 1)',
-            'rgba(238, 174, 85, 1)',
-            'rgba(100, 121, 138, 1)',
-            'rgba(86, 157, 223, 1)',
+            '#44c4a1',
+            '#ff553e',
+            '#eeae55',
+            '#64798a',
+            '#569ddf',
           ],
           borderColor: [
-            'rgba(68, 196, 161, 1)',
-            'rgba(255, 85, 62, 1)',
-            'rgba(238, 174, 85, 1)',
-            'rgba(100, 121, 138, 1)',
-            'rgba(86, 157, 223, 1)',
+            '#44c4a1',
+            '#ff553e',
+            '#eeae55',
+            '#64798a',
+            '#569ddf',
           ],
           borderWidth: 1,
           datalabels: {

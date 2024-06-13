@@ -102,7 +102,7 @@ const historyStore = useHistoryStore();
 const userInfoStore = useUserInfoStore();
 
 const {
-  fetchHistory,
+  // fetchHistory,
   addComma,
   totalIncomeByMonth,
   totalOutcomeByMonth,
@@ -111,10 +111,10 @@ const {
   mostFrequentMemoByMonth,
   mostFrequentCategoryByMonth,
 } = historyStore;
-const { fetchuserInfo } = userInfoStore;
+// const { fetchuserInfo } = userInfoStore;
 
-fetchHistory();
-fetchuserInfo();
+// fetchHistory();
+// fetchuserInfo();
 const userInfo = computed(() => userInfoStore.userInfo);
 
 const date = new Date();
