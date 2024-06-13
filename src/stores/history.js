@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
-import { reactive, computed } from "vue";
-import axios from "axios";
-import moment from "moment";
+import { defineStore } from 'pinia';
+import { reactive, computed } from 'vue';
+import axios from 'axios';
+import moment from 'moment';
 
-export const useUserInfoStore = defineStore("userInfo", () => {
-  const BASEURL = "/api/user";
+export const useUserInfoStore = defineStore('userInfo', () => {
+  const BASEURL = '/api/user';
   const state = reactive({
     userInfo: [],
   });
@@ -18,13 +18,14 @@ export const useUserInfoStore = defineStore("userInfo", () => {
     }
   };
 
+  fetchuserInfo();
   const userInfo = computed(() => state.userInfo);
 
   return { fetchuserInfo, userInfo };
 });
 
-export const useHistoryStore = defineStore("history", () => {
-  const BASEURL = "/api/history";
+export const useHistoryStore = defineStore('history', () => {
+  const BASEURL = '/api/history';
   const state = reactive({
     historyList: [],
   });
@@ -54,11 +55,11 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 월 전체 수입
   const totalIncomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const incomeList = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "income"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'income'
     );
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
@@ -66,11 +67,11 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 월 전체 지출
   const totalOutcomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const incomeList = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
@@ -78,9 +79,9 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 월 최근 5개 내역
   const recentHistoryByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredHistory = state.historyList.filter(
-      (history) => moment(history.date).format("MM") === targetMonth
+      (history) => moment(history.date).format('MM') === targetMonth
     );
 
     const sortedHistory = filteredHistory.sort((a, b) =>
@@ -92,11 +93,11 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 월 단일 최대 금액
   const maxOutcomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredOutcome = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
     if (filteredOutcome.length === 0) {
@@ -140,11 +141,11 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 가장 많은 지출처
   const mostFrequentMemoByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredOutcome = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
     if (filteredOutcome.length === 0) {
@@ -167,11 +168,11 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 가장 많은 카테고리
   const mostFrequentCategoryByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredOutcome = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
     if (filteredOutcome.length === 0) {
@@ -196,14 +197,14 @@ export const useHistoryStore = defineStore("history", () => {
   // 파이 차트
   // 월별 카테고리별 합 배열 반환
   const outcomeByCategoryAndMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredOutcome = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
-    const categories = ["식비", "교통", "문화", "통신", "기타"];
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
     const outcomeByCategory = categories.map((category) => {
       const categoryOutcome = filteredOutcome
         .filter((history) => history.category === category)
@@ -215,11 +216,11 @@ export const useHistoryStore = defineStore("history", () => {
   };
 
   const outcomeByCategoryAndMonthWithPercentage = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
+    const targetMonth = String(month).padStart(2, '0');
     const filteredOutcome = state.historyList.filter(
       (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
+        moment(history.date).format('MM') === targetMonth &&
+        history.type === 'outcome'
     );
 
     const totalOutcome = filteredOutcome.reduce(
@@ -246,23 +247,165 @@ export const useHistoryStore = defineStore("history", () => {
     return outcomeData;
   };
 
+  // 1~6월 카테고리별 누적 금액
+  const getAmountsByMonthAndCategory = () => {
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
+    const months = [1, 2, 3, 4, 5, 6];
+
+    const result = {
+      income: [],
+      outcome: [],
+      ...categories.reduce((acc, category) => {
+        acc[category] = [];
+        return acc;
+      }, {}),
+    };
+
+    months.forEach((month) => {
+      const targetMonth = String(month).padStart(2, '0');
+      const filteredHistory = state.historyList.filter(
+        (history) => moment(history.date).format('MM') === targetMonth
+      );
+
+      const incomeAmount = filteredHistory
+        .filter((history) => history.type === 'income')
+        .reduce((sum, history) => sum + history.amount, 0);
+
+      const outcomeAmount = filteredHistory
+        .filter((history) => history.type === 'outcome')
+        .reduce((sum, history) => sum + history.amount, 0);
+
+      result.income.push(incomeAmount);
+      result.outcome.push(outcomeAmount);
+
+      categories.forEach((category) => {
+        const categoryAmount = filteredHistory
+          .filter(
+            (history) =>
+              history.type === 'outcome' && history.category === category
+          )
+          .reduce((sum, history) => sum + history.amount, 0);
+
+        result[category].push(categoryAmount);
+      });
+    });
+
+    return result;
+  };
+
+  const getComparisonWithPreviousMonth = (month) => {
+    const targetMonth = String(month).padStart(2, '0');
+    const previousMonth = String(month - 1).padStart(2, '0');
+
+    const filteredTargetMonth = state.historyList.filter(
+      (history) => moment(history.date).format('MM') === targetMonth
+    );
+
+    const filteredPreviousMonth = state.historyList.filter(
+      (history) => moment(history.date).format('MM') === previousMonth
+    );
+
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
+
+    const getCount = (data, type, category = null) =>
+      data.filter(
+        (history) =>
+          history.type === type &&
+          (category ? history.category === category : true)
+      ).length;
+
+    const getSum = (data, type, category = null) =>
+      data
+        .filter(
+          (history) =>
+            history.type === type &&
+            (category ? history.category === category : true)
+        )
+        .reduce((sum, history) => sum + history.amount, 0);
+
+    const getGrowthRate = (targetValue, previousValue) =>
+      previousValue === 0
+        ? targetValue === 0
+          ? 0
+          : Infinity
+        : parseFloat(
+            (((targetValue - previousValue) / previousValue) * 100).toFixed(2)
+          );
+
+    const incomeCountDiff =
+      getCount(filteredTargetMonth, 'income') -
+      getCount(filteredPreviousMonth, 'income');
+    const incomeSumDiff =
+      getSum(filteredTargetMonth, 'income') -
+      getSum(filteredPreviousMonth, 'income');
+    const incomeGrowthRate = getGrowthRate(
+      getSum(filteredTargetMonth, 'income'),
+      getSum(filteredPreviousMonth, 'income')
+    );
+
+    const outcomeCountDiff =
+      getCount(filteredTargetMonth, 'outcome') -
+      getCount(filteredPreviousMonth, 'outcome');
+    const outcomeSumDiff =
+      getSum(filteredTargetMonth, 'outcome') -
+      getSum(filteredPreviousMonth, 'outcome');
+    const outcomeGrowthRate = getGrowthRate(
+      getSum(filteredTargetMonth, 'outcome'),
+      getSum(filteredPreviousMonth, 'outcome')
+    );
+
+    const categoryComparison = categories.map((category) => ({
+      category,
+      countDiff:
+        getCount(filteredTargetMonth, 'outcome', category) -
+        getCount(filteredPreviousMonth, 'outcome', category),
+      sumDiff:
+        getSum(filteredTargetMonth, 'outcome', category) -
+        getSum(filteredPreviousMonth, 'outcome', category),
+      growthRate: getGrowthRate(
+        getSum(filteredTargetMonth, 'outcome', category),
+        getSum(filteredPreviousMonth, 'outcome', category)
+      ),
+    }));
+
+    return {
+      incomeCountDiff,
+      incomeSumDiff,
+      incomeGrowthRate,
+      outcomeCountDiff,
+      outcomeSumDiff,
+      outcomeGrowthRate,
+      categoryComparison,
+    };
+  };
+
   // 공통 사용
   // 숫자 세개 단위 콤마
   const addComma = (val) => {
-    return val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    return val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
   };
 
   // 수입일 경우 + 기호, 지출일 경우 - 기호 + 콤마
   const addSymbolComma = (val, type) => {
     const newVal = val
       .toString()
-      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    if (type === "income") {
+      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
+    if (type === 'income') {
       return `+${newVal}`;
     } else {
       return `-${newVal}`;
     }
   };
+
+  const addPlusComma = (num) => {
+    let newNum = num.toString();
+    if (num >= 0) {
+      return `+${newNum.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}`;
+    } else {
+      return newNum.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
+    }
+  };
+
   fetchHistory();
 
   const historyList = computed(() => state.historyList);
@@ -282,5 +425,8 @@ export const useHistoryStore = defineStore("history", () => {
     mostFrequentCategoryByMonth,
     outcomeByCategoryAndMonth,
     outcomeByCategoryAndMonthWithPercentage,
+    addPlusComma,
+    getAmountsByMonthAndCategory,
+    getComparisonWithPreviousMonth,
   };
 });
