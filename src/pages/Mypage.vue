@@ -8,6 +8,7 @@
           <span class="weight-regular">님</span>
           <i class="fa solid fa-chevron-right"></i>
         </div>
+        /
         <router-link to="/" class="profile-frame">
           <img class="profile-image" :src="userInfo.profileImage" alt="" />
         </router-link>
@@ -29,10 +30,10 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
-import Main from '@/components/Main.vue';
-import { useUserInfoStore } from '@/stores/history';
+import Main from "@/components/Main.vue";
+import { useUserInfoStore } from "@/stores/history";
 
 const userInfoStore = useUserInfoStore();
 
