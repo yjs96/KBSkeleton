@@ -30,15 +30,11 @@
     <div class="income-frame">
       <ShadowBox :height="116">
         <div class="income">총 수입</div>
-        <div class="income-amount">
-          {{ addComma(totalIncomeByMonth(month)) }}원
-        </div>
+        <div class="income-amount">{{ addComma(totalIncomeByMonth(month)) }}원</div>
       </ShadowBox>
       <ShadowBox :height="116">
         <div class="income">총 지출</div>
-        <div class="income-amount">
-          {{ addComma(totalOutcomeByMonth(month)) }}원
-        </div>
+        <div class="income-amount">{{ addComma(totalOutcomeByMonth(month)) }}원</div>
       </ShadowBox>
     </div>
     <ShadowBox :height="100" @click="handleShowModal(true)">
@@ -52,27 +48,15 @@
     <ShadowBox>
       <div class="latest-upper">
         <div class="income">최근 내역</div>
-        <router-link
-          to="/statistics"
-          class="fa solid fa-chevron-right"
-        ></router-link>
+        <router-link to="/statistics" class="fa solid fa-chevron-right"></router-link>
       </div>
-      <History
-        v-for="history in recentHistoryByMonth(month)"
-        :value="history"
-      />
+      <History v-for="history in recentHistoryByMonth(month)" :value="history" />
     </ShadowBox>
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 큰</div>
       <div class="income">단일 지출</div>
 
-      <div class="income-amount">
-        {{
-          maxOutcomeByMonth(month)
-            ? addComma(maxOutcomeByMonth(month).amount)
-            : ''
-        }}원
-      </div>
+      <div class="income-amount">{{ maxOutcomeByMonth(month) ? addComma(maxOutcomeByMonth(month).amount) : '' }}원</div>
     </ShadowBox>
     <ShadowBox :height="120">
       <div class="income-subtext">이번달 가장 많은</div>
@@ -112,10 +96,9 @@ const {
   mostFrequentCategoryByMonth,
 } = historyStore;
 const { fetchuserInfo } = userInfoStore;
-
+const userInfo = computed(() => userInfoStore.userInfo);
 fetchHistory();
 fetchuserInfo();
-const userInfo = computed(() => userInfoStore.userInfo);
 
 const date = new Date();
 const month = ref(date.getMonth() + 1);

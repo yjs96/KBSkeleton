@@ -22,39 +22,55 @@
         <!-- 필터링될 History -->
         <div>
           <div class="daily-filter-spend">
-            <History :value="tempObj" />
-            <History :value="tempObj" />
-            <History :value="tempObj" />
-            <History :value="tempObj" />
+            <CalenderHistory :value="tempObj" />
           </div>
         </div>
       </div>
     </div>
+    <div>///</div>
   </Main>
 </template>
 
 <script setup>
-import Calender from "@/components/Calender.vue";
-import History from "@/components/History.vue";
-import Main from "@/components/Main.vue";
-import MemoModal from "@/components/MemoModal.vue";
+import Calender from '@/components/Calender.vue';
+import CalenderHistory from '@/components/CalenderHistory.vue';
+import Main from '@/components/Main.vue';
+import MemoModal from '@/components/MemoModal.vue';
 
-import { ref } from "vue";
+import { ref, computed } from 'vue';
 
 const showModal = ref(false);
-const tempObj = ref({
-  id: 40,
-  memo: "서브웨이",
-  category: "식비",
-  type: "outcome",
-  amount: 9900,
-  date: "2024-04-08",
-  done: "TRUE",
-});
+// const tempObj = ref(null);
 
 const handleShowModal = (val) => {
   showModal.value = val;
 };
+
+// ----------------  pinia  -------------------------
+// import { useHistoryStore } from '@/stores/history';
+
+// const historyStore = useHistoryStore();
+// const { totalByDaily } = historyStore;
+// tempObj.value = historyStore.totalByDaily();
+// totalByDaily();
+// console.log(tempObj.value);
+
+import { useHistoryStore } from '@/stores/history';
+
+const historyStore = useHistoryStore();
+const tempObj = ref({
+  id: 40,
+  memo: '서브웨이',
+  category: '식비',
+  type: 'outcome',
+  amount: 9900,
+  date: '2024-04-08',
+  done: 'TRUE',
+}); // 기본 데이터
+
+// totalByDaily()로 가져온 데이터를 tempObj에 할당
+tempObj.value = historyStore.totalByDaily();
+// ----------------  pinia  -------------------------
 </script>
 
 <style scoped>

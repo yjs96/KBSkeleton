@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
-import { reactive, computed } from "vue";
-import axios from "axios";
-import moment from "moment";
+import { defineStore } from 'pinia';
+import { reactive, computed, ref } from 'vue';
+import axios from 'axios';
+import moment from 'moment';
 
-export const useUserInfoStore = defineStore("userInfo", () => {
-  const BASEURL = "/api/user";
+export const useUserInfoStore = defineStore('userInfo', () => {
+  const BASEURL = '/api/user';
   const state = reactive({
     userInfo: [],
   });
@@ -23,10 +23,11 @@ export const useUserInfoStore = defineStore("userInfo", () => {
   return { fetchuserInfo, userInfo };
 });
 
-export const useHistoryStore = defineStore("history", () => {
-  const BASEURL = "/api/history";
+export const useHistoryStore = defineStore('history', () => {
+  const BASEURL = '/api/history';
   const state = reactive({
     historyList: [],
+    date: '',
   });
 
   // 리스트 받아오기
@@ -54,98 +55,48 @@ export const useHistoryStore = defineStore("history", () => {
 
   // 월 전체 수입
   const totalIncomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const incomeList = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "income"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const incomeList = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'income');
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
   };
 
   // 월 전체 지출
   const totalOutcomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const incomeList = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const incomeList = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     return incomeList.reduce((sum, history) => sum + Number(history.amount), 0);
   };
 
   // 월 최근 5개 내역
   const recentHistoryByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredHistory = state.historyList.filter(
-      (history) => moment(history.date).format("MM") === targetMonth
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredHistory = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth);
 
-    const sortedHistory = filteredHistory.sort((a, b) =>
-      moment(b.date).diff(moment(a.date))
-    );
+    const sortedHistory = filteredHistory.sort((a, b) => moment(b.date).diff(moment(a.date)));
 
     return sortedHistory.slice(0, 5);
   };
 
   // 월 단일 최대 금액
   const maxOutcomeByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
     }
 
-    const maxOutcome = filteredOutcome.reduce((max, history) =>
-      history.amount > max.amount ? history : max
-    );
+    const maxOutcome = filteredOutcome.reduce((max, history) => (history.amount > max.amount ? history : max));
 
     return maxOutcome;
   };
 
-  // 날짜별 지출
-  const totalByDaily = () => {
-    const groupedByDate = {
-      outcome: [],
-      inpome: [],
-    };
-
-    state.historyList.forEach((item) => {
-      console.log(item);
-
-      // 날짜를 키로 사용
-      const date = item.date;
-
-      // 그룹이 없을 경우, 초기화
-      if (!groupedByDate[date]) {
-        groupedByDate[date] = { outcome: [], income: [] };
-      }
-
-      // type별로 분류
-      groupedByDate[date][item.type].push(item);
-    });
-
-    // 결과를 콘솔에 출력 (선택 사항)
-    console.log(groupedByDate);
-
-    return groupedByDate;
-  };
-
   // 가장 많은 지출처
   const mostFrequentMemoByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
@@ -158,21 +109,15 @@ export const useHistoryStore = defineStore("history", () => {
     }, {});
 
     const maxCount = Math.max(...Object.values(memoCount));
-    const mostFrequentMemo = Object.keys(memoCount).find(
-      (memo) => memoCount[memo] === maxCount
-    );
+    const mostFrequentMemo = Object.keys(memoCount).find((memo) => memoCount[memo] === maxCount);
 
     return mostFrequentMemo;
   };
 
   // 가장 많은 카테고리
   const mostFrequentCategoryByMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
     if (filteredOutcome.length === 0) {
       return null;
@@ -185,9 +130,7 @@ export const useHistoryStore = defineStore("history", () => {
     }, {});
 
     const maxCount = Math.max(...Object.values(categoryCount));
-    const mostFrequentCategory = Object.keys(categoryCount).find(
-      (category) => categoryCount[category] === maxCount
-    );
+    const mostFrequentCategory = Object.keys(categoryCount).find((category) => categoryCount[category] === maxCount);
 
     return mostFrequentCategory;
   };
@@ -196,18 +139,12 @@ export const useHistoryStore = defineStore("history", () => {
   // 파이 차트
   // 월별 카테고리별 합 배열 반환
   const outcomeByCategoryAndMonth = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
-    const categories = ["식비", "교통", "문화", "통신", "기타"];
+    const categories = ['식비', '교통', '문화', '통신', '기타'];
     const outcomeByCategory = categories.map((category) => {
-      const categoryOutcome = filteredOutcome
-        .filter((history) => history.category === category)
-        .reduce((sum, history) => sum + history.amount, 0);
+      const categoryOutcome = filteredOutcome.filter((history) => history.category === category).reduce((sum, history) => sum + history.amount, 0);
       return categoryOutcome;
     });
 
@@ -215,17 +152,10 @@ export const useHistoryStore = defineStore("history", () => {
   };
 
   const outcomeByCategoryAndMonthWithPercentage = (month) => {
-    const targetMonth = String(month).padStart(2, "0");
-    const filteredOutcome = state.historyList.filter(
-      (history) =>
-        moment(history.date).format("MM") === targetMonth &&
-        history.type === "outcome"
-    );
+    const targetMonth = String(month).padStart(2, '0');
+    const filteredOutcome = state.historyList.filter((history) => moment(history.date).format('MM') === targetMonth && history.type === 'outcome');
 
-    const totalOutcome = filteredOutcome.reduce(
-      (sum, history) => sum + history.amount,
-      0
-    );
+    const totalOutcome = filteredOutcome.reduce((sum, history) => sum + history.amount, 0);
 
     const categoryOutcome = filteredOutcome.reduce((acc, history) => {
       const { category, amount } = history;
@@ -233,42 +163,65 @@ export const useHistoryStore = defineStore("history", () => {
       return acc;
     }, {});
 
-    const outcomeData = Object.entries(categoryOutcome).map(
-      ([category, sumAmount]) => ({
-        category,
-        sumAmount,
-        percentage: parseFloat(((sumAmount / totalOutcome) * 100).toFixed(2)),
-      })
-    );
+    const outcomeData = Object.entries(categoryOutcome).map(([category, sumAmount]) => ({
+      category,
+      sumAmount,
+      percentage: parseFloat(((sumAmount / totalOutcome) * 100).toFixed(2)),
+    }));
 
     outcomeData.sort((a, b) => b.sumAmount - a.sumAmount);
 
     return outcomeData;
   };
 
+  // 클릭한 날짜별 지출 내역 출력
+  const totalByDaily = () => {
+    const groupedByDate = {};
+
+    state.historyList.forEach((item) => {
+      const date = moment(item.date).format('YYYY-MM-DD');
+
+      if (!groupedByDate[date]) {
+        groupedByDate[date] = { outcome: [], income: [] };
+      }
+
+      groupedByDate[date][item.type].push(item);
+    });
+    console.log('groupedByDate', groupedByDate);
+    return groupedByDate;
+  };
+
   // 공통 사용
   // 숫자 세개 단위 콤마
   const addComma = (val) => {
-    return val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+    return val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
   };
 
   // 수입일 경우 + 기호, 지출일 경우 - 기호 + 콤마
   const addSymbolComma = (val, type) => {
-    const newVal = val
-      .toString()
-      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-    if (type === "income") {
+    const newVal = val.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
+    if (type === 'income') {
       return `+${newVal}`;
     } else {
       return `-${newVal}`;
     }
   };
+
+  // 클릭한 날짜값 변경
+  const getCalenderDate = (newDate) => {
+    state.date = newDate;
+    console.log('date', state.date);
+  };
+
   fetchHistory();
 
   const historyList = computed(() => state.historyList);
+  const date = computed(() => state.date);
 
   return {
     historyList,
+    date,
+    getCalenderDate,
     postHistory,
     addComma,
     totalByDaily,
