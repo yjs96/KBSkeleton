@@ -15,11 +15,11 @@
 </template>
 
 <script setup>
-import moment from "moment";
-import { ref, defineEmits } from "vue";
+import moment from 'moment';
+import { ref, defineEmits } from 'vue';
 
-//--------- pinia store 가져오기----------------------
-import { useHistoryStore } from "@/stores/history";
+//--------- pinia store 가져오기-------------------------
+import { useHistoryStore } from '@/stores/history';
 
 const historyState = useHistoryStore();
 
@@ -27,15 +27,15 @@ const historyState = useHistoryStore();
 const { fetchHistory } = historyState;
 const historyList = computed(() => historyState.historyList);
 
-console.log("22222222", historyList.value[1]); // {id: '2', memo: 'KT CCTV', category: '통신', type: 'outcome', amount: 20000, …}
+console.log('22222222', historyList.value[1]); // {id: '2', memo: 'KT CCTV', category: '통신', type: 'outcome', amount: 20000, …}
 
 // ------------------------------
 
 const date = moment();
 
 const selectedAmount = ref();
-const selectedMemo = ref("");
-const selectedDate = ref(date.format("YYYY-MM-DD"));
+const selectedMemo = ref('');
+const selectedDate = ref(date.format('YYYY-MM-DD'));
 </script>
 
 <style scoped>
