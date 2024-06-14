@@ -18,10 +18,22 @@ export const useUserInfoStore = defineStore('userInfo', () => {
     }
   };
 
+  const changeUsername = async (newName) => {
+    try {
+      const response = await axios.patch(BASEURL, {
+        name: newName,
+        profileImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyPkxMuo6NOHcNx-aO-wOo3eyVnB2oTq-ZwA&s',
+        balance: 2478920,
+      });
+    } catch (err) {
+      // console.log(err);
+    }
+  };
+
   fetchuserInfo();
   const userInfo = computed(() => state.userInfo);
 
-  return { fetchuserInfo, userInfo };
+  return { fetchuserInfo, changeUsername, userInfo };
 });
 
 export const useHistoryStore = defineStore('history', () => {

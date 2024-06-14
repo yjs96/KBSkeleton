@@ -1,8 +1,22 @@
 <template>
+  <div v-if="isModal" class="overlay">
+    <div class="modal-container">
+      <div class="close-frame">
+        <i @click="closeModal" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="button-container">
+        <div class="button-label">메모</div>
+        <div class="select-box">
+          <input class="memo-input" type="text" v-model="newName" />
+        </div>
+      </div>
+      <div @click="changeName" class="add-button">프로필 편집</div>
+    </div>
+  </div>
   <Main :padded="true" class="mypage-wrapper">
     <!-- user header -->
     <div class="mypage-container">
-      <div class="user-box" @click="changeText">
+      <div class="user-box" :class="incomeMonth >= outcomeMonth ? 'color-green' : ''" @click="changeText">
         <div class="user-content">
           <img class="profile-image" :src="userInfo.profileImage" alt="" />
           <div class="user-name-frame">
@@ -16,9 +30,9 @@
       </div>
       <div class="mypage-menu">
         <div class="mypage-menu-box">
-          <div class="menu menu-1">프로필 편집</div>
-          <div class="menu menu-2">도움말</div>
-          <div class="menu menu-3">설정</div>
+          <div @click="showModal" class="menu menu-1" :class="incomeMonth >= outcomeMonth ? 'color-green' : ''">프로필 편집</div>
+          <div class="menu menu-2" :class="incomeMonth >= outcomeMonth ? 'color-green' : ''">도움말</div>
+          <div class="menu menu-3" :class="incomeMonth >= outcomeMonth ? 'color-green' : ''">설정</div>
         </div>
       </div>
     </div>
@@ -38,12 +52,30 @@ const userInfoStore = useUserInfoStore();
 const historyStore = useHistoryStore();
 
 const { totalIncomeByMonth, totalOutcomeByMonth } = historyStore;
-// const {} = userInfoStore;
+const { fetchuserInfo, changeUsername } = userInfoStore;
+const isModal = ref(false);
 
 const incomeMonth = ref(totalIncomeByMonth(month));
 const outcomeMonth = ref(totalOutcomeByMonth(month));
 
 const userInfo = computed(() => userInfoStore.userInfo);
+
+const showModal = () => {
+  isModal.value = true;
+};
+
+const closeModal = () => {
+  isModal.value = false;
+};
+
+const newName = ref(userInfo.value.name);
+
+const changeName = () => {
+  // 프로필 변경
+  changeUsername(newName.value);
+  fetchuserInfo();
+  closeModal();
+};
 
 const changeText = computed(() => {
   return incomeMonth.value >= outcomeMonth.value ? '열심히 절약하셨군요!' : '조금 더 절약할까요?';
@@ -150,16 +182,110 @@ const changeText = computed(() => {
 }
 .menu {
   width: 100%;
-  border: 1px solid var(--dark-gray);
-  border-radius: 20px;
+  /* border: 1px solid var(--dark-gray); */
+  border-radius: 12px;
   text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--dark-gray);
+  font-size: 16px;
+  padding: 8px 0;
+  font-weight: 500;
+  color: var(--white);
   transition: all 0.5s;
+  background-color: var(--red);
 }
 .menu:hover {
-  transform: scale(1.1);
-  background-color: var(--blue);
+  transform: scale(1.05);
+}
+
+.color-green {
+  background-color: var(--green);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  position: relative;
+  background-color: var(--white);
+  width: 80%;
+  box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0.06);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.close-frame {
+  width: 100%;
+  text-align: end;
+  font-size: 20px;
+}
+
+.button-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-label {
+  font-size: 12px;
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.button-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-label {
+  font-size: 12px;
+  color: var(--dark-gray);
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.select-box {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--dark-gray);
+}
+
+.memo-input {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 12px;
+  position: relative;
+  z-index: 3;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.add-button {
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 16px;
 }
 </style>

@@ -267,12 +267,17 @@ watch(selectedDate, () => {
 }
 
 .today-btn {
-  background-color: var(--gray);
+  background-color: var(--green);
   border: none;
   border-radius: 10px;
   color: var(--white);
   padding: 5px 10px;
   margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.today-btn:hover {
+  background-color: #28aa72;
 }
 
 .today-wrapper-btn {
