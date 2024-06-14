@@ -5,7 +5,7 @@
         <i @click="closeModal" class="fa-solid fa-xmark"></i>
       </div>
       <div class="button-container">
-        <div class="button-label">메모</div>
+        <div class="button-label">이름</div>
         <div class="select-box">
           <input class="memo-input" type="text" v-model="newName" />
         </div>
