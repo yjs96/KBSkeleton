@@ -8,24 +8,24 @@
         <!-- 하루 지출 금액 -->
         <div class="daily-history-month">
           <div class="daily-month">
-            <span>10일(월)</span>
+            <span>{{ selectedDay }}</span>
           </div>
           <!-- memo 모달 클릭  -->
-          <div>
+          <!-- <div>
             <i @click="handleShowModal(true)" class="fa-solid fa-envelope"></i>
-          </div>
+          </div> -->
           <div class="daily-spend">
-            <span class="daily-income">+1000</span> |
-            <span class="daily-outcome">-6000</span>
+            <span class="daily-income">{{ selectedDateHistory.incomeSum ? `+ ${addComma(selectedDateHistory.incomeSum)}` : 0 }}원</span> |
+            <span class="daily-outcome">{{ selectedDateHistory.outcomeSum ? `-${addComma(selectedDateHistory.outcomeSum)}` : 0 }}원</span>
           </div>
         </div>
         <!-- 필터링될 History -->
         <div>
           <div class="daily-filter-spend">
-            <History :value="tempObj" />
-            <History :value="tempObj" />
-            <History :value="tempObj" />
-            <History :value="tempObj" />
+            <div v-if="selectedDateHistory.incomeSum === 0 && selectedDateHistory.outcomeSum === 0">내역이 없습니다</div>
+            <div v-else>
+              <History v-for="history in selectedDateHistory.history" :value="history" />
+            </div>
           </div>
         </div>
       </div>
@@ -34,22 +34,32 @@
 </template>
 
 <script setup>
-import Calender from "@/components/Calender.vue";
-import History from "@/components/History.vue";
-import Main from "@/components/Main.vue";
-import MemoModal from "@/components/MemoModal.vue";
+import Calender from '@/components/Calender.vue';
+import History from '@/components/History.vue';
+import Main from '@/components/Main.vue';
+import MemoModal from '@/components/MemoModal.vue';
 
-import { ref } from "vue";
+import { computed, ref, watch } from 'vue';
+import moment from 'moment';
+import { useHistoryStore } from '@/stores/history';
+
+const historyStore = useHistoryStore();
+
+const { addComma } = historyStore;
+
+const selectedDateHistory = computed(() => historyStore.selectedDateHistory);
+const selectedDate = computed(() => historyStore.selectedDate);
+const selectedDay = computed(() => `${moment(selectedDate.value).format('M')}월 ${moment(selectedDate.value).format('D')}일`);
 
 const showModal = ref(false);
 const tempObj = ref({
   id: 40,
-  memo: "서브웨이",
-  category: "식비",
-  type: "outcome",
+  memo: '서브웨이',
+  category: '식비',
+  type: 'outcome',
   amount: 9900,
-  date: "2024-04-08",
-  done: "TRUE",
+  date: '2024-04-08',
+  done: 'TRUE',
 });
 
 const handleShowModal = (val) => {

@@ -4,44 +4,28 @@
       <button class="chevron-icon" @click="prevMonth">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
-      <span class="current-year"
-        >{{ currentYear }}년 {{ currentMonth + 1 }}월</span
-      >
+      <span class="current-year">{{ currentYear }}년 {{ currentMonth + 1 }}월</span>
       <button class="chevron-icon" @click="nextMonth">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
     <div class="calendar-grid">
       <!-- 요일 헤더 -->
-      <div
-        class="calendar-header"
-        v-for="(day, index) in weekDays"
-        :key="index"
-      >
+      <div class="calendar-header" v-for="(day, index) in weekDays" :key="index">
         {{ day }}
       </div>
       <!-- 날짜 렌더링 -->
-      <div
-        class="calendar-day"
-        v-for="day in daysGrid"
-        :key="day.date ? day.date.toString() : Math.random()"
-      >
+      <div class="calendar-day" v-for="day in daysGrid" :key="day.date ? day.date.toString() : Math.random()">
         <!-- 날짜 컨텐츠 전체  -->
         <div class="daily-today-contents">
-          <div
-            @click="selectDate(day.date)"
-            :class="{ 'non-current-month': !day.isCurrentMonth }"
-          >
+          <div @click="selectDate(day.date)" :class="{ 'non-current-month': !day.isCurrentMonth }">
             <!-- today 숫자 -->
-            <div class="daily-today">
-              {{ day.date ? day.date.getDate() : "" }}
+            <div class="daily-today" :class="moment(day.date).format('YYYY-MM-DD') === piniaDate ? 'day-selected' : ''">
+              {{ day.date ? day.date.getDate() : '' }}
             </div>
           </div>
           <!-- mome + income, outcome -->
-          <div
-            v-if="day.isCurrentMonth && hasHistoryForDate(day.date)"
-            class="custom-component"
-          >
+          <div v-if="day.isCurrentMonth && hasHistoryForDate(day.date)" class="custom-component">
             <SpecialComponent
               :date="moment(day.date).format('YYYY-MM-DD')"
               :formattedIncome="getFormattedIncome(day.date)"
@@ -60,28 +44,33 @@
 </template>
 
 <script setup>
-import { ref, computed, reactive } from "vue";
-import SpecialComponent from "./SpecialComponent.vue";
-import moment from "moment";
+import { ref, computed, watch } from 'vue';
+import SpecialComponent from './SpecialComponent.vue';
+import moment from 'moment';
 
 // pinia store 가져오기
-import { useHistoryStore } from "@/stores/history";
+import { useHistoryStore } from '@/stores/history';
 
 const historyState = useHistoryStore();
 
 // const { historyList } = historyState;
-const { totalByDaily } = historyState;
+const { totalByDaily, getHistoryByDate } = historyState;
 const historyList = computed(() => historyState.historyList);
 // console.log(historyList);
-// totalByDaily();
+const piniaDate = computed(() => historyState.selectedDate);
+
+const sortedByDay = ref(totalByDaily());
+
+// console.log(sortedByDay.value);
 // ------------------------------
 const currentDate = ref(new Date());
 const selectedDate = ref(null);
+// console.log(currentDate.value);
 
 const currentYear = computed(() => currentDate.value.getFullYear());
 const currentMonth = computed(() => currentDate.value.getMonth());
 
-const weekDays = ["일", "월", "화", "수", "목", "금", "토"];
+const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
 
 const daysGrid = computed(() => {
   const year = currentYear.value;
@@ -121,47 +110,40 @@ const daysGrid = computed(() => {
 
 const setToday = () => {
   currentDate.value = new Date();
+  selectedDate.value = moment(currentDate.value).format('YYYY-MM-DD');
 };
 // 오늘 날짜 : Thu Jun 20 2024 00:00:00 GMT+0900 (한국 표준시)
 const selectDate = (date) => {
   selectedDate.value = date;
-  const formattedDate = moment(date).format("YYYY-MM-DD");
-  console.log("Selected date:", formattedDate);
+  const formattedDate = moment(date).format('YYYY-MM-DD');
+  // console.log('Selected date:', formattedDate);
 };
 
 const hasHistoryForDate = (date) => {
-  const formattedDate = moment(date).format("YYYY-MM-DD");
+  const formattedDate = moment(date).format('YYYY-MM-DD');
   return historyList.value.some((history) => history.date === formattedDate);
 };
 
 const getFormattedIncome = (date) => {
-  const formattedDate = moment(date).format("YYYY-MM-DD");
+  const formattedDate = moment(date).format('YYYY-MM-DD');
   const totalIncome = historyList.value
-    .filter(
-      (history) => history.date === formattedDate && history.type === "income"
-    )
-    .reduce((sum, history) => sum + history.amount, 0);
+    .filter((history) => history.date === formattedDate && history.type === 'income')
+    .reduce((sum, history) => sum + Number(history.amount), 0);
+  // console.log(`+${totalIncome.toLocaleString()}`);
   return `+${totalIncome.toLocaleString()}`;
 };
 
 const getFormattedOutcome = (date) => {
-  const formattedDate = moment(date).format("YYYY-MM-DD");
+  const formattedDate = moment(date).format('YYYY-MM-DD');
   const totalOutcome = historyList.value
-    .filter(
-      (history) => history.date === formattedDate && history.type === "outcome"
-    )
+    .filter((history) => history.date === formattedDate && history.type === 'outcome')
     .reduce((sum, history) => sum + history.amount, 0);
   return `-${totalOutcome.toLocaleString()}`;
 };
 
 const hasMemoForDate = (date) => {
-  const formattedDate = moment(date).format("YYYY-MM-DD");
-  return historyList.value.some(
-    (history) =>
-      history.date === formattedDate &&
-      history.details &&
-      history.details.length > 0
-  );
+  const formattedDate = moment(date).format('YYYY-MM-DD');
+  return historyList.value.some((history) => history.date === formattedDate && history.details && history.details.length > 0);
 };
 const isSpecialDate = (date) => {
   return date && date.getDate() === 10;
@@ -174,6 +156,14 @@ const prevMonth = () => {
 const nextMonth = () => {
   currentDate.value = new Date(currentYear.value, currentMonth.value + 1, 1);
 };
+
+const momentCurrentDate = moment(currentDate).format('YYYY-MM-DD');
+
+getHistoryByDate(momentCurrentDate);
+
+watch(selectedDate, () => {
+  getHistoryByDate(moment(selectedDate.value).format('YYYY-MM-DD'));
+});
 </script>
 
 <style scoped>
@@ -184,6 +174,7 @@ const nextMonth = () => {
   align-items: center;
   background-color: var(--white);
   padding: 20px 0 0 0;
+  width: 100%;
 }
 
 .calendar-controls {
@@ -215,14 +206,22 @@ const nextMonth = () => {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   /* gap: 10px; */
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 /* 요일 */
 .calendar-header {
   font-weight: bold;
   color: var(--dark-gray);
+  width: 100%;
 }
 .daily-today-contents {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px dotted var(--gray);
@@ -234,14 +233,14 @@ const nextMonth = () => {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  height: 50px;
-  width: 64px;
+  height: 60px;
+  width: 100%;
   cursor: pointer;
 }
 
 /* 날짜 클릭 시 */
 .daily-today {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,6 +254,10 @@ const nextMonth = () => {
   box-shadow: 0 0 5px 1px var(--green); /* 하이라이트 효과 추가 */
 }
 .daily-today:active {
+  background-color: var(--green);
+}
+
+.day-selected {
   background-color: var(--green);
 }
 
