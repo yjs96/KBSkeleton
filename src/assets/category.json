@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "name": "수입",
+    "imgSrc": "/category_icon/income.svg"
+  },
+  {
+    "index": 1,
+    "name": "식비",
+    "imgSrc": "/category_icon/food.svg"
+  },
+  {
+    "index": 2,
+    "name": "교통",
+    "imgSrc": "/category_icon/transportation.svg"
+  },
+  {
+    "index": 3,
+    "name": "문화",
+    "imgSrc": "/category_icon/entertainment.svg"
+  },
+  {
+    "index": 4,
+    "name": "통신",
+    "imgSrc": "/category_icon/contact.svg"
+  },
+  {
+    "index": 5,
+    "name": "기타",
+    "imgSrc": "/category_icon/etc.svg"
+  }
+]
