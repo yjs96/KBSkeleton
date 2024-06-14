@@ -27,7 +27,7 @@ const historyState = useHistoryStore();
 const { fetchHistory } = historyState;
 const historyList = computed(() => historyState.historyList);
 
-console.log('22222222', historyList.value[1]); // {id: '2', memo: 'KT CCTV', category: '통신', type: 'outcome', amount: 20000, …}
+// console.log('22222222', historyList.value[1]); // {id: '2', memo: 'KT CCTV', category: '통신', type: 'outcome', amount: 20000, …}
 
 // ------------------------------
 
