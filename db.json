@@ -6,7 +6,7 @@
   },
   "history": [
     {
-      "id": 1,
+      "id": "1",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -16,7 +16,7 @@
       "done": "FALSE"
     },
     {
-      "id": 2,
+      "id": "2",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -26,7 +26,7 @@
       "done": "FALSE"
     },
     {
-      "id": 6,
+      "id": "6",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -36,7 +36,7 @@
       "done": "FALSE"
     },
     {
-      "id": 7,
+      "id": "7",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -46,7 +46,7 @@
       "done": "FALSE"
     },
     {
-      "id": 12,
+      "id": "12",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -56,7 +56,7 @@
       "done": "FALSE"
     },
     {
-      "id": 13,
+      "id": "13",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -66,7 +66,7 @@
       "done": "FALSE"
     },
     {
-      "id": 20,
+      "id": "20",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -76,7 +76,7 @@
       "done": "TRUE"
     },
     {
-      "id": 21,
+      "id": "21",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -86,7 +86,7 @@
       "done": "FALSE"
     },
     {
-      "id": 25,
+      "id": "25",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -96,7 +96,7 @@
       "done": "FALSE"
     },
     {
-      "id": 27,
+      "id": "27",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -106,7 +106,7 @@
       "done": "FALSE"
     },
     {
-      "id": 28,
+      "id": "28",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -116,7 +116,7 @@
       "done": "FALSE"
     },
     {
-      "id": 30,
+      "id": "30",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -126,7 +126,7 @@
       "done": "TRUE"
     },
     {
-      "id": 36,
+      "id": "36",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -136,7 +136,7 @@
       "done": "FALSE"
     },
     {
-      "id": 40,
+      "id": "40",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -146,7 +146,7 @@
       "done": "TRUE"
     },
     {
-      "id": 41,
+      "id": "41",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -156,7 +156,7 @@
       "done": "FALSE"
     },
     {
-      "id": 42,
+      "id": "42",
       "memo": "책",
       "details": "교재",
       "category": "기타",
@@ -166,7 +166,7 @@
       "done": "TRUE"
     },
     {
-      "id": 45,
+      "id": "45",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -176,7 +176,7 @@
       "done": "FALSE"
     },
     {
-      "id": 60,
+      "id": "60",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -186,7 +186,7 @@
       "done": "TRUE"
     },
     {
-      "id": 61,
+      "id": "61",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -196,7 +196,7 @@
       "done": "TRUE"
     },
     {
-      "id": 60,
+      "id": "60",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -206,7 +206,7 @@
       "done": "TRUE"
     },
     {
-      "id": 61,
+      "id": "61",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -216,7 +216,7 @@
       "done": "TRUE"
     },
     {
-      "id": 62,
+      "id": "62",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -226,7 +226,7 @@
       "done": "FALSE"
     },
     {
-      "id": 63,
+      "id": "63",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -236,7 +236,7 @@
       "done": "TRUE"
     },
     {
-      "id": 64,
+      "id": "64",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -246,7 +246,7 @@
       "done": "TRUE"
     },
     {
-      "id": 62,
+      "id": "62",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -256,7 +256,7 @@
       "done": "FALSE"
     },
     {
-      "id": 63,
+      "id": "63",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -266,7 +266,7 @@
       "done": "TRUE"
     },
     {
-      "id": 64,
+      "id": "64",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -276,7 +276,7 @@
       "done": "TRUE"
     },
     {
-      "id": 65,
+      "id": "65",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -286,7 +286,7 @@
       "done": "TRUE"
     },
     {
-      "id": 67,
+      "id": "67",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -296,7 +296,7 @@
       "done": "FALSE"
     },
     {
-      "id": 65,
+      "id": "65",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -306,7 +306,7 @@
       "done": "TRUE"
     },
     {
-      "id": 67,
+      "id": "67",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -316,7 +316,7 @@
       "done": "FALSE"
     },
     {
-      "id": 69,
+      "id": "69",
       "memo": "강아지 간식",
       "details": "감자 간식",
       "category": "기타",
@@ -326,7 +326,7 @@
       "done": "TRUE"
     },
     {
-      "id": 70,
+      "id": "70",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -336,7 +336,7 @@
       "done": "FALSE"
     },
     {
-      "id": 71,
+      "id": "71",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -346,7 +346,7 @@
       "done": "FALSE"
     },
     {
-      "id": 69,
+      "id": "69",
       "memo": "강아지 간식",
       "details": "감자 간식",
       "category": "기타",
@@ -356,7 +356,7 @@
       "done": "TRUE"
     },
     {
-      "id": 70,
+      "id": "70",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -366,7 +366,7 @@
       "done": "FALSE"
     },
     {
-      "id": 71,
+      "id": "71",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -376,7 +376,7 @@
       "done": "FALSE"
     },
     {
-      "id": 75,
+      "id": "75",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -386,7 +386,7 @@
       "done": "TRUE"
     },
     {
-      "id": 76,
+      "id": "76",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -396,7 +396,7 @@
       "done": "TRUE"
     },
     {
-      "id": 75,
+      "id": "75",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -406,7 +406,7 @@
       "done": "TRUE"
     },
     {
-      "id": 76,
+      "id": "76",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -415,9 +415,8 @@
       "date": "2024-03-19",
       "done": "TRUE"
     },
-
     {
-      "id": 83,
+      "id": "83",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -427,7 +426,7 @@
       "done": "FALSE"
     },
     {
-      "id": 84,
+      "id": "84",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -437,7 +436,7 @@
       "done": "FALSE"
     },
     {
-      "id": 83,
+      "id": "83",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -447,7 +446,7 @@
       "done": "FALSE"
     },
     {
-      "id": 84,
+      "id": "84",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -457,7 +456,7 @@
       "done": "FALSE"
     },
     {
-      "id": 86,
+      "id": "86",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -467,7 +466,7 @@
       "done": "TRUE"
     },
     {
-      "id": 91,
+      "id": "91",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -477,7 +476,7 @@
       "done": "TRUE"
     },
     {
-      "id": 92,
+      "id": "92",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -487,7 +486,7 @@
       "done": "FALSE"
     },
     {
-      "id": 91,
+      "id": "91",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -497,7 +496,7 @@
       "done": "TRUE"
     },
     {
-      "id": 92,
+      "id": "92",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -507,7 +506,7 @@
       "done": "FALSE"
     },
     {
-      "id": 98,
+      "id": "98",
       "memo": "회식",
       "details": "회식 N빵",
       "category": "식비",
@@ -517,7 +516,7 @@
       "done": "TRUE"
     },
     {
-      "id": 99,
+      "id": "99",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -527,7 +526,7 @@
       "done": "TRUE"
     },
     {
-      "id": 100,
+      "id": "100",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -537,7 +536,7 @@
       "done": "TRUE"
     },
     {
-      "id": 99,
+      "id": "99",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -547,7 +546,7 @@
       "done": "TRUE"
     },
     {
-      "id": 99,
+      "id": "99",
       "memo": "급여",
       "details": "",
       "category": "수입",
@@ -557,7 +556,7 @@
       "done": "TRUE"
     },
     {
-      "id": 100,
+      "id": "100",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -567,7 +566,7 @@
       "done": "TRUE"
     },
     {
-      "id": 105,
+      "id": "105",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -577,7 +576,7 @@
       "done": "TRUE"
     },
     {
-      "id": 105,
+      "id": "105",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -587,7 +586,7 @@
       "done": "TRUE"
     },
     {
-      "id": 110,
+      "id": "110",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -597,7 +596,7 @@
       "done": "FALSE"
     },
     {
-      "id": 112,
+      "id": "112",
       "memo": "치킨",
       "details": "",
       "category": "식비",
@@ -607,7 +606,7 @@
       "done": "TRUE"
     },
     {
-      "id": 110,
+      "id": "110",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -617,7 +616,7 @@
       "done": "FALSE"
     },
     {
-      "id": 112,
+      "id": "112",
       "memo": "치킨",
       "details": "",
       "category": "식비",
@@ -627,7 +626,7 @@
       "done": "TRUE"
     },
     {
-      "id": 115,
+      "id": "115",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -637,7 +636,7 @@
       "done": "TRUE"
     },
     {
-      "id": 116,
+      "id": "116",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -647,7 +646,7 @@
       "done": "TRUE"
     },
     {
-      "id": 117,
+      "id": "117",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -657,7 +656,7 @@
       "done": "TRUE"
     },
     {
-      "id": 116,
+      "id": "116",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -667,7 +666,7 @@
       "done": "TRUE"
     },
     {
-      "id": 117,
+      "id": "117",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -677,7 +676,7 @@
       "done": "TRUE"
     },
     {
-      "id": 119,
+      "id": "119",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -687,7 +686,7 @@
       "done": "FALSE"
     },
     {
-      "id": 119,
+      "id": "119",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -697,7 +696,7 @@
       "done": "FALSE"
     },
     {
-      "id": 121,
+      "id": "121",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -707,7 +706,7 @@
       "done": "TRUE"
     },
     {
-      "id": 122,
+      "id": "122",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -717,7 +716,7 @@
       "done": "TRUE"
     },
     {
-      "id": 123,
+      "id": "123",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -727,7 +726,7 @@
       "done": "FALSE"
     },
     {
-      "id": 127,
+      "id": "127",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -737,7 +736,7 @@
       "done": "FALSE"
     },
     {
-      "id": 133,
+      "id": "133",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -747,7 +746,7 @@
       "done": "FALSE"
     },
     {
-      "id": 138,
+      "id": "138",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -757,7 +756,7 @@
       "done": "FALSE"
     },
     {
-      "id": 141,
+      "id": "141",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -767,7 +766,7 @@
       "done": "FALSE"
     },
     {
-      "id": 144,
+      "id": "144",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -777,7 +776,7 @@
       "done": "TRUE"
     },
     {
-      "id": 145,
+      "id": "145",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -787,7 +786,7 @@
       "done": "FALSE"
     },
     {
-      "id": 150,
+      "id": "150",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -797,7 +796,7 @@
       "done": "TRUE"
     },
     {
-      "id": 152,
+      "id": "152",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -807,7 +806,7 @@
       "done": "TRUE"
     },
     {
-      "id": 154,
+      "id": "154",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -817,7 +816,7 @@
       "done": "TRUE"
     },
     {
-      "id": 156,
+      "id": "156",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -827,7 +826,7 @@
       "done": "FALSE"
     },
     {
-      "id": 161,
+      "id": "161",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -837,7 +836,7 @@
       "done": "FALSE"
     },
     {
-      "id": 162,
+      "id": "162",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -847,7 +846,7 @@
       "done": "FALSE"
     },
     {
-      "id": 163,
+      "id": "163",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -857,7 +856,7 @@
       "done": "FALSE"
     },
     {
-      "id": 164,
+      "id": "164",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -867,7 +866,7 @@
       "done": "TRUE"
     },
     {
-      "id": 167,
+      "id": "167",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -877,7 +876,7 @@
       "done": "FALSE"
     },
     {
-      "id": 168,
+      "id": "168",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -887,7 +886,7 @@
       "done": "TRUE"
     },
     {
-      "id": 170,
+      "id": "170",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -897,7 +896,7 @@
       "done": "FALSE"
     },
     {
-      "id": 171,
+      "id": "171",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -907,7 +906,7 @@
       "done": "TRUE"
     },
     {
-      "id": 173,
+      "id": "173",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -917,7 +916,7 @@
       "done": "TRUE"
     },
     {
-      "id": 174,
+      "id": "174",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -927,7 +926,7 @@
       "done": "FALSE"
     },
     {
-      "id": 177,
+      "id": "177",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -937,7 +936,7 @@
       "done": "TRUE"
     },
     {
-      "id": 179,
+      "id": "179",
       "memo": "용돈",
       "details": "할머니가 용돈 주심",
       "category": "수입",
@@ -947,7 +946,7 @@
       "done": "TRUE"
     },
     {
-      "id": 183,
+      "id": "183",
       "memo": "옷",
       "details": "",
       "category": "기타",
@@ -957,7 +956,7 @@
       "done": "FALSE"
     },
     {
-      "id": 185,
+      "id": "185",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -967,7 +966,7 @@
       "done": "FALSE"
     },
     {
-      "id": 187,
+      "id": "187",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -977,7 +976,7 @@
       "done": "FALSE"
     },
     {
-      "id": 188,
+      "id": "188",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -987,7 +986,7 @@
       "done": "TRUE"
     },
     {
-      "id": 193,
+      "id": "193",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -997,7 +996,7 @@
       "done": "FALSE"
     },
     {
-      "id": 195,
+      "id": "195",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1007,7 +1006,7 @@
       "done": "FALSE"
     },
     {
-      "id": 198,
+      "id": "198",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1017,7 +1016,7 @@
       "done": "TRUE"
     },
     {
-      "id": 199,
+      "id": "199",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -1027,7 +1026,7 @@
       "done": "TRUE"
     },
     {
-      "id": 201,
+      "id": "201",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1037,7 +1036,7 @@
       "done": "TRUE"
     },
     {
-      "id": 203,
+      "id": "203",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1047,7 +1046,7 @@
       "done": "TRUE"
     },
     {
-      "id": 206,
+      "id": "206",
       "memo": "영화",
       "details": "",
       "category": "문화",
@@ -1057,7 +1056,7 @@
       "done": "TRUE"
     },
     {
-      "id": 207,
+      "id": "207",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -1067,7 +1066,7 @@
       "done": "TRUE"
     },
     {
-      "id": 208,
+      "id": "208",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -1077,7 +1076,7 @@
       "done": "TRUE"
     },
     {
-      "id": 209,
+      "id": "209",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -1087,7 +1086,7 @@
       "done": "TRUE"
     },
     {
-      "id": 214,
+      "id": "214",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -1097,7 +1096,7 @@
       "done": "FALSE"
     },
     {
-      "id": 215,
+      "id": "215",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -1107,7 +1106,7 @@
       "done": "TRUE"
     },
     {
-      "id": 216,
+      "id": "216",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -1117,7 +1116,7 @@
       "done": "TRUE"
     },
     {
-      "id": 217,
+      "id": "217",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -1127,7 +1126,7 @@
       "done": "FALSE"
     },
     {
-      "id": 219,
+      "id": "219",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1137,7 +1136,7 @@
       "done": "FALSE"
     },
     {
-      "id": 220,
+      "id": "220",
       "memo": "노래방",
       "details": "",
       "category": "문화",
@@ -1147,7 +1146,7 @@
       "done": "FALSE"
     },
     {
-      "id": 221,
+      "id": "221",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -1157,7 +1156,7 @@
       "done": "TRUE"
     },
     {
-      "id": 222,
+      "id": "222",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -1167,7 +1166,7 @@
       "done": "TRUE"
     },
     {
-      "id": 231,
+      "id": "231",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1177,7 +1176,7 @@
       "done": "FALSE"
     },
     {
-      "id": 237,
+      "id": "237",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -1187,7 +1186,7 @@
       "done": "FALSE"
     },
     {
-      "id": 240,
+      "id": "240",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -1197,7 +1196,7 @@
       "done": "FALSE"
     },
     {
-      "id": 241,
+      "id": "241",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1207,7 +1206,7 @@
       "done": "TRUE"
     },
     {
-      "id": 243,
+      "id": "243",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1217,7 +1216,7 @@
       "done": "TRUE"
     },
     {
-      "id": 247,
+      "id": "247",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1227,7 +1226,7 @@
       "done": "FALSE"
     },
     {
-      "id": 248,
+      "id": "248",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -1237,7 +1236,7 @@
       "done": "FALSE"
     },
     {
-      "id": 251,
+      "id": "251",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -1247,7 +1246,7 @@
       "done": "FALSE"
     },
     {
-      "id": 253,
+      "id": "253",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -1257,7 +1256,7 @@
       "done": "TRUE"
     },
     {
-      "id": 254,
+      "id": "254",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -1267,7 +1266,7 @@
       "done": "FALSE"
     },
     {
-      "id": 256,
+      "id": "256",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -1277,7 +1276,7 @@
       "done": "TRUE"
     },
     {
-      "id": 258,
+      "id": "258",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -1287,7 +1286,7 @@
       "done": "FALSE"
     },
     {
-      "id": 259,
+      "id": "259",
       "memo": "치킨",
       "details": "준수랑 먹음",
       "category": "식비",
@@ -1297,7 +1296,7 @@
       "done": "TRUE"
     },
     {
-      "id": 263,
+      "id": "263",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -1307,7 +1306,7 @@
       "done": "FALSE"
     },
     {
-      "id": 267,
+      "id": "267",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -1317,7 +1316,7 @@
       "done": "TRUE"
     },
     {
-      "id": 272,
+      "id": "272",
       "memo": "자전거",
       "details": "당근에서 중고 자전거",
       "category": "기타",
@@ -1327,7 +1326,7 @@
       "done": "FALSE"
     },
     {
-      "id": 278,
+      "id": "278",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1337,7 +1336,7 @@
       "done": "TRUE"
     },
     {
-      "id": 32,
+      "id": "32",
       "memo": "영화",
       "details": "연비언니랑 봤음",
       "category": "문화",
@@ -1347,7 +1346,7 @@
       "done": "TRUE"
     },
     {
-      "id": 46,
+      "id": "46",
       "memo": "뮤지컬",
       "details": "뮤지컬 관람",
       "category": "문화",
@@ -1357,7 +1356,7 @@
       "done": "FALSE"
     },
     {
-      "id": 46,
+      "id": "46",
       "memo": "뮤지컬",
       "details": "뮤지컬 관람",
       "category": "문화",
@@ -1367,7 +1366,7 @@
       "done": "FALSE"
     },
     {
-      "id": 89,
+      "id": "89",
       "memo": "영화",
       "details": "호진이랑 봄",
       "category": "문화",
@@ -1377,7 +1376,7 @@
       "done": "FALSE"
     },
     {
-      "id": 113,
+      "id": "113",
       "memo": "노래방",
       "details": "",
       "category": "문화",
@@ -1387,7 +1386,7 @@
       "done": "FALSE"
     },
     {
-      "id": 113,
+      "id": "113",
       "memo": "노래방",
       "details": "",
       "category": "문화",
@@ -1397,7 +1396,7 @@
       "done": "FALSE"
     },
     {
-      "id": 142,
+      "id": "142",
       "memo": "영화",
       "details": "",
       "category": "문화",
@@ -1407,7 +1406,7 @@
       "done": "TRUE"
     },
     {
-      "id": 157,
+      "id": "157",
       "memo": "공연",
       "details": "엄마랑 공연봄",
       "category": "문화",
@@ -1417,7 +1416,7 @@
       "done": "FALSE"
     },
     {
-      "id": 264,
+      "id": "264",
       "memo": "전시회",
       "details": "레오나르도 다빈치 특별 전시회",
       "category": "문화",
@@ -1427,7 +1426,7 @@
       "done": "FALSE"
     },
     {
-      "id": 3,
+      "id": "3",
       "memo": "미용실",
       "details": "머리 잘랐음",
       "category": "기타",
@@ -1437,7 +1436,7 @@
       "done": "TRUE"
     },
     {
-      "id": 4,
+      "id": "4",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -1447,7 +1446,7 @@
       "done": "TRUE"
     },
     {
-      "id": 8,
+      "id": "8",
       "memo": "철물점",
       "details": "",
       "category": "기타",
@@ -1457,7 +1456,7 @@
       "done": "TRUE"
     },
     {
-      "id": 9,
+      "id": "9",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -1467,7 +1466,7 @@
       "done": "TRUE"
     },
     {
-      "id": 10,
+      "id": "10",
       "memo": "미용실",
       "details": "머리 잘랐음",
       "category": "기타",
@@ -1477,7 +1476,7 @@
       "done": "TRUE"
     },
     {
-      "id": 11,
+      "id": "11",
       "memo": "강아지 병원",
       "details": "감자 병원",
       "category": "기타",
@@ -1487,7 +1486,7 @@
       "done": "TRUE"
     },
     {
-      "id": 14,
+      "id": "14",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -1497,7 +1496,7 @@
       "done": "TRUE"
     },
     {
-      "id": 15,
+      "id": "15",
       "memo": "약",
       "details": "",
       "category": "기타",
@@ -1507,7 +1506,7 @@
       "done": "TRUE"
     },
     {
-      "id": 16,
+      "id": "16",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1517,7 +1516,7 @@
       "done": "FALSE"
     },
     {
-      "id": 23,
+      "id": "23",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1527,7 +1526,7 @@
       "done": "FALSE"
     },
     {
-      "id": 26,
+      "id": "26",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1537,7 +1536,7 @@
       "done": "FALSE"
     },
     {
-      "id": 31,
+      "id": "31",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1547,7 +1546,7 @@
       "done": "TRUE"
     },
     {
-      "id": 33,
+      "id": "33",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1557,7 +1556,7 @@
       "done": "FALSE"
     },
     {
-      "id": 34,
+      "id": "34",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1567,7 +1566,7 @@
       "done": "TRUE"
     },
     {
-      "id": 35,
+      "id": "35",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -1577,7 +1576,7 @@
       "done": "TRUE"
     },
     {
-      "id": 38,
+      "id": "38",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1587,7 +1586,7 @@
       "done": "TRUE"
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1597,7 +1596,7 @@
       "done": "FALSE"
     },
     {
-      "id": 43,
+      "id": "43",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1607,7 +1606,7 @@
       "done": "TRUE"
     },
     {
-      "id": 47,
+      "id": "47",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1617,7 +1616,7 @@
       "done": "FALSE"
     },
     {
-      "id": 48,
+      "id": "48",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1627,7 +1626,7 @@
       "done": "FALSE"
     },
     {
-      "id": 49,
+      "id": "49",
       "memo": "진관홀",
       "details": "",
       "category": "교통",
@@ -1637,7 +1636,7 @@
       "done": "TRUE"
     },
     {
-      "id": 50,
+      "id": "50",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1647,7 +1646,7 @@
       "done": "TRUE"
     },
     {
-      "id": 74,
+      "id": "74",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1657,7 +1656,7 @@
       "done": "TRUE"
     },
     {
-      "id": 77,
+      "id": "77",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1667,7 +1666,7 @@
       "done": "FALSE"
     },
     {
-      "id": 78,
+      "id": "78",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1677,7 +1676,7 @@
       "done": "TRUE"
     },
     {
-      "id": 85,
+      "id": "85",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1687,7 +1686,7 @@
       "done": "TRUE"
     },
     {
-      "id": 85,
+      "id": "85",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1697,7 +1696,7 @@
       "done": "TRUE"
     },
     {
-      "id": 85,
+      "id": "85",
       "memo": "용돈",
       "details": "용돈 받았음",
       "category": "수입",
@@ -1707,7 +1706,7 @@
       "done": "TRUE"
     },
     {
-      "id": 90,
+      "id": "90",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1717,7 +1716,7 @@
       "done": "TRUE"
     },
     {
-      "id": 102,
+      "id": "102",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1727,7 +1726,7 @@
       "done": "TRUE"
     },
     {
-      "id": 103,
+      "id": "103",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1737,7 +1736,7 @@
       "done": "FALSE"
     },
     {
-      "id": 108,
+      "id": "108",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1747,7 +1746,7 @@
       "done": "FALSE"
     },
     {
-      "id": 114,
+      "id": "114",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1757,7 +1756,7 @@
       "done": "FALSE"
     },
     {
-      "id": 118,
+      "id": "118",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1767,7 +1766,7 @@
       "done": "TRUE"
     },
     {
-      "id": 120,
+      "id": "120",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1777,7 +1776,7 @@
       "done": "FALSE"
     },
     {
-      "id": 126,
+      "id": "126",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1787,7 +1786,7 @@
       "done": "TRUE"
     },
     {
-      "id": 128,
+      "id": "128",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1797,7 +1796,7 @@
       "done": "TRUE"
     },
     {
-      "id": 129,
+      "id": "129",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1807,7 +1806,7 @@
       "done": "FALSE"
     },
     {
-      "id": 130,
+      "id": "130",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1817,7 +1816,7 @@
       "done": "TRUE"
     },
     {
-      "id": 131,
+      "id": "131",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1827,7 +1826,7 @@
       "done": "TRUE"
     },
     {
-      "id": 134,
+      "id": "134",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -1837,7 +1836,7 @@
       "done": "TRUE"
     },
     {
-      "id": 135,
+      "id": "135",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1847,7 +1846,7 @@
       "done": "TRUE"
     },
     {
-      "id": 136,
+      "id": "136",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1857,7 +1856,7 @@
       "done": "TRUE"
     },
     {
-      "id": 137,
+      "id": "137",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1867,7 +1866,7 @@
       "done": "TRUE"
     },
     {
-      "id": 143,
+      "id": "143",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1877,7 +1876,7 @@
       "done": "TRUE"
     },
     {
-      "id": 146,
+      "id": "146",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1887,7 +1886,7 @@
       "done": "FALSE"
     },
     {
-      "id": 147,
+      "id": "147",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -1897,7 +1896,7 @@
       "done": "FALSE"
     },
     {
-      "id": 148,
+      "id": "148",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1907,7 +1906,7 @@
       "done": "TRUE"
     },
     {
-      "id": 153,
+      "id": "153",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1917,7 +1916,7 @@
       "done": "TRUE"
     },
     {
-      "id": 155,
+      "id": "155",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1927,7 +1926,7 @@
       "done": "FALSE"
     },
     {
-      "id": 159,
+      "id": "159",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1937,7 +1936,7 @@
       "done": "TRUE"
     },
     {
-      "id": 160,
+      "id": "160",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1947,7 +1946,7 @@
       "done": "FALSE"
     },
     {
-      "id": 165,
+      "id": "165",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -1957,7 +1956,7 @@
       "done": "TRUE"
     },
     {
-      "id": 166,
+      "id": "166",
       "memo": "책",
       "details": "교재 샀음",
       "category": "기타",
@@ -1967,7 +1966,7 @@
       "done": "FALSE"
     },
     {
-      "id": 175,
+      "id": "175",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -1977,7 +1976,7 @@
       "done": "FALSE"
     },
     {
-      "id": 176,
+      "id": "176",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1987,7 +1986,7 @@
       "done": "FALSE"
     },
     {
-      "id": 180,
+      "id": "180",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -1997,7 +1996,7 @@
       "done": "FALSE"
     },
     {
-      "id": 181,
+      "id": "181",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2007,7 +2006,7 @@
       "done": "FALSE"
     },
     {
-      "id": 186,
+      "id": "186",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -2017,7 +2016,7 @@
       "done": "FALSE"
     },
     {
-      "id": 190,
+      "id": "190",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2027,7 +2026,7 @@
       "done": "TRUE"
     },
     {
-      "id": 191,
+      "id": "191",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2037,7 +2036,7 @@
       "done": "FALSE"
     },
     {
-      "id": 197,
+      "id": "197",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -2047,7 +2046,7 @@
       "done": "FALSE"
     },
     {
-      "id": 202,
+      "id": "202",
       "memo": "월급",
       "details": "",
       "category": "수입",
@@ -2057,7 +2056,7 @@
       "done": "FALSE"
     },
     {
-      "id": 204,
+      "id": "204",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2067,7 +2066,7 @@
       "done": "FALSE"
     },
     {
-      "id": 205,
+      "id": "205",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -2077,7 +2076,7 @@
       "done": "FALSE"
     },
     {
-      "id": 210,
+      "id": "210",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2087,7 +2086,7 @@
       "done": "TRUE"
     },
     {
-      "id": 211,
+      "id": "211",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2097,7 +2096,7 @@
       "done": "FALSE"
     },
     {
-      "id": 218,
+      "id": "218",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -2107,7 +2106,7 @@
       "done": "TRUE"
     },
     {
-      "id": 230,
+      "id": "230",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2117,7 +2116,7 @@
       "done": "TRUE"
     },
     {
-      "id": 230,
+      "id": "230",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2127,7 +2126,7 @@
       "done": "TRUE"
     },
     {
-      "id": 234,
+      "id": "234",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2137,7 +2136,7 @@
       "done": "FALSE"
     },
     {
-      "id": 235,
+      "id": "235",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2147,7 +2146,7 @@
       "done": "FALSE"
     },
     {
-      "id": 236,
+      "id": "236",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2157,7 +2156,7 @@
       "done": "TRUE"
     },
     {
-      "id": 239,
+      "id": "239",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2167,7 +2166,7 @@
       "done": "FALSE"
     },
     {
-      "id": 245,
+      "id": "245",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -2177,7 +2176,7 @@
       "done": "FALSE"
     },
     {
-      "id": 246,
+      "id": "246",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2187,7 +2186,7 @@
       "done": "FALSE"
     },
     {
-      "id": 250,
+      "id": "250",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2197,7 +2196,7 @@
       "done": "FALSE"
     },
     {
-      "id": 252,
+      "id": "252",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2207,7 +2206,7 @@
       "done": "TRUE"
     },
     {
-      "id": 255,
+      "id": "255",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2217,7 +2216,7 @@
       "done": "TRUE"
     },
     {
-      "id": 261,
+      "id": "261",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2227,7 +2226,7 @@
       "done": "TRUE"
     },
     {
-      "id": 262,
+      "id": "262",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2237,7 +2236,7 @@
       "done": "FALSE"
     },
     {
-      "id": 265,
+      "id": "265",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2247,7 +2246,7 @@
       "done": "TRUE"
     },
     {
-      "id": 266,
+      "id": "266",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2257,7 +2256,7 @@
       "done": "FALSE"
     },
     {
-      "id": 275,
+      "id": "275",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -2267,7 +2266,7 @@
       "done": "FALSE"
     },
     {
-      "id": 286,
+      "id": "286",
       "memo": "급여",
       "details": "",
       "category": "수입",
@@ -2277,7 +2276,7 @@
       "done": true
     },
     {
-      "id": 287,
+      "id": "287",
       "memo": "이차돌",
       "details": "내가 쐈음",
       "category": "기타",
@@ -2287,7 +2286,7 @@
       "done": true
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2297,7 +2296,7 @@
       "done": "TRUE"
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2307,7 +2306,7 @@
       "done": "TRUE"
     },
     {
-      "id": 1,
+      "id": "1",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -2317,7 +2316,7 @@
       "done": "FALSE"
     },
     {
-      "id": 2,
+      "id": "2",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -2327,7 +2326,7 @@
       "done": "FALSE"
     },
     {
-      "id": 6,
+      "id": "6",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -2337,7 +2336,7 @@
       "done": "FALSE"
     },
     {
-      "id": 7,
+      "id": "7",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -2347,7 +2346,7 @@
       "done": "FALSE"
     },
     {
-      "id": 12,
+      "id": "12",
       "memo": "유플러스",
       "details": "",
       "category": "통신",
@@ -2357,7 +2356,7 @@
       "done": "FALSE"
     },
     {
-      "id": 13,
+      "id": "13",
       "memo": "KT CCTV",
       "details": "",
       "category": "통신",
@@ -2367,7 +2366,7 @@
       "done": "FALSE"
     },
     {
-      "id": 20,
+      "id": "20",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2377,7 +2376,7 @@
       "done": "TRUE"
     },
     {
-      "id": 21,
+      "id": "21",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2387,7 +2386,7 @@
       "done": "FALSE"
     },
     {
-      "id": 25,
+      "id": "25",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2397,7 +2396,7 @@
       "done": "FALSE"
     },
     {
-      "id": 27,
+      "id": "27",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2407,7 +2406,7 @@
       "done": "FALSE"
     },
     {
-      "id": 28,
+      "id": "28",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2417,7 +2416,7 @@
       "done": "FALSE"
     },
     {
-      "id": 30,
+      "id": "30",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2427,7 +2426,7 @@
       "done": "TRUE"
     },
     {
-      "id": 36,
+      "id": "36",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2437,7 +2436,7 @@
       "done": "FALSE"
     },
     {
-      "id": 40,
+      "id": "40",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2447,7 +2446,7 @@
       "done": "TRUE"
     },
     {
-      "id": 41,
+      "id": "41",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2457,7 +2456,7 @@
       "done": "FALSE"
     },
     {
-      "id": 42,
+      "id": "42",
       "memo": "책",
       "details": "교재",
       "category": "기타",
@@ -2467,7 +2466,7 @@
       "done": "TRUE"
     },
     {
-      "id": 45,
+      "id": "45",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2477,7 +2476,7 @@
       "done": "FALSE"
     },
     {
-      "id": 60,
+      "id": "60",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2487,7 +2486,7 @@
       "done": "TRUE"
     },
     {
-      "id": 61,
+      "id": "61",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2497,7 +2496,7 @@
       "done": "TRUE"
     },
     {
-      "id": 62,
+      "id": "62",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2507,7 +2506,7 @@
       "done": "FALSE"
     },
     {
-      "id": 63,
+      "id": "63",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2517,7 +2516,7 @@
       "done": "TRUE"
     },
     {
-      "id": 64,
+      "id": "64",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2527,7 +2526,7 @@
       "done": "TRUE"
     },
     {
-      "id": 65,
+      "id": "65",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2537,7 +2536,7 @@
       "done": "TRUE"
     },
     {
-      "id": 67,
+      "id": "67",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2547,7 +2546,7 @@
       "done": "FALSE"
     },
     {
-      "id": 69,
+      "id": "69",
       "memo": "강아지 간식",
       "details": "감자 간식",
       "category": "기타",
@@ -2557,7 +2556,7 @@
       "done": "TRUE"
     },
     {
-      "id": 70,
+      "id": "70",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2567,7 +2566,7 @@
       "done": "FALSE"
     },
     {
-      "id": 71,
+      "id": "71",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2577,7 +2576,7 @@
       "done": "FALSE"
     },
     {
-      "id": 75,
+      "id": "75",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2587,7 +2586,7 @@
       "done": "TRUE"
     },
     {
-      "id": 76,
+      "id": "76",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2596,9 +2595,8 @@
       "date": "2024-02-19",
       "done": "TRUE"
     },
-
     {
-      "id": 83,
+      "id": "83",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2608,7 +2606,7 @@
       "done": "FALSE"
     },
     {
-      "id": 84,
+      "id": "84",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2618,7 +2616,7 @@
       "done": "FALSE"
     },
     {
-      "id": 86,
+      "id": "86",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2628,7 +2626,7 @@
       "done": "TRUE"
     },
     {
-      "id": 91,
+      "id": "91",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2638,7 +2636,7 @@
       "done": "TRUE"
     },
     {
-      "id": 92,
+      "id": "92",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2648,7 +2646,7 @@
       "done": "FALSE"
     },
     {
-      "id": 98,
+      "id": "98",
       "memo": "회식",
       "details": "회식 N빵",
       "category": "식비",
@@ -2658,7 +2656,7 @@
       "done": "TRUE"
     },
     {
-      "id": 99,
+      "id": "99",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2668,7 +2666,7 @@
       "done": "TRUE"
     },
     {
-      "id": 100,
+      "id": "100",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2678,7 +2676,7 @@
       "done": "TRUE"
     },
     {
-      "id": 105,
+      "id": "105",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2688,7 +2686,7 @@
       "done": "TRUE"
     },
     {
-      "id": 110,
+      "id": "110",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2698,7 +2696,7 @@
       "done": "FALSE"
     },
     {
-      "id": 112,
+      "id": "112",
       "memo": "치킨",
       "details": "",
       "category": "식비",
@@ -2708,7 +2706,7 @@
       "done": "TRUE"
     },
     {
-      "id": 115,
+      "id": "115",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2718,7 +2716,7 @@
       "done": "TRUE"
     },
     {
-      "id": 116,
+      "id": "116",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2728,7 +2726,7 @@
       "done": "TRUE"
     },
     {
-      "id": 117,
+      "id": "117",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2738,7 +2736,7 @@
       "done": "TRUE"
     },
     {
-      "id": 121,
+      "id": "121",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2748,7 +2746,7 @@
       "done": "TRUE"
     },
     {
-      "id": 122,
+      "id": "122",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2758,7 +2756,7 @@
       "done": "TRUE"
     },
     {
-      "id": 123,
+      "id": "123",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2768,7 +2766,7 @@
       "done": "FALSE"
     },
     {
-      "id": 127,
+      "id": "127",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2778,7 +2776,7 @@
       "done": "FALSE"
     },
     {
-      "id": 133,
+      "id": "133",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2788,7 +2786,7 @@
       "done": "FALSE"
     },
     {
-      "id": 138,
+      "id": "138",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2798,7 +2796,7 @@
       "done": "FALSE"
     },
     {
-      "id": 141,
+      "id": "141",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2808,7 +2806,7 @@
       "done": "FALSE"
     },
     {
-      "id": 144,
+      "id": "144",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2818,7 +2816,7 @@
       "done": "TRUE"
     },
     {
-      "id": 145,
+      "id": "145",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2828,7 +2826,7 @@
       "done": "FALSE"
     },
     {
-      "id": 150,
+      "id": "150",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2838,7 +2836,7 @@
       "done": "TRUE"
     },
     {
-      "id": 152,
+      "id": "152",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2848,7 +2846,7 @@
       "done": "TRUE"
     },
     {
-      "id": 154,
+      "id": "154",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -2858,7 +2856,7 @@
       "done": "TRUE"
     },
     {
-      "id": 156,
+      "id": "156",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2868,7 +2866,7 @@
       "done": "FALSE"
     },
     {
-      "id": 161,
+      "id": "161",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2878,7 +2876,7 @@
       "done": "FALSE"
     },
     {
-      "id": 162,
+      "id": "162",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2888,7 +2886,7 @@
       "done": "FALSE"
     },
     {
-      "id": 163,
+      "id": "163",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -2898,7 +2896,7 @@
       "done": "FALSE"
     },
     {
-      "id": 164,
+      "id": "164",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -2908,7 +2906,7 @@
       "done": "TRUE"
     },
     {
-      "id": 167,
+      "id": "167",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2918,7 +2916,7 @@
       "done": "FALSE"
     },
     {
-      "id": 168,
+      "id": "168",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2928,7 +2926,7 @@
       "done": "TRUE"
     },
     {
-      "id": 167,
+      "id": "167",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2938,7 +2936,7 @@
       "done": "FALSE"
     },
     {
-      "id": 168,
+      "id": "168",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -2948,7 +2946,7 @@
       "done": "TRUE"
     },
     {
-      "id": 170,
+      "id": "170",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2958,7 +2956,7 @@
       "done": "FALSE"
     },
     {
-      "id": 171,
+      "id": "171",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2968,7 +2966,7 @@
       "done": "TRUE"
     },
     {
-      "id": 173,
+      "id": "173",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -2978,7 +2976,7 @@
       "done": "TRUE"
     },
     {
-      "id": 174,
+      "id": "174",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -2988,7 +2986,7 @@
       "done": "FALSE"
     },
     {
-      "id": 177,
+      "id": "177",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -2998,7 +2996,7 @@
       "done": "TRUE"
     },
     {
-      "id": 179,
+      "id": "179",
       "memo": "용돈",
       "details": "할머니가 용돈 주심",
       "category": "수입",
@@ -3008,7 +3006,7 @@
       "done": "TRUE"
     },
     {
-      "id": 183,
+      "id": "183",
       "memo": "옷",
       "details": "",
       "category": "기타",
@@ -3018,7 +3016,7 @@
       "done": "FALSE"
     },
     {
-      "id": 185,
+      "id": "185",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3028,7 +3026,7 @@
       "done": "FALSE"
     },
     {
-      "id": 187,
+      "id": "187",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3038,7 +3036,7 @@
       "done": "FALSE"
     },
     {
-      "id": 188,
+      "id": "188",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3048,7 +3046,7 @@
       "done": "TRUE"
     },
     {
-      "id": 193,
+      "id": "193",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3058,7 +3056,7 @@
       "done": "FALSE"
     },
     {
-      "id": 195,
+      "id": "195",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3068,7 +3066,7 @@
       "done": "FALSE"
     },
     {
-      "id": 198,
+      "id": "198",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3078,7 +3076,7 @@
       "done": "TRUE"
     },
     {
-      "id": 199,
+      "id": "199",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3088,7 +3086,7 @@
       "done": "TRUE"
     },
     {
-      "id": 201,
+      "id": "201",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3098,7 +3096,7 @@
       "done": "TRUE"
     },
     {
-      "id": 203,
+      "id": "203",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3108,7 +3106,7 @@
       "done": "TRUE"
     },
     {
-      "id": 206,
+      "id": "206",
       "memo": "영화",
       "details": "",
       "category": "문화",
@@ -3118,7 +3116,7 @@
       "done": "TRUE"
     },
     {
-      "id": 207,
+      "id": "207",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3128,7 +3126,7 @@
       "done": "TRUE"
     },
     {
-      "id": 208,
+      "id": "208",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3138,7 +3136,7 @@
       "done": "TRUE"
     },
     {
-      "id": 209,
+      "id": "209",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -3148,7 +3146,7 @@
       "done": "TRUE"
     },
     {
-      "id": 214,
+      "id": "214",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3158,7 +3156,7 @@
       "done": "FALSE"
     },
     {
-      "id": 215,
+      "id": "215",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3168,7 +3166,7 @@
       "done": "TRUE"
     },
     {
-      "id": 216,
+      "id": "216",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3178,7 +3176,7 @@
       "done": "TRUE"
     },
     {
-      "id": 217,
+      "id": "217",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -3188,7 +3186,7 @@
       "done": "FALSE"
     },
     {
-      "id": 219,
+      "id": "219",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3198,7 +3196,7 @@
       "done": "FALSE"
     },
     {
-      "id": 220,
+      "id": "220",
       "memo": "노래방",
       "details": "",
       "category": "문화",
@@ -3208,7 +3206,7 @@
       "done": "FALSE"
     },
     {
-      "id": 221,
+      "id": "221",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -3218,7 +3216,7 @@
       "done": "TRUE"
     },
     {
-      "id": 222,
+      "id": "222",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3228,7 +3226,7 @@
       "done": "TRUE"
     },
     {
-      "id": 231,
+      "id": "231",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3238,7 +3236,7 @@
       "done": "FALSE"
     },
     {
-      "id": 237,
+      "id": "237",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3248,7 +3246,7 @@
       "done": "FALSE"
     },
     {
-      "id": 240,
+      "id": "240",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3258,7 +3256,7 @@
       "done": "FALSE"
     },
     {
-      "id": 241,
+      "id": "241",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3268,7 +3266,7 @@
       "done": "TRUE"
     },
     {
-      "id": 243,
+      "id": "243",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3278,7 +3276,7 @@
       "done": "TRUE"
     },
     {
-      "id": 247,
+      "id": "247",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3288,7 +3286,7 @@
       "done": "FALSE"
     },
     {
-      "id": 248,
+      "id": "248",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3298,7 +3296,7 @@
       "done": "FALSE"
     },
     {
-      "id": 251,
+      "id": "251",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3308,7 +3306,7 @@
       "done": "FALSE"
     },
     {
-      "id": 253,
+      "id": "253",
       "memo": "우동연가",
       "details": "",
       "category": "식비",
@@ -3318,7 +3316,7 @@
       "done": "TRUE"
     },
     {
-      "id": 254,
+      "id": "254",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3328,7 +3326,7 @@
       "done": "FALSE"
     },
     {
-      "id": 256,
+      "id": "256",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -3338,7 +3336,7 @@
       "done": "TRUE"
     },
     {
-      "id": 258,
+      "id": "258",
       "memo": "스타벅스",
       "details": "",
       "category": "식비",
@@ -3348,7 +3346,7 @@
       "done": "FALSE"
     },
     {
-      "id": 259,
+      "id": "259",
       "memo": "치킨",
       "details": "준수랑 먹음",
       "category": "식비",
@@ -3358,7 +3356,7 @@
       "done": "TRUE"
     },
     {
-      "id": 263,
+      "id": "263",
       "memo": "서브웨이",
       "details": "",
       "category": "식비",
@@ -3368,7 +3366,7 @@
       "done": "FALSE"
     },
     {
-      "id": 267,
+      "id": "267",
       "memo": "맥도날드",
       "details": "",
       "category": "식비",
@@ -3378,7 +3376,7 @@
       "done": "TRUE"
     },
     {
-      "id": 272,
+      "id": "272",
       "memo": "자전거",
       "details": "당근에서 중고 자전거",
       "category": "기타",
@@ -3388,7 +3386,7 @@
       "done": "FALSE"
     },
     {
-      "id": 278,
+      "id": "278",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3398,7 +3396,7 @@
       "done": "TRUE"
     },
     {
-      "id": 32,
+      "id": "32",
       "memo": "영화",
       "details": "연비언니랑 봤음",
       "category": "문화",
@@ -3408,7 +3406,7 @@
       "done": "TRUE"
     },
     {
-      "id": 46,
+      "id": "46",
       "memo": "뮤지컬",
       "details": "뮤지컬 관람",
       "category": "문화",
@@ -3418,7 +3416,7 @@
       "done": "FALSE"
     },
     {
-      "id": 89,
+      "id": "89",
       "memo": "영화",
       "details": "호진이랑 봄",
       "category": "문화",
@@ -3428,7 +3426,7 @@
       "done": "FALSE"
     },
     {
-      "id": 113,
+      "id": "113",
       "memo": "노래방",
       "details": "",
       "category": "문화",
@@ -3438,7 +3436,7 @@
       "done": "FALSE"
     },
     {
-      "id": 142,
+      "id": "142",
       "memo": "영화",
       "details": "",
       "category": "문화",
@@ -3448,7 +3446,7 @@
       "done": "TRUE"
     },
     {
-      "id": 157,
+      "id": "157",
       "memo": "공연",
       "details": "엄마랑 공연봄",
       "category": "문화",
@@ -3458,7 +3456,7 @@
       "done": "FALSE"
     },
     {
-      "id": 264,
+      "id": "264",
       "memo": "전시회",
       "details": "레오나르도 다빈치 특별 전시회",
       "category": "문화",
@@ -3468,7 +3466,7 @@
       "done": "FALSE"
     },
     {
-      "id": 3,
+      "id": "3",
       "memo": "미용실",
       "details": "머리 잘랐음",
       "category": "기타",
@@ -3478,7 +3476,7 @@
       "done": "TRUE"
     },
     {
-      "id": 4,
+      "id": "4",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -3488,7 +3486,7 @@
       "done": "TRUE"
     },
     {
-      "id": 8,
+      "id": "8",
       "memo": "철물점",
       "details": "",
       "category": "기타",
@@ -3498,7 +3496,7 @@
       "done": "TRUE"
     },
     {
-      "id": 9,
+      "id": "9",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -3508,7 +3506,7 @@
       "done": "TRUE"
     },
     {
-      "id": 10,
+      "id": "10",
       "memo": "미용실",
       "details": "머리 잘랐음",
       "category": "기타",
@@ -3518,7 +3516,7 @@
       "done": "TRUE"
     },
     {
-      "id": 11,
+      "id": "11",
       "memo": "강아지 병원",
       "details": "감자 병원",
       "category": "기타",
@@ -3528,7 +3526,7 @@
       "done": "TRUE"
     },
     {
-      "id": 14,
+      "id": "14",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -3538,7 +3536,7 @@
       "done": "TRUE"
     },
     {
-      "id": 15,
+      "id": "15",
       "memo": "약",
       "details": "",
       "category": "기타",
@@ -3548,7 +3546,7 @@
       "done": "TRUE"
     },
     {
-      "id": 16,
+      "id": "16",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3558,7 +3556,7 @@
       "done": "FALSE"
     },
     {
-      "id": 23,
+      "id": "23",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3568,7 +3566,7 @@
       "done": "FALSE"
     },
     {
-      "id": 26,
+      "id": "26",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3578,7 +3576,7 @@
       "done": "FALSE"
     },
     {
-      "id": 31,
+      "id": "31",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3588,7 +3586,7 @@
       "done": "TRUE"
     },
     {
-      "id": 33,
+      "id": "33",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3598,7 +3596,7 @@
       "done": "FALSE"
     },
     {
-      "id": 34,
+      "id": "34",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3608,7 +3606,7 @@
       "done": "TRUE"
     },
     {
-      "id": 35,
+      "id": "35",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -3618,7 +3616,7 @@
       "done": "TRUE"
     },
     {
-      "id": 38,
+      "id": "38",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3628,7 +3626,7 @@
       "done": "TRUE"
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3638,7 +3636,7 @@
       "done": "FALSE"
     },
     {
-      "id": 43,
+      "id": "43",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3648,7 +3646,7 @@
       "done": "TRUE"
     },
     {
-      "id": 47,
+      "id": "47",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3658,7 +3656,7 @@
       "done": "FALSE"
     },
     {
-      "id": 48,
+      "id": "48",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3668,7 +3666,7 @@
       "done": "FALSE"
     },
     {
-      "id": 49,
+      "id": "49",
       "memo": "진관홀",
       "details": "",
       "category": "교통",
@@ -3678,7 +3676,7 @@
       "done": "TRUE"
     },
     {
-      "id": 50,
+      "id": "50",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3688,7 +3686,7 @@
       "done": "TRUE"
     },
     {
-      "id": 74,
+      "id": "74",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3698,7 +3696,7 @@
       "done": "TRUE"
     },
     {
-      "id": 77,
+      "id": "77",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3708,7 +3706,7 @@
       "done": "FALSE"
     },
     {
-      "id": 78,
+      "id": "78",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3718,7 +3716,7 @@
       "done": "TRUE"
     },
     {
-      "id": 85,
+      "id": "85",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3728,7 +3726,7 @@
       "done": "TRUE"
     },
     {
-      "id": 90,
+      "id": "90",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3738,7 +3736,7 @@
       "done": "TRUE"
     },
     {
-      "id": 102,
+      "id": "102",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3748,7 +3746,7 @@
       "done": "TRUE"
     },
     {
-      "id": 103,
+      "id": "103",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3758,7 +3756,7 @@
       "done": "FALSE"
     },
     {
-      "id": 108,
+      "id": "108",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3768,7 +3766,7 @@
       "done": "FALSE"
     },
     {
-      "id": 114,
+      "id": "114",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3778,7 +3776,7 @@
       "done": "FALSE"
     },
     {
-      "id": 120,
+      "id": "120",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3788,7 +3786,7 @@
       "done": "FALSE"
     },
     {
-      "id": 126,
+      "id": "126",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3798,7 +3796,7 @@
       "done": "TRUE"
     },
     {
-      "id": 128,
+      "id": "128",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3808,7 +3806,7 @@
       "done": "TRUE"
     },
     {
-      "id": 129,
+      "id": "129",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3818,7 +3816,7 @@
       "done": "FALSE"
     },
     {
-      "id": 130,
+      "id": "130",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3828,7 +3826,7 @@
       "done": "TRUE"
     },
     {
-      "id": 131,
+      "id": "131",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3838,7 +3836,7 @@
       "done": "TRUE"
     },
     {
-      "id": 134,
+      "id": "134",
       "memo": "올리브영",
       "details": "",
       "category": "기타",
@@ -3848,7 +3846,7 @@
       "done": "TRUE"
     },
     {
-      "id": 135,
+      "id": "135",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3858,7 +3856,7 @@
       "done": "TRUE"
     },
     {
-      "id": 136,
+      "id": "136",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3868,7 +3866,7 @@
       "done": "TRUE"
     },
     {
-      "id": 137,
+      "id": "137",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3878,7 +3876,7 @@
       "done": "TRUE"
     },
     {
-      "id": 143,
+      "id": "143",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3888,7 +3886,7 @@
       "done": "TRUE"
     },
     {
-      "id": 146,
+      "id": "146",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3898,7 +3896,7 @@
       "done": "FALSE"
     },
     {
-      "id": 147,
+      "id": "147",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -3908,7 +3906,7 @@
       "done": "FALSE"
     },
     {
-      "id": 148,
+      "id": "148",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3918,7 +3916,7 @@
       "done": "TRUE"
     },
     {
-      "id": 153,
+      "id": "153",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3928,7 +3926,7 @@
       "done": "TRUE"
     },
     {
-      "id": 155,
+      "id": "155",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3938,7 +3936,7 @@
       "done": "FALSE"
     },
     {
-      "id": 159,
+      "id": "159",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3948,7 +3946,7 @@
       "done": "TRUE"
     },
     {
-      "id": 160,
+      "id": "160",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3958,7 +3956,7 @@
       "done": "FALSE"
     },
     {
-      "id": 165,
+      "id": "165",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -3968,7 +3966,7 @@
       "done": "TRUE"
     },
     {
-      "id": 166,
+      "id": "166",
       "memo": "책",
       "details": "교재 샀음",
       "category": "기타",
@@ -3978,7 +3976,7 @@
       "done": "FALSE"
     },
     {
-      "id": 175,
+      "id": "175",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -3988,7 +3986,7 @@
       "done": "FALSE"
     },
     {
-      "id": 176,
+      "id": "176",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -3998,7 +3996,7 @@
       "done": "FALSE"
     },
     {
-      "id": 180,
+      "id": "180",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -4008,7 +4006,7 @@
       "done": "FALSE"
     },
     {
-      "id": 181,
+      "id": "181",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -4018,7 +4016,7 @@
       "done": "FALSE"
     },
     {
-      "id": 186,
+      "id": "186",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -4028,7 +4026,7 @@
       "done": "FALSE"
     },
     {
-      "id": 190,
+      "id": "190",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4038,7 +4036,7 @@
       "done": "TRUE"
     },
     {
-      "id": 191,
+      "id": "191",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4048,7 +4046,7 @@
       "done": "FALSE"
     },
     {
-      "id": 197,
+      "id": "197",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -4058,7 +4056,7 @@
       "done": "FALSE"
     },
     {
-      "id": 202,
+      "id": "202",
       "memo": "월급",
       "details": "",
       "category": "수입",
@@ -4068,7 +4066,7 @@
       "done": "FALSE"
     },
     {
-      "id": 204,
+      "id": "204",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4078,7 +4076,7 @@
       "done": "FALSE"
     },
     {
-      "id": 205,
+      "id": "205",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -4088,7 +4086,7 @@
       "done": "FALSE"
     },
     {
-      "id": 210,
+      "id": "210",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4098,7 +4096,7 @@
       "done": "TRUE"
     },
     {
-      "id": 211,
+      "id": "211",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4108,7 +4106,7 @@
       "done": "FALSE"
     },
     {
-      "id": 218,
+      "id": "218",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -4118,7 +4116,7 @@
       "done": "TRUE"
     },
     {
-      "id": 230,
+      "id": "230",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4128,7 +4126,7 @@
       "done": "TRUE"
     },
     {
-      "id": 234,
+      "id": "234",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4138,7 +4136,7 @@
       "done": "FALSE"
     },
     {
-      "id": 235,
+      "id": "235",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4148,7 +4146,7 @@
       "done": "FALSE"
     },
     {
-      "id": 236,
+      "id": "236",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4158,7 +4156,7 @@
       "done": "TRUE"
     },
     {
-      "id": 239,
+      "id": "239",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4168,7 +4166,7 @@
       "done": "FALSE"
     },
     {
-      "id": 245,
+      "id": "245",
       "memo": "따릉이",
       "details": "",
       "category": "교통",
@@ -4178,7 +4176,7 @@
       "done": "FALSE"
     },
     {
-      "id": 246,
+      "id": "246",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4188,7 +4186,7 @@
       "done": "FALSE"
     },
     {
-      "id": 250,
+      "id": "250",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4198,7 +4196,7 @@
       "done": "FALSE"
     },
     {
-      "id": 252,
+      "id": "252",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -4208,7 +4206,7 @@
       "done": "TRUE"
     },
     {
-      "id": 255,
+      "id": "255",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -4218,7 +4216,7 @@
       "done": "TRUE"
     },
     {
-      "id": 261,
+      "id": "261",
       "memo": "버스",
       "details": "",
       "category": "교통",
@@ -4228,7 +4226,7 @@
       "done": "TRUE"
     },
     {
-      "id": 262,
+      "id": "262",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4238,7 +4236,7 @@
       "done": "FALSE"
     },
     {
-      "id": 265,
+      "id": "265",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4248,7 +4246,7 @@
       "done": "TRUE"
     },
     {
-      "id": 266,
+      "id": "266",
       "memo": "택시",
       "details": "",
       "category": "교통",
@@ -4258,7 +4256,7 @@
       "done": "FALSE"
     },
     {
-      "id": 275,
+      "id": "275",
       "memo": "전철",
       "details": "",
       "category": "교통",
@@ -4268,7 +4266,7 @@
       "done": "FALSE"
     },
     {
-      "id": 286,
+      "id": "286",
       "memo": "급여",
       "details": "",
       "category": "수입",
@@ -4278,7 +4276,7 @@
       "done": true
     },
     {
-      "id": 287,
+      "id": "287",
       "memo": "이차돌",
       "details": "내가 쐈음",
       "category": "기타",
@@ -4288,7 +4286,7 @@
       "done": true
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "진관홀",
       "details": "",
       "category": "식비",
@@ -4298,7 +4296,7 @@
       "done": "TRUE"
     },
     {
-      "id": 39,
+      "id": "39",
       "memo": "택시",
       "details": "",
       "category": "교통",

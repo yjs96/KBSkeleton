@@ -8,12 +8,6 @@
         <option value="4">4월</option>
         <option value="5">5월</option>
         <option value="6">6월</option>
-        <option value="7">7월</option>
-        <option value="8">8월</option>
-        <option value="9">9월</option>
-        <option value="10">10월</option>
-        <option value="11">11월</option>
-        <option value="12">12월</option>
       </select>
     </div>
     <div class="chart-frame">
@@ -41,16 +35,10 @@ const date = new Date();
 const month = ref(date.getMonth() + 1);
 
 const historyStore = useHistoryStore();
-const {
-  outcomeByCategoryAndMonth,
-  outcomeByCategoryAndMonthWithPercentage,
-} = historyStore;
-
+const { outcomeByCategoryAndMonth, outcomeByCategoryAndMonthWithPercentage } = historyStore;
 
 const outcomeList = computed(() => outcomeByCategoryAndMonth(month.value));
-const percentageList = computed(() =>
-  outcomeByCategoryAndMonthWithPercentage(month.value)
-);
+const percentageList = computed(() => outcomeByCategoryAndMonthWithPercentage(month.value));
 
 Chart.register(...registerables);
 Chart.register(ChartDataLabels);
@@ -73,20 +61,8 @@ const createChart = () => {
         {
           label: '지출액',
           data: outcomeList.value,
-          backgroundColor: [
-            '#44c4a1',
-            '#ff553e',
-            '#eeae55',
-            '#64798a',
-            '#569ddf',
-          ],
-          borderColor: [
-            '#44c4a1',
-            '#ff553e',
-            '#eeae55',
-            '#64798a',
-            '#569ddf',
-          ],
+          backgroundColor: ['#44c4a1', '#ff553e', '#eeae55', '#64798a', '#569ddf'],
+          borderColor: ['#44c4a1', '#ff553e', '#eeae55', '#64798a', '#569ddf'],
           borderWidth: 1,
           datalabels: {
             color: '#727272',
